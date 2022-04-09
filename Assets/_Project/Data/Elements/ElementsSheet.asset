@@ -1,0 +1,6011 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ffbab3efcdce54289a5106c79a8f2d, type: 3}
+  m_Name: ElementsSheet
+  m_EditorClassIdentifier: 
+  SheetName: Assets/_Project/ElementsSheet.xlsx
+  WorksheetName: ElementsSheet
+  dataArray:
+  - abbreviation: H
+    elementname: "Hidrog\xEAnio"
+    atomicnumber: 1
+    electronegativity: 2.1
+    atomicradius: 53
+    group: 0
+  - abbreviation: He
+    elementname: "H\xE9lio"
+    atomicnumber: 2
+    electronegativity: 0
+    atomicradius: 31
+    group: 1
+  - abbreviation: Li
+    elementname: "L\xEDtio"
+    atomicnumber: 3
+    electronegativity: 1
+    atomicradius: 152
+    group: 2
+  - abbreviation: Be
+    elementname: "Ber\xEDlio"
+    atomicnumber: 4
+    electronegativity: 1.6
+    atomicradius: 112
+    group: 3
+  - abbreviation: B
+    elementname: Boro
+    atomicnumber: 5
+    electronegativity: 2
+    atomicradius: 87
+    group: 4
+  - abbreviation: C
+    elementname: Carbono
+    atomicnumber: 6
+    electronegativity: 2.5
+    atomicradius: 67
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
+  - abbreviation: 
+    elementname: 
+    atomicnumber: 0
+    electronegativity: 0
+    atomicradius: 0
+    group: 0
