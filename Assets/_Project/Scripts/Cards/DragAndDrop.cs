@@ -9,19 +9,23 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
     [SerializeField] private float _dragSpeed;
     [SerializeField] private float _snapSpeed;
-    [SerializeField] private float _maxDistanceToSwitchSlot;
+    [SerializeField] private float _maxDistanceToSwitchDeck;
     
     private InputManager _inputManager;
     private Animator _animator;
+    private RectTransform _rectTransform;
     private CardController _cardController;
     private bool _isDragging;
     private Vector3 _targetPosition;
+
+    public bool IsDragging => _isDragging;
 
     // Start is called before the first frame update
     void Start()
     {
         _inputManager = InputManager.Instance;
         _animator = GetComponent<Animator>();
+        _rectTransform = GetComponent<RectTransform>();
         _cardController = GetComponent<CardController>();
     }
 
@@ -43,32 +47,29 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
     private void Drop()
     {
-        _isDragging = false;
         _animator.SetBool(AnimatorParameters.IS_DRAGGING, false);
-        SnapToTarget(GetNearestEmptySlot().transform.position);
+        //SnapToTarget(GetNearestDeck().transform.position);
+        SnapToDeck(_cardController.GetCurrentDeck());
+        _isDragging = false;
     }
 
-    private CardSlot GetNearestEmptySlot()
+    private DeckController GetNearestDeck()
     {
-        CardSlot[] cardSlots = FindObjectsOfType<CardSlot>();
-        CardSlot nearestSlot = _cardController.GetCurrentSlot();
+        DeckController[] cardDecks = FindObjectsOfType<DeckController>();
+        DeckController nearestDeckController = _cardController.GetCurrentDeck();
 
-        foreach (var slot in cardSlots)
+        foreach (var deck in cardDecks)
         {
-            if (!slot.IsSlotEmpty()) continue;
-
-            float distanceToSlot = Vector3.Distance(transform.position, slot.transform.position);
-            float distanceToNearestSlot = Vector3.Distance(transform.position, nearestSlot.transform.position);
+            float distanceToDeck = Vector3.Distance(transform.position, deck.transform.position);
+            float distanceToNearestDeck = Vector3.Distance(transform.position, nearestDeckController.transform.position);
             
-            if (distanceToSlot < distanceToNearestSlot && distanceToSlot < _maxDistanceToSwitchSlot)
+            if (distanceToDeck < distanceToNearestDeck && distanceToDeck < _maxDistanceToSwitchDeck)
             {
-                nearestSlot = slot;
+                nearestDeckController = deck;
             }
         }
-
         
-        Debug.Log(Vector3.Distance(transform.position, nearestSlot.transform.position));
-        return nearestSlot;
+        return nearestDeckController;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -77,9 +78,11 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         _animator.SetBool(AnimatorParameters.IS_DRAGGING, true);
     }
 
-    private void SnapToTarget(Vector3 target)
+    private void SnapToDeck(DeckController deck)
     {
-        transform.DOMove(target, 1 / _snapSpeed);
+        Vector2 deckPosition = new Vector2(0, deck.GetTopCard().GetComponent<RectTransform>().anchoredPosition.y + DeckSettings.GetRandomSpacingBetweenCards());
+        
+        _rectTransform.DOAnchorPos(deckPosition, 1 / _snapSpeed);
     }
 
     public void OnPointerDown(PointerEventData eventData)

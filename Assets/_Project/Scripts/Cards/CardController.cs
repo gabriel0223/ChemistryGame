@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using Random = UnityEngine.Random;
 
 public class CardController : MonoBehaviour
 {
@@ -11,14 +12,14 @@ public class CardController : MonoBehaviour
     
     private ElementsSheetData _cardData;
     private CardDataDisplayer _cardDataDisplayer;
-    private CardSlot _currentSlot;
+    private DeckController _currentDeckController;
 
     private void Start()
     {
         _cardDataDisplayer = GetComponent<CardDataDisplayer>();
-        _currentSlot = GetComponentInParent<CardSlot>();
+        _currentDeckController = GetComponentInParent<DeckController>();
 
-        Initialize(_atomicNumber);
+        Initialize();
     }
 
     private void Initialize(int atomicNumber)
@@ -28,14 +29,23 @@ public class CardController : MonoBehaviour
         _cardData = _elementsSheet.dataArray[cardIndex];
         _cardDataDisplayer.UpdateDataDisplay(_cardData);
     }
-
-    public CardSlot GetCurrentSlot()
+    
+    private void Initialize()
     {
-        return _currentSlot;
+        int cardIndex = Random.Range(0, _elementsSheet.dataArray.Length);
+
+        _cardData = _elementsSheet.dataArray[cardIndex];
+        _cardDataDisplayer.UpdateDataDisplay(_cardData);
     }
 
-    public void SetCurrentSlot(CardSlot newSlot)
+    public DeckController GetCurrentDeck()
     {
-        _currentSlot = newSlot;
+        return _currentDeckController;
+    }
+
+    public void SwitchDeck(DeckController newDeckController)
+    {
+        transform.SetParent(newDeckController.transform);
+        _currentDeckController = newDeckController;
     }
 }
