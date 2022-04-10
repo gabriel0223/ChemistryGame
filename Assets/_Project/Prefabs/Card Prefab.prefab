@@ -316,6 +316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dragSpeed: 10
   _snapSpeed: 5
+  _maxDistanceToSwitchSlot: 60
 --- !u!1 &7119724268968485295
 GameObject:
   m_ObjectHideFlags: 0

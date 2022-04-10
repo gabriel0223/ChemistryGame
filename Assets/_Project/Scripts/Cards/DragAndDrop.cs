@@ -9,6 +9,7 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 {
     [SerializeField] private float _dragSpeed;
     [SerializeField] private float _snapSpeed;
+    [SerializeField] private float _maxDistanceToSwitchSlot;
     
     private InputManager _inputManager;
     private Animator _animator;
@@ -59,12 +60,14 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
             float distanceToSlot = Vector3.Distance(transform.position, slot.transform.position);
             float distanceToNearestSlot = Vector3.Distance(transform.position, nearestSlot.transform.position);
             
-            if (distanceToSlot < distanceToNearestSlot)
+            if (distanceToSlot < distanceToNearestSlot && distanceToSlot < _maxDistanceToSwitchSlot)
             {
                 nearestSlot = slot;
             }
         }
 
+        
+        Debug.Log(Vector3.Distance(transform.position, nearestSlot.transform.position));
         return nearestSlot;
     }
 
