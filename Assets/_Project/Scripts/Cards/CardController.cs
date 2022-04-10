@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class CardController : MonoBehaviour
 {
@@ -10,11 +11,13 @@ public class CardController : MonoBehaviour
     
     private ElementsSheetData _cardData;
     private CardDataDisplayer _cardDataDisplayer;
+    private CardSlot _currentSlot;
 
     private void Start()
     {
         _cardDataDisplayer = GetComponent<CardDataDisplayer>();
-        
+        _currentSlot = GetComponentInParent<CardSlot>();
+
         Initialize(_atomicNumber);
     }
 
@@ -24,5 +27,15 @@ public class CardController : MonoBehaviour
 
         _cardData = _elementsSheet.dataArray[cardIndex];
         _cardDataDisplayer.UpdateDataDisplay(_cardData);
+    }
+
+    public CardSlot GetCurrentSlot()
+    {
+        return _currentSlot;
+    }
+
+    public void SetCurrentSlot(CardSlot newSlot)
+    {
+        _currentSlot = newSlot;
     }
 }

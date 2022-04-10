@@ -222,6 +222,8 @@ GameObject:
   - component: {fileID: 7119724268561778301}
   - component: {fileID: 1689532869695747693}
   - component: {fileID: 1689532869695747699}
+  - component: {fileID: 1522958131}
+  - component: {fileID: 1522958130}
   m_Layer: 5
   m_Name: Card Prefab
   m_TagString: Untagged
@@ -238,7 +240,7 @@ RectTransform:
   m_GameObject: {fileID: 7119724268561778273}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_Children:
   - {fileID: 7119724269521179860}
   m_Father: {fileID: 0}
@@ -262,7 +264,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _elementsSheet: {fileID: 11400000, guid: 41a042c45df766e41a93828d352377b3, type: 2}
-  _atomicNumber: 6
+  _atomicNumber: 1
 --- !u!114 &1689532869695747699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,6 +283,39 @@ MonoBehaviour:
   _electronegativity: {fileID: 7119724270121207467}
   _atomicRadius: {fileID: 8228277795414317141}
   _elementGroup: {fileID: 0}
+--- !u!95 &1522958131
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7119724268561778273}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c698bd672b6d2e4469b06d2e65f19ab5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1522958130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7119724268561778273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fdc4146957b28544ab3919c6de30b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dragSpeed: 10
+  _snapSpeed: 5
 --- !u!1 &7119724268968485295
 GameObject:
   m_ObjectHideFlags: 0
