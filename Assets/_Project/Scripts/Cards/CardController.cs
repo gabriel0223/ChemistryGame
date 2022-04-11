@@ -1,51 +1,60 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Random = UnityEngine.Random;
 
 public class CardController : MonoBehaviour
 {
+    public event Action<CardController> OnAddCardToCompound;
+    
     [SerializeField] private ElementsSheet _elementsSheet;
     [SerializeField] private int _atomicNumber;
+    [SerializeField] private float _destructionTime;
     
     private ElementsSheetData _cardData;
     private CardDataDisplayer _cardDataDisplayer;
-    private DeckController _currentDeckController;
+    private DeckController _currentDeck;
+    private CompoundSlot _compoundSlot;
+
+    public CompoundSlot CompoundSlot => _compoundSlot;
 
     private void Start()
     {
         _cardDataDisplayer = GetComponent<CardDataDisplayer>();
-        _currentDeckController = GetComponentInParent<DeckController>();
+        _currentDeck = GetComponentInParent<DeckController>();
+        _compoundSlot = FindObjectOfType<CompoundSlot>();
 
-        Initialize();
+        int cardIndex = Random.Range(0, _elementsSheet.dataArray.Length - 1);
+        Initialize(cardIndex);
     }
 
     private void Initialize(int atomicNumber)
     {
-        int cardIndex = atomicNumber - 1;
-
-        _cardData = _elementsSheet.dataArray[cardIndex];
-        _cardDataDisplayer.UpdateDataDisplay(_cardData);
-    }
-    
-    private void Initialize()
-    {
-        int cardIndex = Random.Range(0, _elementsSheet.dataArray.Length);
-
-        _cardData = _elementsSheet.dataArray[cardIndex];
+        _cardData = _elementsSheet.dataArray[atomicNumber];
         _cardDataDisplayer.UpdateDataDisplay(_cardData);
     }
 
     public DeckController GetCurrentDeck()
     {
-        return _currentDeckController;
+        return _currentDeck;
     }
 
-    public void SwitchDeck(DeckController newDeckController)
+    public void AddToCompoundSlot()
     {
-        transform.SetParent(newDeckController.transform);
-        _currentDeckController = newDeckController;
+        _currentDeck = null;
+        transform.SetParent(_compoundSlot.transform);
+        _compoundSlot.AddCardToCompound(this);
+        OnAddCardToCompound?.Invoke(this);
+        
+        DestroyCard();
+    }
+
+    private void DestroyCard()
+    {
+        transform.DOScale(Vector3.zero, _destructionTime)
+            .OnComplete(() => Destroy(gameObject));
     }
 }

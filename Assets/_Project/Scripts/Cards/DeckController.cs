@@ -26,6 +26,13 @@ public class DeckController : MonoBehaviour
     public void AddCardToDeck(CardController card)
     {
         _cardsOnDeck.Add(card);
+        card.OnAddCardToCompound += RemoveCardFromDeck;
+    }
+
+    public void RemoveCardFromDeck(CardController card)
+    {
+        _cardsOnDeck.Remove(card);
+        card.OnAddCardToCompound -= RemoveCardFromDeck;
     }
 
     public CardController GetCard(int index)

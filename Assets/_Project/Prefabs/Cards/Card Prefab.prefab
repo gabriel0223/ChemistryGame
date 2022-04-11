@@ -321,8 +321,8 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
@@ -340,6 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _elementsSheet: {fileID: 11400000, guid: 41a042c45df766e41a93828d352377b3, type: 2}
   _atomicNumber: 1
+  _destructionTime: 0.5
 --- !u!114 &1689532869695747699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -391,7 +392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dragSpeed: 10
   _snapSpeed: 5
-  _maxDistanceToSwitchDeck: 60
+  _maxDistanceToSwitchDeck: 200
 --- !u!1 &7119724268968485295
 GameObject:
   m_ObjectHideFlags: 0

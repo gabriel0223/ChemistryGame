@@ -7,6 +7,8 @@ using UnityEngine.EventSystems;
 
 public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler, IDragHandler
 {
+    public event Action OnDropOnCompound;
+
     [SerializeField] private float _dragSpeed;
     [SerializeField] private float _snapSpeed;
     [SerializeField] private float _maxDistanceToSwitchDeck;
@@ -47,9 +49,19 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
     private void Drop()
     {
+        float distanceToCompoundSlot = (Vector3.Distance(transform.position,_cardController.CompoundSlot.transform.position));
+        
         _animator.SetBool(AnimatorParameters.IS_DRAGGING, false);
-        //SnapToTarget(GetNearestDeck().transform.position);
-        SnapToDeck(_cardController.GetCurrentDeck());
+        
+        if  (distanceToCompoundSlot <_maxDistanceToSwitchDeck)
+        {
+            DropInCompoundSlot();
+        }
+        else
+        {
+            ReturnToDeck(_cardController.GetCurrentDeck());
+        }
+        
         _isDragging = false;
     }
 
@@ -78,13 +90,24 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         _animator.SetBool(AnimatorParameters.IS_DRAGGING, true);
     }
 
-    private void SnapToDeck(DeckController deck)
+    private void ReturnToDeck(DeckController deck)
     {
         Vector2 deckPosition = new Vector2(0, deck.GetTopCard().GetComponent<RectTransform>().anchoredPosition.y + DeckSettings.GetRandomSpacingBetweenCards());
         
-        _rectTransform.DOAnchorPos(deckPosition, 1 / _snapSpeed);
+        SnapToTarget(deckPosition);
     }
 
+    private void DropInCompoundSlot()
+    {
+        _cardController.AddToCompoundSlot();
+        SnapToTarget(Vector3.zero);
+    }
+
+    private void SnapToTarget(Vector3 target)
+    {
+        _rectTransform.DOAnchorPos(target, 1 / _snapSpeed);
+    }
+    
     public void OnPointerDown(PointerEventData eventData)
     {
         
