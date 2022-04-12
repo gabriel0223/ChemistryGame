@@ -14,27 +14,22 @@ public class CardController : MonoBehaviour
     [SerializeField] private int _atomicNumber;
     [SerializeField] private float _destructionTime;
     
-    private ElementsSheetData _cardData;
+    private Element _element;
     private CardDataDisplayer _cardDataDisplayer;
     private DeckController _currentDeck;
     private CompoundSlot _compoundSlot;
 
     public CompoundSlot CompoundSlot => _compoundSlot;
+    public Element Element => _element;
 
-    private void Start()
+    public void Initialize(Element element)
     {
         _cardDataDisplayer = GetComponent<CardDataDisplayer>();
         _currentDeck = GetComponentInParent<DeckController>();
         _compoundSlot = FindObjectOfType<CompoundSlot>();
-
-        int cardIndex = Random.Range(0, _elementsSheet.dataArray.Length - 1);
-        Initialize(cardIndex);
-    }
-
-    private void Initialize(int atomicNumber)
-    {
-        _cardData = _elementsSheet.dataArray[atomicNumber];
-        _cardDataDisplayer.UpdateDataDisplay(_cardData);
+        
+        _element = element;
+        _cardDataDisplayer.UpdateDataDisplay(element);
     }
 
     public DeckController GetCurrentDeck()

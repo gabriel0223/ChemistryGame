@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class CompoundSlot : MonoBehaviour
 {
-    public event Action OnAddToCompound;
+    public event Action<Element> OnAddToCompound;
     
     private List<CardController> _cardsOnCompound = new List<CardController>();
 
@@ -13,6 +13,6 @@ public class CompoundSlot : MonoBehaviour
     {
         _cardsOnCompound.Add(card);
         
-        OnAddToCompound?.Invoke();
+        OnAddToCompound?.Invoke(card.Element);
     }
 }

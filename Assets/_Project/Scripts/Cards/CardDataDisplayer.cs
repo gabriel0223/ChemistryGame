@@ -14,13 +14,13 @@ public class CardDataDisplayer : MonoBehaviour
     [SerializeField] private TMP_Text _atomicRadius;
     [SerializeField] private TMP_Text _elementGroup;
 
-    public void UpdateDataDisplay(ElementsSheetData element)
+    public void UpdateDataDisplay(Element element)
     {
-        _abbreviation.SetText(element.Abbreviation);
-        _elementName.SetText(element.Elementname);
-        _atomicNumber.SetText(element.Atomicnumber.ToString());
-        _electronegativity.SetText(element.Electronegativity.ToString(CultureInfo.InvariantCulture));
-        _atomicRadius.SetText(element.Atomicradius.ToString(CultureInfo.InvariantCulture));
+        _abbreviation.SetText(element.ElementData.Abbreviation);
+        _elementName.SetText(element.ElementData.Elementname);
+        _atomicNumber.SetText(element.ElementData.Atomicnumber.ToString());
+        _electronegativity.SetText(element.ElementData.Electronegativity.ToString(CultureInfo.InvariantCulture));
+        _atomicRadius.SetText(element.ElementData.Atomicradius.ToString(CultureInfo.InvariantCulture));
         //_elementGroup.SetText(element.GROUP.ToString());
     }
 }

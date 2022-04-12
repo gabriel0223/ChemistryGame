@@ -5,17 +5,11 @@ using UnityEngine;
 public class DeckManager : MonoBehaviour
 {
     [SerializeField] private GameObject _cardPrefab;
-    [SerializeField] private DeckController[] _decksToBeBuilded;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        BuildDecks(_decksToBeBuilded);
-    }
+    [SerializeField] private DeckController[] _decksToBeBuilt;
 
-    private void BuildDecks(DeckController[] decks)
+    public void BuildDecks(Element[] elements)
     {
-        foreach (var deck in decks)
+        foreach (var deck in _decksToBeBuilt)
         {
             int deckSize = Random.Range(DeckSettings.MIN_DECK_SIZE, DeckSettings.MAX_DECK_SIZE);
             float topCardYPos = 0;
@@ -23,6 +17,9 @@ public class DeckManager : MonoBehaviour
             for (int i = 0; i < deckSize; i++)
             {
                 CardController newCard = Instantiate(_cardPrefab, deck.transform).GetComponent<CardController>();
+                Element element = elements[Random.Range(0, elements.Length)];
+                newCard.Initialize(element);
+                
                 deck.AddCardToDeck(newCard);
 
                 topCardYPos += DeckSettings.GetRandomSpacingBetweenCards();
