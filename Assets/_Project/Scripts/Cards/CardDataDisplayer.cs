@@ -19,8 +19,8 @@ public class CardDataDisplayer : MonoBehaviour
         _abbreviation.SetText(element.ElementData.Abbreviation);
         _elementName.SetText(element.ElementData.Elementname);
         _atomicNumber.SetText(element.ElementData.Atomicnumber.ToString());
-        _electronegativity.SetText(element.ElementData.Electronegativity.ToString(CultureInfo.InvariantCulture));
-        _atomicRadius.SetText(element.ElementData.Atomicradius.ToString(CultureInfo.InvariantCulture));
+        // _electronegativity.SetText(element.ElementData.Electronegativity.ToString(CultureInfo.InvariantCulture));
+        // _atomicRadius.SetText(element.ElementData.Atomicradius.ToString(CultureInfo.InvariantCulture));
         //_elementGroup.SetText(element.GROUP.ToString());
     }
 }
