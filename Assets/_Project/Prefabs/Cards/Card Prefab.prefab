@@ -1192,6 +1192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74e899b32c0dbba409b7faaedb2a1aa3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _cardBaseColor: {fileID: 7119724269735175517}
   _abbreviation: {fileID: 7119724269410441242}
   _elementName: {fileID: 7119724269131739504}
   _atomicNumber: {fileID: 1756895867510335576}

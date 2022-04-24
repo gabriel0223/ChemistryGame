@@ -4,9 +4,11 @@ using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class CardDataDisplayer : MonoBehaviour
 {
+    [SerializeField] private Image _cardBaseColor;
     [SerializeField] private TMP_Text _abbreviation;
     [SerializeField] private TMP_Text _elementName;
     [SerializeField] private TMP_Text _atomicNumber;
@@ -14,6 +16,11 @@ public class CardDataDisplayer : MonoBehaviour
     [SerializeField] private TMP_Text _atomicRadius;
     [SerializeField] private TMP_Text _elementGroup;
 
+    public void SetCardColor(Sprite color)
+    {
+        _cardBaseColor.sprite = color;
+    }
+    
     public void UpdateDataDisplay(Element element)
     {
         _abbreviation.SetText(element.ElementData.Abbreviation);

@@ -1,4 +1,7 @@
 public enum PropertyQuantity
 {
-    Minimum, Low, High, Maximum
+    Minimum = -2, 
+    Low = -1, 
+    High = 1, 
+    Maximum = 2
 }

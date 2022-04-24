@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -19,40 +20,41 @@ public class GameManager : MonoBehaviour
 
     private void GenerateMatchElements()
     {
-        int atomicNumberAverage = 0;
-        float electronegativityAverage = 0;
-        float atomicRadiusAverage = 0;
-        
         foreach (var atomicNumber in _atomicNumbersUsedInThisMatch)
         {
             Element newElement = new Element(_elementsSheet.dataArray[atomicNumber - 1]);
 
-            atomicNumberAverage += newElement.ElementData.Atomicnumber;
-            electronegativityAverage += newElement.ElementData.Electronegativity;
-            atomicRadiusAverage += newElement.ElementData.Atomicradius;
-            
             _elementsUsedInThisMatch.Add(newElement);   
         }
 
-        atomicNumberAverage /= _elementsUsedInThisMatch.Count;
-        electronegativityAverage /= _elementsUsedInThisMatch.Count;
-        atomicRadiusAverage /= _elementsUsedInThisMatch.Count;
-
+        List<Element> elementsByAtomicNumber = _elementsUsedInThisMatch.OrderBy(e => e.ElementData.Atomicnumber).ToList();
+        List<Element> elementsByElectronegativity = _elementsUsedInThisMatch.OrderBy(e => e.ElementData.Electronegativity).ToList();
+        List<Element> elementsByAtomicRadius = _elementsUsedInThisMatch.OrderBy(e => e.ElementData.Atomicradius).ToList();
+        
         foreach (var element in _elementsUsedInThisMatch)
         {
-            bool isAtomicNumberAboveAverage = element.ElementData.Atomicnumber > atomicNumberAverage;
-            bool isElectronegativityAboveAverage = element.ElementData.Electronegativity > electronegativityAverage;
-            bool isAtomicRadiusAboveAverage = element.ElementData.Atomicnumber > atomicRadiusAverage;
-
-            element.SetPropertyQuantity(PropertyName.AtomicNumber,
-                isAtomicNumberAboveAverage ? PropertyQuantity.High : PropertyQuantity.Low);
-            element.SetPropertyQuantity(PropertyName.Electronegativity,
-                isElectronegativityAboveAverage ? PropertyQuantity.High : PropertyQuantity.Low);
-            element.SetPropertyQuantity(PropertyName.AtomicRadius,
-                isAtomicRadiusAboveAverage ? PropertyQuantity.High : PropertyQuantity.Low);
+            CalculatePropertyQuantity(element, PropertyName.AtomicNumber, elementsByAtomicNumber);
+            CalculatePropertyQuantity(element, PropertyName.Electronegativity, elementsByElectronegativity);
+            CalculatePropertyQuantity(element, PropertyName.AtomicRadius, elementsByAtomicRadius);
         }
+    }
+
+    private void CalculatePropertyQuantity(Element element, PropertyName property, List<Element> elementsOrderedByProperty)
+    {
+        int minimumThreshold = _elementsUsedInThisMatch.Count / 4;
+        int maximumThreshold = (int)(_elementsUsedInThisMatch.Count / 2 * 1.5f);
         
-        //TODO 
-        //finish average calculations
+        int elementIndex = elementsOrderedByProperty.FindIndex(e => e == element);
+
+        if (elementIndex > _elementsUsedInThisMatch.Count / 2)
+        {
+            bool isQuantityMaximum = elementIndex >= maximumThreshold;
+            element.SetPropertyQuantity(property, isQuantityMaximum ? PropertyQuantity.Maximum : PropertyQuantity.High);
+        }
+        else
+        {
+            bool isQuantityMinimum = elementIndex <= minimumThreshold;
+            element.SetPropertyQuantity(property, isQuantityMinimum ? PropertyQuantity.Minimum : PropertyQuantity.Low);
+        }
     }
 }

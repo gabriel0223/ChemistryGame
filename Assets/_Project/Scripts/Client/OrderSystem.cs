@@ -1,21 +1,19 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class OrderSystem : MonoBehaviour
 {
-    [SerializeField] private Image _clientImage;
-    [SerializeField] private TextMeshProUGUI _firstOrder;
-    [SerializeField] private TextMeshProUGUI _secondOrder;
-    [SerializeField] private Image _arrowFirstOrder;
-    [SerializeField] private Image _arrowSecondOrder;
+    private ClientGenerator _clientGenerator;
 
-    public void ChangeClientPanel(Sprite clientImage, string firstOrder, string secondOrder, int arrowFirstOrderAngle, int arrowSecondOrderAngle)
+    private void Awake()
     {
-        this._clientImage.sprite = clientImage;
-        this._firstOrder.text = firstOrder;
-        this._secondOrder.text = secondOrder;
-        this._arrowFirstOrder.transform.rotation = Quaternion.Euler(0, 0, arrowFirstOrderAngle);
-        this._arrowSecondOrder.transform.rotation = Quaternion.Euler(0, 0, arrowSecondOrderAngle);
+        _clientGenerator = GetComponent<ClientGenerator>();
+    }
+
+    private void Start()
+    {
+        _clientGenerator.GenerateNewCustomer();
     }
 }
