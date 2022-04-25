@@ -62,29 +62,28 @@ public class ClientController : MonoBehaviour
         switch (order.ElementProperty.PropertyQuantity)
         {
             case PropertyQuantity.Minimum:
-                PaintArrows(_smallQuantityColor);
-                SetArrowsUpsideDown(true);
+                paintArrows(_smallQuantityColor);
+                setArrowsUpsideDown(true);
                 break;
             case PropertyQuantity.Low:
                 extraArrow.gameObject.SetActive(false);
-                PaintArrows(_smallQuantityColor);
-                SetArrowsUpsideDown(true);
+                paintArrows(_smallQuantityColor);
+                setArrowsUpsideDown(true);
                 break;
             case PropertyQuantity.High:
                 extraArrow.gameObject.SetActive(false);
-                PaintArrows(_largeQuantityColor);
-                SetArrowsUpsideDown(false);
+                paintArrows(_largeQuantityColor);
+                setArrowsUpsideDown(false);
                 break;
             case PropertyQuantity.Maximum:
-                PaintArrows(_largeQuantityColor);
-                SetArrowsUpsideDown(false);
+                paintArrows(_largeQuantityColor);
+                setArrowsUpsideDown(false);
                 break;
             default:
-                Debug.Log(order.ElementProperty.PropertyQuantity);
                 throw new ArgumentOutOfRangeException();
         }
 
-        void SetArrowsUpsideDown(bool value)
+        void setArrowsUpsideDown(bool value)
         {
             Vector3 arrowRotation = value == true ? Vector3.forward * -90 : Vector3.forward * 90;
 
@@ -92,7 +91,7 @@ public class ClientController : MonoBehaviour
             extraArrow.transform.rotation = Quaternion.Euler(arrowRotation);
         }
 
-        void PaintArrows(Color color)
+        void paintArrows(Color color)
         {
             arrow.color = color;
             extraArrow.color = color;
@@ -107,11 +106,13 @@ public class ClientController : MonoBehaviour
     public void SetCompoundSlot(CompoundSlot compoundSlot)
     {
         _compoundSlot = compoundSlot;
-        _compoundSlot.OnSendCompound += ReceiveOrder;
+        _compoundSlot.OnSendCompound += ProcessOrder;
     }
 
-    private void ReceiveOrder(List<CardController> compound)
+    private void ProcessOrder(Compound compound)
     {
+        int goldToGive = 0;
+        
         
     }
 }

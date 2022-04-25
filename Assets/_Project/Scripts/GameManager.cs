@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -48,13 +49,18 @@ public class GameManager : MonoBehaviour
 
         if (elementIndex > _elementsUsedInThisMatch.Count / 2)
         {
-            bool isQuantityMaximum = elementIndex >= maximumThreshold;
+            bool isQuantityMaximum = elementIndex > maximumThreshold;
             element.SetPropertyQuantity(property, isQuantityMaximum ? PropertyQuantity.Maximum : PropertyQuantity.High);
         }
         else
         {
-            bool isQuantityMinimum = elementIndex <= minimumThreshold;
+            bool isQuantityMinimum = elementIndex < minimumThreshold;
             element.SetPropertyQuantity(property, isQuantityMinimum ? PropertyQuantity.Minimum : PropertyQuantity.Low);
         }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

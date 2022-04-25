@@ -31,14 +31,33 @@ public class CompoundBars : MonoBehaviour
 
     private void UpdateBars(Element element)
     {
-        AnimateBar(_atomicNumberBar, (int)element.AtomicNumber.PropertyQuantity);
-        AnimateBar(_electronegativityBar, (int)element.Electronegativity.PropertyQuantity);
-        AnimateBar(_atomicRadiusBar, (int)element.AtomicRadius.PropertyQuantity);
+        if (element.ElementData.Atomicnumber == 1)
+        {
+            return;
+        }
+        
+        AnimateBar(_atomicNumberBar, element.AtomicNumber.PropertyQuantity);
+        AnimateBar(_electronegativityBar, element.Electronegativity.PropertyQuantity);
+        AnimateBar(_atomicRadiusBar, element.AtomicRadius.PropertyQuantity);
     }
 
-    private void AnimateBar(Image bar, int quantityMultiplier)
+    private void AnimateBar(Image bar, PropertyQuantity propertyQuantity)
     {
-        bar.DOFillAmount(_atomicNumberBar.fillAmount - _barMinimumStep * quantityMultiplier, _barAnimationDuration)
+        float fillMultiplier = propertyQuantity switch
+        {
+            PropertyQuantity.Minimum => -2,
+            PropertyQuantity.Low => -1,
+            PropertyQuantity.High => 1,
+            PropertyQuantity.Maximum => 2,
+            _ => throw new ArgumentOutOfRangeException(nameof(propertyQuantity), propertyQuantity, null)
+        };
+        
+        
+        float barFillAmount = bar.fillAmount + _barMinimumStep * fillMultiplier;
+        
+        barFillAmount = Mathf.Clamp(barFillAmount, _barMinimumStep, 1);
+        
+        bar.DOFillAmount(barFillAmount, _barAnimationDuration)
             .SetEase(_barAnimationCurve);
     }
 

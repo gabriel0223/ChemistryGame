@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8567886176191123524}
   - component: {fileID: 4139777169901647102}
   m_Layer: 5
-  m_Name: Triangle
+  m_Name: Extra Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,7 +194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7421044279950592854
 RectTransform:
   m_ObjectHideFlags: 0
@@ -209,9 +209,9 @@ RectTransform:
   m_Father: {fileID: 4973775188430990118}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 27.44475, y: -54.55005}
   m_SizeDelta: {x: 34.8895, y: 46.5196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9065386108186384875
@@ -290,7 +290,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5657732502123786646
 RectTransform:
   m_ObjectHideFlags: 0
@@ -305,9 +305,9 @@ RectTransform:
   m_Father: {fileID: 7890625212428885151}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 27.44475, y: -54.55005}
   m_SizeDelta: {x: 34.8895, y: 46.5196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8330019738167630878
@@ -419,12 +419,12 @@ GameObject:
   - component: {fileID: 7908516697898639413}
   - component: {fileID: 3332181888403873639}
   m_Layer: 5
-  m_Name: Triangle
+  m_Name: Extra Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9223309900469871254
 RectTransform:
   m_ObjectHideFlags: 0
@@ -439,9 +439,9 @@ RectTransform:
   m_Father: {fileID: 7890625212428885151}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 62.33425, y: -54.55005}
   m_SizeDelta: {x: 34.8895, y: 46.5196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3434331406619462850
@@ -520,7 +520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6859399552777454550
 RectTransform:
   m_ObjectHideFlags: 0
@@ -535,9 +535,9 @@ RectTransform:
   m_Father: {fileID: 6730945897170302194}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 124.79884, y: -54.55005}
   m_SizeDelta: {x: 34.8895, y: 46.5196}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4132304244207848167
@@ -1196,9 +1196,17 @@ MonoBehaviour:
   _abbreviation: {fileID: 7119724269410441242}
   _elementName: {fileID: 7119724269131739504}
   _atomicNumber: {fileID: 1756895867510335576}
-  _electronegativity: {fileID: 0}
-  _atomicRadius: {fileID: 0}
-  _elementGroup: {fileID: 0}
+  _smallQuantityColor: {r: 0.627451, g: 0.20392157, b: 0.20392157, a: 1}
+  _largeQuantityColor: {r: 0.19607843, g: 0.21176471, b: 0.627451, a: 1}
+  _atomicNumberSymbol: {fileID: 7496051614040862399}
+  _atomicNumberArrow: {fileID: 2701052708261678488}
+  _atomicNumberExtraArrow: {fileID: 7908516697898639413}
+  _electronegativitySymbol: {fileID: 3144774232720579640}
+  _electronegativityArrow: {fileID: 723548615838849357}
+  _electronegativityExtraArrow: {fileID: 8567886176191123524}
+  _atomicRadiusSymbol: {fileID: 6099408279372589988}
+  _atomicRadiusArrow: {fileID: 2873545102976585106}
+  _atomicRadiusExtraArrow: {fileID: 4973470964049046513}
 --- !u!95 &1522958131
 Animator:
   serializedVersion: 3
@@ -1639,7 +1647,7 @@ GameObject:
   - component: {fileID: 4973470964049046513}
   - component: {fileID: 637820919886088340}
   m_Layer: 5
-  m_Name: Triangle
+  m_Name: Extra Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -20,8 +20,9 @@ public class DeckManager : MonoBehaviour
             for (int j = 0; j < deckSize; j++)
             {
                 CardController newCard = Instantiate(_cardPrefab, deck.transform).GetComponent<CardController>();
-                Element element = elements[Random.Range(0, elements.Length)];
+                Element element = i == 0? elements[0] : elements[Random.Range(1, elements.Length)];
                 newCard.Initialize(element);
+                
                 newCard.gameObject.GetComponent<CardDataDisplayer>().SetCardColor(deckColor);
 
                 deck.AddCardToDeck(newCard);

@@ -41,7 +41,7 @@ public class CardController : MonoBehaviour
     {
         _currentDeck = null;
         transform.SetParent(_compoundSlot.transform);
-        _compoundSlot.AddCardToCompound(this);
+        _compoundSlot.AddElementToCompound(_element);
         OnAddCardToCompound?.Invoke(this);
         
         DestroyCard();

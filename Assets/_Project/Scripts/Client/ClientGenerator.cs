@@ -48,11 +48,6 @@ public class ClientGenerator : MonoBehaviour
         PropertyName property = (PropertyName)Random.Range(0, Enum.GetValues(typeof(PropertyName)).Length);
         PropertyQuantity quantity = (PropertyQuantity)Random.Range((int)PropertyQuantity.Minimum, (int)PropertyQuantity.Maximum);
 
-        while (quantity == 0)
-        {
-            quantity = (PropertyQuantity)Random.Range((int)PropertyQuantity.Minimum, (int)PropertyQuantity.Maximum);
-        }
-
         return new Order(new ElementProperty(property, quantity));
     }
 }
