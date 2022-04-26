@@ -116,7 +116,25 @@ public class ClientController : MonoBehaviour
         int diffBtwOrderAndCompound = 0;
 
         processOrder(_firstOrder);
+
+        int goldToGive = diffBtwOrderAndCompound switch
+        {
+            0 => 10,
+            1 => 5,
+            2 => 3,
+            3 => 0,
+            _ => 0
+        };
+        
         processOrder(_secondOrder);
+
+        if (diffBtwOrderAndCompound == 0)
+        {
+            goldToGive += 5;
+        }
+
+        OnGiveGold?.Invoke(goldToGive);
+        _compoundSlot.OnSendCompound -= ProcessOrders;
 
         int getDifferenceBetweenQuantities(PropertyQuantity firstQuantity, PropertyQuantity secondQuantity)
         {
@@ -135,17 +153,5 @@ public class ClientController : MonoBehaviour
             
             diffBtwOrderAndCompound += getDifferenceBetweenQuantities(compoundProperty.PropertyQuantity, order.ElementProperty.PropertyQuantity);
         }
-
-        int goldToGive = diffBtwOrderAndCompound switch
-        {
-            0 => 10,
-            1 => 8,
-            2 => 6,
-            3 => 3,
-            _ => 0
-        };
-
-        OnGiveGold?.Invoke(goldToGive);
-        _compoundSlot.OnSendCompound -= ProcessOrders;
     }
 }

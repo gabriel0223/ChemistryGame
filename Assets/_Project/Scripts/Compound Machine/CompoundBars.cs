@@ -17,6 +17,10 @@ public class CompoundBars : MonoBehaviour
     [SerializeField] private float _barAnimationDuration;
     [SerializeField] private AnimationCurve _barAnimationCurve;
 
+    private int _atomicNumberLevel = 2;
+    private int _electronegativityLevel = 2;
+    private int _atomicRadiusLevel = 2;
+
     private void OnEnable()
     {
         _compoundSlot.OnAddToCompound += UpdateBars;
@@ -36,14 +40,14 @@ public class CompoundBars : MonoBehaviour
             return;
         }
         
-        AnimateBar(_atomicNumberBar, element.AtomicNumber.PropertyQuantity);
-        AnimateBar(_electronegativityBar, element.Electronegativity.PropertyQuantity);
-        AnimateBar(_atomicRadiusBar, element.AtomicRadius.PropertyQuantity);
+        AnimateBar(_atomicNumberBar, element.AtomicNumber.PropertyQuantity, ref _atomicNumberLevel);
+        AnimateBar(_electronegativityBar, element.Electronegativity.PropertyQuantity, ref _electronegativityLevel);
+        AnimateBar(_atomicRadiusBar, element.AtomicRadius.PropertyQuantity, ref _atomicRadiusLevel);
     }
 
-    private void AnimateBar(Image bar, PropertyQuantity propertyQuantity)
+    private void AnimateBar(Image bar, PropertyQuantity propertyQuantity, ref int barLevel)
     {
-        float fillMultiplier = propertyQuantity switch
+        int fillMultiplier = propertyQuantity switch
         {
             PropertyQuantity.Minimum => -2,
             PropertyQuantity.Low => -1,
@@ -51,9 +55,11 @@ public class CompoundBars : MonoBehaviour
             PropertyQuantity.Maximum => 2,
             _ => throw new ArgumentOutOfRangeException(nameof(propertyQuantity), propertyQuantity, null)
         };
-        
-        float barFillAmount = bar.fillAmount + _barMinimumStep * fillMultiplier;
-        
+
+        barLevel += fillMultiplier;
+        barLevel = Mathf.Clamp(barLevel, 1, 4);
+
+        float barFillAmount = (float)barLevel / 4;
         barFillAmount = Mathf.Clamp(barFillAmount, _barMinimumStep, 1);
         
         bar.DOFillAmount(barFillAmount, _barAnimationDuration)
@@ -65,5 +71,9 @@ public class CompoundBars : MonoBehaviour
         _atomicNumberBar.DOFillAmount(0.5f, _barAnimationDuration).SetEase(_barAnimationCurve);
         _electronegativityBar.DOFillAmount(0.5f, _barAnimationDuration).SetEase(_barAnimationCurve);
         _atomicRadiusBar.DOFillAmount(0.5f, _barAnimationDuration).SetEase(_barAnimationCurve);
+
+        _atomicNumberLevel = 2;
+        _electronegativityLevel = 2;
+        _atomicRadiusLevel = 2;
     }
 }

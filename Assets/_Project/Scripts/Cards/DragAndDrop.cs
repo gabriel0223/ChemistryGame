@@ -17,6 +17,7 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     private Animator _animator;
     private RectTransform _rectTransform;
     private CardController _cardController;
+    private Canvas _canvasElement;
     private bool _isDragging;
     private Vector3 _targetPosition;
 
@@ -29,6 +30,7 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
         _animator = GetComponent<Animator>();
         _rectTransform = GetComponent<RectTransform>();
         _cardController = GetComponent<CardController>();
+        _canvasElement = GetComponent<Canvas>();
     }
 
     private void Update()
@@ -44,16 +46,22 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        if (!_isDragging)
+        {
+            return;
+        }
+        
         Drop();
     }
 
     private void Drop()
     {
         float distanceToCompoundSlot = (Vector3.Distance(transform.position,_cardController.CompoundSlot.transform.position));
+        bool isCompoundResetting = _cardController.CompoundSlot.Resetting;
         
         _animator.SetBool(AnimatorParameters.IS_DRAGGING, false);
         
-        if  (distanceToCompoundSlot <_maxDistanceToSwitchDeck)
+        if  (distanceToCompoundSlot <_maxDistanceToSwitchDeck && !isCompoundResetting)
         {
             DropInCompoundSlot();
         }
@@ -86,6 +94,13 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
     public void OnDrag(PointerEventData eventData)
     {
+        Transform deck = transform.parent;
+        if (transform != deck.GetChild(deck.childCount - 1))
+        {
+            return;
+        }
+        
+        _canvasElement.overrideSorting = true;
         _isDragging = true;
         _animator.SetBool(AnimatorParameters.IS_DRAGGING, true);
     }
@@ -105,7 +120,7 @@ public class DragAndDrop : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
     private void SnapToTarget(Vector3 target)
     {
-        _rectTransform.DOAnchorPos(target, 1 / _snapSpeed);
+        _rectTransform.DOAnchorPos(target, 1 / _snapSpeed).OnComplete(() => _canvasElement.overrideSorting = false);
     }
     
     public void OnPointerDown(PointerEventData eventData)

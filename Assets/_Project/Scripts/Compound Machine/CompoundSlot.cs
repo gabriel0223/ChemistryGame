@@ -11,6 +11,8 @@ public class CompoundSlot : MonoBehaviour
 
     private List<Element> _elementsOnCompound = new List<Element>();
     private Compound _generatedCompound;
+    
+    public bool Resetting { get; private set; }
 
     public void AddElementToCompound(Element element)
     {
@@ -45,7 +47,7 @@ public class CompoundSlot : MonoBehaviour
         _generatedCompound = new Compound(compoundAtomicNumber, compoundElectronegativity, compoundAtomicRadius);
 
         OnSendCompound?.Invoke(_generatedCompound);
-        Invoke(nameof(ResetCompound), 1f);
+        StartCoroutine(ResetCompound());
 
         void sumProperties(ref PropertyQuantity firstQuantity, PropertyQuantity secondQuantity)
         {
@@ -64,11 +66,15 @@ public class CompoundSlot : MonoBehaviour
         }
     }
 
-    private void ResetCompound()
+    private IEnumerator ResetCompound()
     {
+        Resetting = true;
         Debug.Log($"[{nameof(CompoundSlot)}] - Reset compound");
-        _elementsOnCompound.Clear();
+
+        yield return new WaitForSeconds(1f);
         
+        _elementsOnCompound.Clear();
         OnResetCompound?.Invoke();
+        Resetting = false;
     }
 }
