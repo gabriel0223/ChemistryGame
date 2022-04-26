@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class ClientController : MonoBehaviour
 {
+    public static event Action<int> OnGiveGold;
+
     [SerializeField] private Image _clientImage;
     [SerializeField] private TMP_Text _firstPropertyText;
     [SerializeField] private TMP_Text _secondPropertyText;
@@ -106,13 +108,44 @@ public class ClientController : MonoBehaviour
     public void SetCompoundSlot(CompoundSlot compoundSlot)
     {
         _compoundSlot = compoundSlot;
-        _compoundSlot.OnSendCompound += ProcessOrder;
+        _compoundSlot.OnSendCompound += ProcessOrders;
     }
 
-    private void ProcessOrder(Compound compound)
+    private void ProcessOrders(Compound compound)
     {
-        int goldToGive = 0;
-        
-        
+        int diffBtwOrderAndCompound = 0;
+
+        processOrder(_firstOrder);
+        processOrder(_secondOrder);
+
+        int getDifferenceBetweenQuantities(PropertyQuantity firstQuantity, PropertyQuantity secondQuantity)
+        {
+            return Mathf.Abs(firstQuantity - secondQuantity);
+        }
+
+        void processOrder(Order order)
+        {
+            ElementProperty compoundProperty = order.ElementProperty.PropertyName switch
+            {
+                PropertyName.AtomicNumber => compound.AtomicNumber,
+                PropertyName.Electronegativity => compound.Electronegativity,
+                PropertyName.AtomicRadius => compound.AtomicRadius,
+                _ => throw new ArgumentOutOfRangeException()
+            };
+            
+            diffBtwOrderAndCompound += getDifferenceBetweenQuantities(compoundProperty.PropertyQuantity, order.ElementProperty.PropertyQuantity);
+        }
+
+        int goldToGive = diffBtwOrderAndCompound switch
+        {
+            0 => 10,
+            1 => 8,
+            2 => 6,
+            3 => 3,
+            _ => 0
+        };
+
+        OnGiveGold?.Invoke(goldToGive);
+        _compoundSlot.OnSendCompound -= ProcessOrders;
     }
 }

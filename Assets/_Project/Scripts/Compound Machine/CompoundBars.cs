@@ -52,7 +52,6 @@ public class CompoundBars : MonoBehaviour
             _ => throw new ArgumentOutOfRangeException(nameof(propertyQuantity), propertyQuantity, null)
         };
         
-        
         float barFillAmount = bar.fillAmount + _barMinimumStep * fillMultiplier;
         
         barFillAmount = Mathf.Clamp(barFillAmount, _barMinimumStep, 1);

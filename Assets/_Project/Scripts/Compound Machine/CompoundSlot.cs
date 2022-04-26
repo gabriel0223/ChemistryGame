@@ -43,27 +43,22 @@ public class CompoundSlot : MonoBehaviour
         }
 
         _generatedCompound = new Compound(compoundAtomicNumber, compoundElectronegativity, compoundAtomicRadius);
-        Debug.Log($"ATOMIC NUMBER: {_generatedCompound.AtomicNumber.PropertyQuantity}");
-        Debug.Log($"ELECTRONEGATIVITY: {_generatedCompound.Electronegativity.PropertyQuantity}");
-        Debug.Log($"ATOMIC RADIUS: {_generatedCompound.AtomicRadius.PropertyQuantity}");
-        
+
         OnSendCompound?.Invoke(_generatedCompound);
         Invoke(nameof(ResetCompound), 1f);
 
         void sumProperties(ref PropertyQuantity firstQuantity, PropertyQuantity secondQuantity)
         {
-            int diff = Mathf.Abs((int)firstQuantity - (int)secondQuantity);
+            int propertySum = secondQuantity switch
+            {
+                PropertyQuantity.Minimum => -2,
+                PropertyQuantity.Low => -1,
+                PropertyQuantity.High => 1,
+                PropertyQuantity.Maximum => 2,
+                _ => throw new ArgumentOutOfRangeException(nameof(secondQuantity), secondQuantity, null)
+            };
 
-            if ((int)secondQuantity > (int)PropertyQuantity.Low)
-            {
-                diff += diff != 0? 0 : -1;
-                firstQuantity += diff;
-            }
-            else
-            {
-                diff += diff != 0? 0 : 1;
-                firstQuantity -= diff;
-            }
+            firstQuantity += propertySum;
             
             firstQuantity = (PropertyQuantity)Mathf.Clamp((int)firstQuantity, (int)PropertyQuantity.Minimum, (int)PropertyQuantity.Maximum);
         }

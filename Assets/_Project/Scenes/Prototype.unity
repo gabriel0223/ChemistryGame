@@ -1949,6 +1949,7 @@ GameObject:
   - component: {fileID: 2047888630}
   - component: {fileID: 2047888632}
   - component: {fileID: 2047888631}
+  - component: {fileID: 2047888633}
   m_Layer: 5
   m_Name: Money Box
   m_TagString: Untagged
@@ -2014,6 +2015,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2047888629}
   m_CullTransparentMesh: 1
+--- !u!114 &2047888633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047888629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29138514478e03847bf0d9e42c7b5826, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moneyFeedbackPrefab: {fileID: 3181017513619248797, guid: 375fa2ed57f73f74fa838503132b6b4c,
+    type: 3}
+  _goodMoneyColor: {r: 0.56919134, g: 0.9056604, b: 0.16660735, a: 1}
+  _okayMoneyColor: {r: 0.90588236, g: 0.77124745, b: 0.16470589, a: 1}
+  _badMoneyColor: {r: 0.90588236, g: 0.16470589, b: 0.16470589, a: 1}
+  _moneyText: {fileID: 798499139}
 --- !u!1 &2094842288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2572,7 +2591,7 @@ PrefabInstance:
     - target: {fileID: 6321632221322917105, guid: c5e089283996e9c44bbddecf7bdb86c5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6321632221322917105, guid: c5e089283996e9c44bbddecf7bdb86c5,
         type: 3}
