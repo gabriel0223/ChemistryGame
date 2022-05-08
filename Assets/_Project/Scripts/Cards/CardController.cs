@@ -31,25 +31,4 @@ public class CardController : MonoBehaviour
         _element = element;
         _cardDataDisplayer.UpdateDataDisplay(element);
     }
-
-    public DeckController GetCurrentDeck()
-    {
-        return _currentDeck;
-    }
-
-    public void AddToCompoundSlot()
-    {
-        _currentDeck = null;
-        transform.SetParent(_compoundSlot.transform);
-        _compoundSlot.AddElementToCompound(_element);
-        OnAddCardToCompound?.Invoke(this);
-        
-        DestroyCard();
-    }
-
-    private void DestroyCard()
-    {
-        transform.DOScale(Vector3.zero, _destructionTime)
-            .OnComplete(() => Destroy(gameObject));
-    }
 }

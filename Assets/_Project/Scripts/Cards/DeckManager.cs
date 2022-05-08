@@ -12,7 +12,7 @@ public class DeckManager : MonoBehaviour
     {
         for (int i = 0; i < _decksToBeBuilt.Length; i++)
         {
-            int deckSize = Random.Range(DeckSettings.MIN_DECK_SIZE, DeckSettings.MAX_DECK_SIZE);
+            int deckSize = 1;
             DeckController deck = _decksToBeBuilt[i];
             Sprite deckColor = _cardColors[i];
             float topCardYPos = 0;

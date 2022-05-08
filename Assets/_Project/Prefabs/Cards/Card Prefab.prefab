@@ -1140,6 +1140,7 @@ GameObject:
   - component: {fileID: 1522958130}
   - component: {fileID: 8773150274389362473}
   - component: {fileID: 4992922338599427754}
+  - component: {fileID: 405877723699991613}
   m_Layer: 5
   m_Name: Card Prefab
   m_TagString: Untagged
@@ -1281,6 +1282,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!225 &405877723699991613
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7119724268561778273}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &7119724269131739506
 GameObject:
   m_ObjectHideFlags: 0

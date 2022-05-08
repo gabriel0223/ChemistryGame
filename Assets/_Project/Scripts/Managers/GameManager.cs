@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private ElementsSheet _elementsSheet;
-    [SerializeField] private DeckManager _deckManager;
+    [SerializeField] private CardManager _cardManager;
     [SerializeField] private int[] _atomicNumbersUsedInThisMatch;
 
     private List<Element> _elementsUsedInThisMatch = new List<Element>();
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         GenerateMatchElements();
-        _deckManager.BuildDecks(_elementsUsedInThisMatch.ToArray());
+        _cardManager.GenerateHand(_elementsUsedInThisMatch.ToArray());
     }
 
     private void GenerateMatchElements()

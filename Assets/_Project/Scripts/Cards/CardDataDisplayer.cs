@@ -36,12 +36,6 @@ public class CardDataDisplayer : MonoBehaviour
         _elementName.SetText(element.ElementData.Elementname);
         _atomicNumber.SetText(element.ElementData.Atomicnumber.ToString());
 
-        if (element.ElementData.Atomicnumber == 1)
-        {
-            DisplayHidrogenInfo();
-            return;
-        }
-        
         UpdateArrowDisplay(element.AtomicNumber.PropertyQuantity, _atomicNumberSymbol, _atomicNumberArrow, _atomicNumberExtraArrow);
         UpdateArrowDisplay(element.Electronegativity.PropertyQuantity, _electronegativitySymbol, _electronegativityArrow, _electronegativityExtraArrow);
         UpdateArrowDisplay(element.AtomicRadius.PropertyQuantity, _atomicRadiusSymbol, _atomicRadiusArrow, _atomicRadiusExtraArrow);
@@ -108,13 +102,5 @@ public class CardDataDisplayer : MonoBehaviour
                     break;
             }
         }
-    }
-
-    private void DisplayHidrogenInfo()
-    {
-        _atomicNumber.gameObject.SetActive(false);
-        _atomicNumberSymbol.gameObject.SetActive(false);
-        _electronegativitySymbol.gameObject.SetActive(false);
-        _atomicRadiusSymbol.gameObject.SetActive(false);
     }
 }
