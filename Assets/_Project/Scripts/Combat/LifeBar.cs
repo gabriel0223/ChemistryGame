@@ -24,6 +24,7 @@ public class LifeBar : MonoBehaviour
     public void SetInitialHealth(int health)
     {
         _initialHealth = health;
+        _lifeText.SetText($"{_initialHealth}/{_initialHealth}");
     }
     
     public void AnimateBar(int newHealth)

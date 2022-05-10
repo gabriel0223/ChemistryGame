@@ -11,8 +11,7 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
 
     [SerializeField] private float _dragSpeed;
     [SerializeField] private float _snapSpeed;
-    [SerializeField] private float _maxDistanceToSwitchDeck;
-    
+
     private InputManager _inputManager;
     private Animator _animator;
     private RectTransform _rectTransform;
@@ -72,6 +71,11 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     private void SnapToTarget(Vector3 target)
     {
         _rectTransform.DOAnchorPos(target, 1 / _snapSpeed).OnComplete(() => _canvasElement.overrideSorting = false);
+    }
+    
+    public void SnapToTarget(Vector3 target, float duration)
+    {
+        _rectTransform.DOAnchorPos(target, duration).OnComplete(() => _canvasElement.overrideSorting = false);
     }
 
     private void SnapToParent()

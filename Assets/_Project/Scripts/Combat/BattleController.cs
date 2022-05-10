@@ -11,7 +11,11 @@ public enum BattleState
 
 public class BattleController : MonoBehaviour
 {
-    public event Action OnPlayerTurn;
+    public event Action OnStartPlayerTurn;
+    public event Action OnEndPlayerTurn;
+    public event Action OnStartEnemyTurn;
+    public event Action OnEndEnemyTurn;
+    public event Action OnChangeTurn;
     
     [SerializeField] private Canvas _canvas;
     [SerializeField] private DuelistGenerator _duelistGenerator;
@@ -33,18 +37,27 @@ public class BattleController : MonoBehaviour
         _enemyAI = _enemyDuelist.GetComponent<DuelistAI>();
 
         _playerController.OnPlayerAttack += PlayerAttack;
+        _playerController.OnPlayerDefend += PlayerDefend;
         _enemyAI.OnEnemyAttack += EnemyAttack;
     }
 
     private void OnDisable()
     {
         _playerController.OnPlayerAttack -= PlayerAttack;
+        _playerController.OnPlayerDefend -= PlayerDefend;
         _enemyAI.OnEnemyAttack -= EnemyAttack;
     }
 
     private void PlayerAttack()
     {
         _playerDuelist.Attack(_enemyDuelist);
+
+        StartCoroutine(ChangeTurn());
+    }
+    
+    private void PlayerDefend()
+    {
+        _playerDuelist.Defend();
 
         StartCoroutine(ChangeTurn());
     }
@@ -61,6 +74,15 @@ public class BattleController : MonoBehaviour
         _battleState = _battleState == BattleState.PlayerTurn ? BattleState.EnemyTurn : BattleState.PlayerTurn;
         
         TurnInformationPanel turnInformationPanel = _battleState == BattleState.PlayerTurn ? _playerTurnAnimation : _enemyTurnAnimation;
+        
+        if (_battleState == BattleState.EnemyTurn)
+        {
+            OnEndPlayerTurn?.Invoke();
+        }
+        else
+        {
+            OnEndEnemyTurn?.Invoke();
+        }
 
         yield return new WaitForSeconds(1f);
         
@@ -70,12 +92,15 @@ public class BattleController : MonoBehaviour
         
         if (_battleState == BattleState.EnemyTurn)
         {
+            OnStartEnemyTurn?.Invoke();
             _enemyAI.MakeAMove();
         }
         else
         {
             _playerController.SetMyTurn(true);
-            OnPlayerTurn?.Invoke();
+            OnStartPlayerTurn?.Invoke();
         }
+        
+        OnChangeTurn?.Invoke();
     }
 }

@@ -12,19 +12,22 @@ public class CardManager : MonoBehaviour
     [SerializeField] private Transform[] _cardSlots;
     [SerializeField] private Sprite[] _cardColors;
     [SerializeField] private Transform _cardGenerationPosition;
+    [SerializeField] private Transform _cardDiscardPosition;
 
     private Element[] _elementsInTheDeck;
     private List<Element> _cardsInTheDeck = new List<Element>();
 
     private void OnEnable()
     {
-        _battleController.OnPlayerTurn += GenerateHand;
+        _battleController.OnStartPlayerTurn += GenerateHand;
+        _battleController.OnEndPlayerTurn += DiscardHand;
         DragAndDrop.OnDestroyCard += ReturnCardToDeck;
     }
     
     private void OnDisable()
     {
-        _battleController.OnPlayerTurn -= GenerateHand;
+        _battleController.OnStartPlayerTurn -= GenerateHand;
+        _battleController.OnEndPlayerTurn -= DiscardHand;
         DragAndDrop.OnDestroyCard -= ReturnCardToDeck;
     }
 
@@ -38,6 +41,11 @@ public class CardManager : MonoBehaviour
     private void GenerateHand()
     {
         StartCoroutine(GenerateHandCoroutine(_elementsInTheDeck));
+    }
+
+    private void DiscardHand()
+    {
+        StartCoroutine(DiscardHandCoroutine());
     }
 
     private IEnumerator GenerateHandCoroutine(Element[] elements)
@@ -64,6 +72,25 @@ public class CardManager : MonoBehaviour
             
             newCard.Initialize(chosenElement);
             newCard.gameObject.GetComponent<CardDataDisplayer>().SetCardColor(deckColor);
+        }
+    }
+    
+    private IEnumerator DiscardHandCoroutine()
+    {
+        yield return new WaitForSeconds(0.5f);
+        
+        for (int i = 0; i < 4; i++)
+        {
+            if (_cardSlots[i].childCount == 0)
+            {
+                continue;
+            }
+
+            CardController card = _cardSlots[i].GetComponentInChildren<CardController>();
+            card.transform.SetParent(_cardDiscardPosition);
+            
+            card.GetComponent<DragAndDrop>().SnapToTarget(Vector3.zero, 0.5f);
+            ReturnCardToDeck(card.Element);
         }
     }
 

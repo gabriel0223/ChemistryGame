@@ -9,6 +9,7 @@ using UnityEngine.UI;
 
 public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IDropHandler
 {
+    [SerializeField] private BattleController _battleController;
     [SerializeField] private TMP_Text _powerText;
     [SerializeField] private Image _equipmentImage;
     [SerializeField] private DurabilityBar _durabilityBar;
@@ -22,6 +23,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     private List<Element> _elementsFused = new List<Element>();
     private Element _elementBeingPreviewed;
+    private bool _isSlotLocked;
 
     // Start is called before the first frame update
     void Start()
@@ -33,12 +35,16 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     {
         _equipment.OnChangeDurability += _durabilityBar.AnimateBar;
         _equipment.OnEquipmentBreak += ResetEquipment;
+
+        _battleController.OnChangeTurn += UnlockSlot;
     }
 
     private void OnDisable()
     {
         _equipment.OnChangeDurability -= _durabilityBar.AnimateBar;
         _equipment.OnEquipmentBreak -= ResetEquipment;
+        
+        _battleController.OnChangeTurn -= UnlockSlot;
     }
 
     private void ResetEquipment()
@@ -81,6 +87,17 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         UpdateEquipmentUI();
         DisablePreviewCardEffect();
         AddElementInitialsToSlot(element.ElementData.Abbreviation);
+        LockSlot();
+    }
+
+    private void LockSlot()
+    {
+        _isSlotLocked = true;
+    }
+
+    private void UnlockSlot()
+    {
+        _isSlotLocked = false;
     }
 
     private void AddElementInitialsToSlot(string elementInitials)
@@ -90,9 +107,26 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         elementSlot.gameObject.SetActive(true);
     }
 
+    public void ActivateSlot()
+    {
+        // Sequence activationTween = DOTween.Sequence();
+        //
+        // activationTween.Append(_equipmentImage.transform.DOScale(Vector3.one * , 1));
+        // activationTween.AppendInterval(1f);
+        // activationTween.Append(_equipmentImage.transform.DOScale(Vector3.one, 1));
+        
+        _equipmentImage.transform.DOPunchScale(Vector3.one * 0.15f, 0.75f, 5, 0.5f);
+        _equipmentImage.transform.DOShakeRotation(0.75f, 10f);
+    }
+
     public void OnPointerEnter(PointerEventData eventData)
     {
         if (eventData.pointerDrag == null || !eventData.pointerDrag.TryGetComponent(out CardController card))
+        {
+            return;
+        }
+
+        if (_isSlotLocked)
         {
             return;
         }
@@ -118,7 +152,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             return;
         }
 
-        if (_elementsFused.Count == _maxElementsFused)
+        if (_isSlotLocked || _elementsFused.Count == _maxElementsFused)
         {
             return;
         }

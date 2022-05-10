@@ -33,4 +33,6 @@ public class DurabilityBar : MonoBehaviour
         _durabilityBar.DOColor(newBarColor, _animationDuration);
         _durabilityBar.DOFillAmount( (float)newDurability / 3, _animationDuration);
     }
+    
+    //public void 
 }

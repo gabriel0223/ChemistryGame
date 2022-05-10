@@ -6,6 +6,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public event Action OnPlayerAttack;
+    public event Action OnPlayerDefend;
+
+    [SerializeField] private EquipmentSlot _attackSlot;
+    [SerializeField] private EquipmentSlot _defenseSlot;
 
     private DuelistController _duelistController;
     private WeaponController _weapon;
@@ -26,7 +30,21 @@ public class PlayerController : MonoBehaviour
             return;
         }
         
+        _attackSlot.ActivateSlot();
         OnPlayerAttack?.Invoke();
+        
+        SetMyTurn(false);
+    }
+    
+    public void Defend()
+    {
+        if (!_isMyTurn || _shield.Power == 0)
+        {
+            return;
+        }
+        
+        _defenseSlot.ActivateSlot();
+        OnPlayerDefend?.Invoke();
         
         SetMyTurn(false);
     }

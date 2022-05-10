@@ -14,10 +14,13 @@ public class DuelistController : MonoBehaviour
     [SerializeField] private int _health;
 
     private WeaponController _weapon;
+    private ShieldController _shield;
+    private bool _isDefenseActive;
 
     private void Awake()
     {
         _weapon = GetComponent<WeaponController>();
+        _shield = GetComponent<ShieldController>();
     }
 
     private void OnEnable()
@@ -41,13 +44,25 @@ public class DuelistController : MonoBehaviour
         _weapon.DecreaseDurability();
     }
 
-    private void Defend()
+    public void Defend()
     {
-        
+        _isDefenseActive = true;
     }
 
     private void TakeDamage(int damage)
     {
+        if (_isDefenseActive)
+        {
+            damage -= _shield.GetPower();
+            _shield.DecreaseDurability();
+            _isDefenseActive = false;
+        }
+
+        if (damage <= 0)
+        {
+            return;
+        }
+        
         _health -= damage;
 
         if (_health < 0) { _health = 0; }
