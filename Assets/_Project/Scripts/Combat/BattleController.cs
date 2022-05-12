@@ -15,13 +15,15 @@ public class BattleController : MonoBehaviour
     public event Action OnEndPlayerTurn;
     public event Action OnStartEnemyTurn;
     public event Action OnEndEnemyTurn;
-    public event Action OnChangeTurn;
+    public event Action OnEndTurn;
     
     [SerializeField] private Canvas _canvas;
     [SerializeField] private DuelistGenerator _duelistGenerator;
     [SerializeField] private TurnInformationPanel _playerTurnAnimation;
     [SerializeField] private TurnInformationPanel _enemyTurnAnimation;
 
+    private const float EndTurnDelay = 1f;
+    
     private DuelistController _playerDuelist;
     private PlayerController _playerController;
     private DuelistController _enemyDuelist;
@@ -39,6 +41,7 @@ public class BattleController : MonoBehaviour
         _playerController.OnPlayerAttack += PlayerAttack;
         _playerController.OnPlayerDefend += PlayerDefend;
         _enemyAI.OnEnemyAttack += EnemyAttack;
+        _enemyAI.OnEnemyDefend += EnemyDefend;
     }
 
     private void OnDisable()
@@ -46,30 +49,38 @@ public class BattleController : MonoBehaviour
         _playerController.OnPlayerAttack -= PlayerAttack;
         _playerController.OnPlayerDefend -= PlayerDefend;
         _enemyAI.OnEnemyAttack -= EnemyAttack;
+        _enemyAI.OnEnemyDefend -= EnemyDefend;
     }
 
     private void PlayerAttack()
     {
         _playerDuelist.Attack(_enemyDuelist);
 
-        StartCoroutine(ChangeTurn());
+        StartCoroutine(EndTurn());
     }
     
     private void PlayerDefend()
     {
         _playerDuelist.Defend();
 
-        StartCoroutine(ChangeTurn());
+        StartCoroutine(EndTurn());
     }
 
     private void EnemyAttack()
     {
         _enemyDuelist.Attack(_playerDuelist);
         
-        StartCoroutine(ChangeTurn());
+        StartCoroutine(EndTurn());
+    }
+    
+    private void EnemyDefend()
+    {
+        _enemyDuelist.Defend();
+        
+        StartCoroutine(EndTurn());
     }
 
-    private IEnumerator ChangeTurn()
+    private IEnumerator EndTurn()
     {
         _battleState = _battleState == BattleState.PlayerTurn ? BattleState.EnemyTurn : BattleState.PlayerTurn;
         
@@ -84,7 +95,7 @@ public class BattleController : MonoBehaviour
             OnEndEnemyTurn?.Invoke();
         }
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(EndTurnDelay);
         
         Instantiate(turnInformationPanel, _canvas.transform);
 
@@ -97,10 +108,10 @@ public class BattleController : MonoBehaviour
         }
         else
         {
-            _playerController.SetMyTurn(true);
+            _playerController.SetPlayerTurn(true);
             OnStartPlayerTurn?.Invoke();
         }
         
-        OnChangeTurn?.Invoke();
+        OnEndTurn?.Invoke();
     }
 }

@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 8277548054856913169}
   - component: {fileID: 8277548054856913182}
   - component: {fileID: 1264386084}
-  - component: {fileID: 1264386088}
-  - component: {fileID: 1264386089}
+  - component: {fileID: 353917584}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -71,9 +70,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _elementsSheet: {fileID: 11400000, guid: 41a042c45df766e41a93828d352377b3, type: 2}
-  _deckManager: {fileID: 8277548054856913182}
+  _cardManager: {fileID: 353917584}
   _atomicNumbersUsedInThisMatch: 010000000200000003000000040000000500000006000000
---- !u!114 &1264386088
+--- !u!114 &353917584
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82,19 +81,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 8277548054856913171}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd386dda96485274db27770398bb8230, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b11ba88de0184d40a73fbf1d949cd2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1264386089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8277548054856913171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 551c6f0688eb0d44eb150aa56d448371, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _clientGenerator: {fileID: 0}
+  _battleController: {fileID: 0}
+  _cardPrefab: {fileID: 7119724268561778273, guid: 2ef298bf93f97a74d8b22e527c3e4a05,
+    type: 3}
+  _cardSlots:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  _cardColors:
+  - {fileID: 21300000, guid: 390e2f190d0fc6b40ada0bdfe786e886, type: 3}
+  - {fileID: 21300000, guid: 353ea0bbc2d5d2949a7e22e1adcbc506, type: 3}
+  - {fileID: 21300000, guid: 04744795494fee446b985ea261a0cdd3, type: 3}
+  - {fileID: 21300000, guid: b5c2b176a26a5234bbb7a71fcd229196, type: 3}
+  _cardGenerationPosition: {fileID: 0}
+  _cardDiscardPosition: {fileID: 0}

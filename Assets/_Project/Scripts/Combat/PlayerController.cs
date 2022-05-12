@@ -33,7 +33,7 @@ public class PlayerController : MonoBehaviour
         _attackSlot.ActivateSlot();
         OnPlayerAttack?.Invoke();
         
-        SetMyTurn(false);
+        SetPlayerTurn(false);
     }
     
     public void Defend()
@@ -46,10 +46,10 @@ public class PlayerController : MonoBehaviour
         _defenseSlot.ActivateSlot();
         OnPlayerDefend?.Invoke();
         
-        SetMyTurn(false);
+        SetPlayerTurn(false);
     }
 
-    public void SetMyTurn(bool value)
+    public void SetPlayerTurn(bool value)
     {
         _isMyTurn = value;
     }

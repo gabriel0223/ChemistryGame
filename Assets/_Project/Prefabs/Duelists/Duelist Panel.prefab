@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525d526bc141cfa45a9caacd4f2bf35d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _power: 22
+  _power: 15
   _durability: 0
 --- !u!114 &9162329718156419650
 MonoBehaviour:
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61577a55b745fe84f9d7f68618076d91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _power: 0
+  _power: 10
   _durability: 0
 --- !u!114 &2212367706497527419
 MonoBehaviour:

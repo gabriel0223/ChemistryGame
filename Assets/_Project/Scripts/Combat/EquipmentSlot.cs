@@ -36,7 +36,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         _equipment.OnChangeDurability += _durabilityBar.AnimateBar;
         _equipment.OnEquipmentBreak += ResetEquipment;
 
-        _battleController.OnChangeTurn += UnlockSlot;
+        _battleController.OnStartPlayerTurn += UnlockSlot;
     }
 
     private void OnDisable()
@@ -44,7 +44,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         _equipment.OnChangeDurability -= _durabilityBar.AnimateBar;
         _equipment.OnEquipmentBreak -= ResetEquipment;
         
-        _battleController.OnChangeTurn -= UnlockSlot;
+        _battleController.OnStartPlayerTurn -= UnlockSlot;
     }
 
     private void ResetEquipment()

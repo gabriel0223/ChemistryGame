@@ -31,12 +31,4 @@ public class DuelistGenerator : MonoBehaviour
 
         return _duelistGenerated;
     }
-
-    private Order GenerateOrder()
-    {
-        PropertyName property = (PropertyName)Random.Range(0, Enum.GetValues(typeof(PropertyName)).Length);
-        PropertyQuantity quantity = (PropertyQuantity)Random.Range((int)PropertyQuantity.Minimum, (int)PropertyQuantity.Maximum);
-
-        return new Order(new ElementProperty(property, quantity));
-    }
 }

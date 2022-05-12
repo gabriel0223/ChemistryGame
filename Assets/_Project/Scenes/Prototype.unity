@@ -832,39 +832,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5720f20dc769fd4cab452563a493f08, type: 3}
---- !u!1 &353917583 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8277548054856913171, guid: 9426df5a52282e9469c2d50e4c0703ad,
-    type: 3}
-  m_PrefabInstance: {fileID: 8277548054071907286}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &353917584
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 353917583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b11ba88de0184d40a73fbf1d949cd2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _battleController: {fileID: 256522936}
-  _cardPrefab: {fileID: 7119724268561778273, guid: 2ef298bf93f97a74d8b22e527c3e4a05,
-    type: 3}
-  _cardSlots:
-  - {fileID: 106439992}
-  - {fileID: 4985486934854781917}
-  - {fileID: 4985486933839494866}
-  - {fileID: 4985486933560216421}
-  _cardColors:
-  - {fileID: 21300000, guid: 390e2f190d0fc6b40ada0bdfe786e886, type: 3}
-  - {fileID: 21300000, guid: 353ea0bbc2d5d2949a7e22e1adcbc506, type: 3}
-  - {fileID: 21300000, guid: 04744795494fee446b985ea261a0cdd3, type: 3}
-  - {fileID: 21300000, guid: b5c2b176a26a5234bbb7a71fcd229196, type: 3}
-  _cardGenerationPosition: {fileID: 649873776}
-  _cardDiscardPosition: {fileID: 1853788346}
 --- !u!1 &360741243
 GameObject:
   m_ObjectHideFlags: 0
@@ -3255,6 +3222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
     type: 3}
   m_PointAction: {fileID: 1054132383583890850, guid: ca9f5fa95ffab41fb9a615ab714db018,
@@ -3752,7 +3720,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 8277548054071907286}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 353917583}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9becca5d6bcf794aa3311a1f5bb5dd7, type: 3}
@@ -6635,18 +6603,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730617405}
     m_Modifications:
-    - target: {fileID: 1264386084, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
-      propertyPath: _cardManager
+    - target: {fileID: 353917584, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
+      propertyPath: _battleController
       value: 
-      objectReference: {fileID: 353917584}
-    - target: {fileID: 1264386089, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1264386089, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
-      propertyPath: _clientGenerator
+      objectReference: {fileID: 256522936}
+    - target: {fileID: 353917584, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
+      propertyPath: _cardDiscardPosition
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1853788346}
+    - target: {fileID: 353917584, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
+      propertyPath: _cardGenerationPosition
+      value: 
+      objectReference: {fileID: 649873776}
+    - target: {fileID: 353917584, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
+      propertyPath: _cardSlots.Array.data[0]
+      value: 
+      objectReference: {fileID: 106439992}
+    - target: {fileID: 353917584, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
+      propertyPath: _cardSlots.Array.data[1]
+      value: 
+      objectReference: {fileID: 4985486934854781917}
+    - target: {fileID: 353917584, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
+      propertyPath: _cardSlots.Array.data[2]
+      value: 
+      objectReference: {fileID: 4985486933839494866}
+    - target: {fileID: 353917584, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
+      propertyPath: _cardSlots.Array.data[3]
+      value: 
+      objectReference: {fileID: 4985486933560216421}
     - target: {fileID: 8277548054856913169, guid: 9426df5a52282e9469c2d50e4c0703ad,
         type: 3}
       propertyPath: m_RootOrder
@@ -6727,8 +6711,7 @@ PrefabInstance:
       propertyPath: _decksToBeBuilt.Array.data[3]
       value: 
       objectReference: {fileID: 4985486933560216420}
-    m_RemovedComponents:
-    - {fileID: 1264386089, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9426df5a52282e9469c2d50e4c0703ad, type: 3}
 --- !u!1 &9064603696677548112
 GameObject:
