@@ -75,7 +75,11 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     
     public void SnapToTarget(Vector3 target, float duration)
     {
-        _rectTransform.DOAnchorPos(target, duration).OnComplete(() => _canvasElement.overrideSorting = false);
+        _rectTransform.DOAnchorPos(target, duration).OnComplete(() =>
+        {
+            DestroyCard();
+            _canvasElement.overrideSorting = false;
+        });
     }
 
     private void SnapToParent()

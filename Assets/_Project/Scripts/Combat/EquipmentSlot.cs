@@ -126,7 +126,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             return;
         }
 
-        if (_isSlotLocked)
+        if (_isSlotLocked || _elementsFused.Count == _maxElementsFused)
         {
             return;
         }

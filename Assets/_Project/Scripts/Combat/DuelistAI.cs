@@ -9,6 +9,7 @@ public class DuelistAI : MonoBehaviour
 {
     public event Action OnEnemyAttack;
     public event Action OnEnemyDefend;
+    public event Action OnStartEnemyTurn;
     
     private DuelistController _duelistController;
     private const float MakeMoveDelay = 1f;
@@ -20,6 +21,8 @@ public class DuelistAI : MonoBehaviour
 
     public void MakeAMove()
     {
+        OnStartEnemyTurn?.Invoke();
+        
         Sequence moveSequence = DOTween.Sequence();
         moveSequence.AppendInterval(MakeMoveDelay);
         moveSequence.AppendCallback(DecideMove);
@@ -31,12 +34,10 @@ public class DuelistAI : MonoBehaviour
             if (odds <= 0.8f)
             {
                 OnEnemyAttack?.Invoke();
-                Debug.Log("VOU ATACAR");
             }
             else
             {
                 OnEnemyDefend?.Invoke();
-                Debug.Log("VOU DEFENDER");
             }
         }
     }

@@ -55,7 +55,7 @@ public class CardManager : MonoBehaviour
             _cardsInTheDeck = elements.ToList();
         }
 
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < _cardSlots.Length; i++)
         {
             if (_cardSlots[i].childCount > 0)
             {
@@ -79,7 +79,7 @@ public class CardManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < _cardSlots.Length; i++)
         {
             if (_cardSlots[i].childCount == 0)
             {

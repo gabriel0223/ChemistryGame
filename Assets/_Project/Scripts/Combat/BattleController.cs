@@ -6,7 +6,8 @@ using UnityEngine;
 public enum BattleState
 {
     PlayerTurn,
-    EnemyTurn
+    EnemyTurn,
+    End
 }
 
 public class BattleController : MonoBehaviour
@@ -19,10 +20,12 @@ public class BattleController : MonoBehaviour
     
     [SerializeField] private Canvas _canvas;
     [SerializeField] private DuelistGenerator _duelistGenerator;
+    [SerializeField] private EndBattlePanel _endBattlePanel;
     [SerializeField] private TurnInformationPanel _playerTurnAnimation;
     [SerializeField] private TurnInformationPanel _enemyTurnAnimation;
 
     private const float EndTurnDelay = 1f;
+    private const float EndBattleDelay = 2f;
     
     private DuelistController _playerDuelist;
     private PlayerController _playerController;
@@ -38,18 +41,34 @@ public class BattleController : MonoBehaviour
         _enemyDuelist = _duelistGenerator.GenerateDuelist();
         _enemyAI = _enemyDuelist.GetComponent<DuelistAI>();
 
+        OnStartPlayerTurn += _playerDuelist.StartTurn;
+        OnStartPlayerTurn += _playerController.StartPlayerTurn;
+        OnStartEnemyTurn += _enemyDuelist.StartTurn;
+        OnStartEnemyTurn += _enemyAI.MakeAMove;
+
         _playerController.OnPlayerAttack += PlayerAttack;
         _playerController.OnPlayerDefend += PlayerDefend;
         _enemyAI.OnEnemyAttack += EnemyAttack;
         _enemyAI.OnEnemyDefend += EnemyDefend;
+        
+        _enemyDuelist.OnDie += PlayerWinsHandler;
+        _playerDuelist.OnDie += PlayerLosesHandler;
     }
 
     private void OnDisable()
     {
+        OnStartPlayerTurn -= _playerDuelist.StartTurn;
+        OnStartPlayerTurn -= _playerController.StartPlayerTurn;
+        OnStartEnemyTurn -= _enemyDuelist.StartTurn;
+        OnStartEnemyTurn -= _enemyAI.MakeAMove;
+        
         _playerController.OnPlayerAttack -= PlayerAttack;
         _playerController.OnPlayerDefend -= PlayerDefend;
         _enemyAI.OnEnemyAttack -= EnemyAttack;
         _enemyAI.OnEnemyDefend -= EnemyDefend;
+        
+        _enemyDuelist.OnDie -= PlayerWinsHandler;
+        _playerDuelist.OnDie -= PlayerLosesHandler;
     }
 
     private void PlayerAttack()
@@ -80,12 +99,29 @@ public class BattleController : MonoBehaviour
         StartCoroutine(EndTurn());
     }
 
+    private void PlayerWinsHandler()
+    {
+        _battleState = BattleState.End;
+
+        StartCoroutine(EndBattle());
+    }
+    
+    private void PlayerLosesHandler()
+    {
+        _battleState = BattleState.End;
+
+        StartCoroutine(EndBattle());
+    }
+
     private IEnumerator EndTurn()
     {
+        if (_battleState == BattleState.End)
+        {
+            yield break;
+        }
+        
         _battleState = _battleState == BattleState.PlayerTurn ? BattleState.EnemyTurn : BattleState.PlayerTurn;
-        
-        TurnInformationPanel turnInformationPanel = _battleState == BattleState.PlayerTurn ? _playerTurnAnimation : _enemyTurnAnimation;
-        
+
         if (_battleState == BattleState.EnemyTurn)
         {
             OnEndPlayerTurn?.Invoke();
@@ -94,8 +130,17 @@ public class BattleController : MonoBehaviour
         {
             OnEndEnemyTurn?.Invoke();
         }
-
+        
         yield return new WaitForSeconds(EndTurnDelay);
+        
+        OnEndTurn?.Invoke();
+
+        StartCoroutine(StartNewTurn());
+    }
+
+    private IEnumerator StartNewTurn()
+    {
+        TurnInformationPanel turnInformationPanel = _battleState == BattleState.PlayerTurn ? _playerTurnAnimation : _enemyTurnAnimation;
         
         Instantiate(turnInformationPanel, _canvas.transform);
 
@@ -104,14 +149,17 @@ public class BattleController : MonoBehaviour
         if (_battleState == BattleState.EnemyTurn)
         {
             OnStartEnemyTurn?.Invoke();
-            _enemyAI.MakeAMove();
         }
         else
         {
-            _playerController.SetPlayerTurn(true);
             OnStartPlayerTurn?.Invoke();
         }
+    }
+
+    private IEnumerator EndBattle()
+    {
+        yield return new WaitForSeconds(EndBattleDelay);
         
-        OnEndTurn?.Invoke();
+        _endBattlePanel.Initialize();
     }
 }

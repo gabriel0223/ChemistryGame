@@ -8,6 +8,9 @@ public class DuelistController : MonoBehaviour
 {
     public event Action<int> OnHealthChange;
     public event Action OnTakeDamage;
+    public event Action OnEnableDefense;
+    public event Action OnDisableDefense;
+    public event Action OnDie;
 
     [SerializeField] private LifeBar _lifeBar;
     [SerializeField] private TMP_Text _duelistName;
@@ -38,6 +41,11 @@ public class DuelistController : MonoBehaviour
         _lifeBar.SetInitialHealth(_health);
     }
 
+    public void StartTurn()
+    {
+        DisableDefense();
+    }
+
     public void Attack(DuelistController targetDuelist)
     {
         targetDuelist.TakeDamage(_weapon.GetPower());
@@ -47,6 +55,13 @@ public class DuelistController : MonoBehaviour
     public void Defend()
     {
         _isDefenseActive = true;
+        OnEnableDefense?.Invoke();
+    }
+
+    private void DisableDefense()
+    {
+        _isDefenseActive = false;
+        OnDisableDefense?.Invoke();
     }
 
     private void TakeDamage(int damage)
@@ -55,7 +70,6 @@ public class DuelistController : MonoBehaviour
         {
             damage -= _shield.GetPower();
             _shield.DecreaseDurability();
-            _isDefenseActive = false;
         }
 
         if (damage <= 0)
@@ -65,7 +79,11 @@ public class DuelistController : MonoBehaviour
         
         _health -= damage;
 
-        if (_health < 0) { _health = 0; }
+        if (_health < 0)
+        {
+            _health = 0;
+            OnDie?.Invoke();
+        }
         
         OnHealthChange?.Invoke(_health);
         OnTakeDamage?.Invoke();

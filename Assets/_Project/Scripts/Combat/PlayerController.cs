@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     private DuelistController _duelistController;
     private WeaponController _weapon;
     private ShieldController _shield;
-    private bool _isMyTurn = true;
+    private bool _isPlayerTurn = true;
 
     private void Awake()
     {
@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     public void Attack()
     {
-        if (!_isMyTurn || _weapon.Power == 0)
+        if (!_isPlayerTurn || _weapon.Power == 0)
         {
             return;
         }
@@ -33,12 +33,12 @@ public class PlayerController : MonoBehaviour
         _attackSlot.ActivateSlot();
         OnPlayerAttack?.Invoke();
         
-        SetPlayerTurn(false);
+        EndPlayerTurn();
     }
     
     public void Defend()
     {
-        if (!_isMyTurn || _shield.Power == 0)
+        if (!_isPlayerTurn || _shield.Power == 0)
         {
             return;
         }
@@ -46,11 +46,16 @@ public class PlayerController : MonoBehaviour
         _defenseSlot.ActivateSlot();
         OnPlayerDefend?.Invoke();
         
-        SetPlayerTurn(false);
+        EndPlayerTurn();
     }
 
-    public void SetPlayerTurn(bool value)
+    public void StartPlayerTurn()
     {
-        _isMyTurn = value;
+        _isPlayerTurn = true;
+    }
+
+    private void EndPlayerTurn()
+    {
+        _isPlayerTurn = false;
     }
 }
