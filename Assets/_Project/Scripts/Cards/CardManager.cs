@@ -90,7 +90,6 @@ public class CardManager : MonoBehaviour
             card.transform.SetParent(_cardDiscardPosition);
             
             card.GetComponent<DragAndDrop>().SnapToTarget(Vector3.zero, 0.5f);
-            ReturnCardToDeck(card.Element);
         }
     }
 
