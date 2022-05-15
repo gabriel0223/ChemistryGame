@@ -18,7 +18,11 @@ public class DuelistController : MonoBehaviour
 
     private WeaponController _weapon;
     private ShieldController _shield;
+    private int _initialHealth;
     private bool _isDefenseActive;
+
+    public DuelistController DuelistOpponent { get; private set; }
+    public float HealthPercentage => (float)_health / _initialHealth;
 
     private void Awake()
     {
@@ -38,7 +42,8 @@ public class DuelistController : MonoBehaviour
 
     private void Start()
     {
-        _lifeBar.SetInitialHealth(_health);
+        _initialHealth = _health;
+        _lifeBar.SetInitialHealth(_initialHealth);
     }
 
     public void StartTurn()
@@ -89,6 +94,11 @@ public class DuelistController : MonoBehaviour
         OnTakeDamage?.Invoke();
     }
 
+    public void SetOpponent(DuelistController opponent)
+    {
+        DuelistOpponent = opponent;
+    }
+    
     public void SetDuelistName(string duelistName)
     {
         _duelistName.SetText(duelistName);

@@ -6,9 +6,9 @@ public class DuelistGenerator : MonoBehaviour
 {
     [SerializeField] private GameObject _duelistPrefab;
     [SerializeField] private GameObject[] _duelistFacesPrefabs;
-    [SerializeField] private Sprite[] _eyes;
+    [SerializeField] private DuelistEyes[] _duelistEyes;
+    [SerializeField] private DuelistMouth[] _duelistMouths;
     [SerializeField] private Sprite[] _noses;
-    [SerializeField] private Sprite[] _mouths;
     [SerializeField] private Sprite[] _bodies;
 
     private DuelistController _duelistGenerated;
@@ -16,9 +16,9 @@ public class DuelistGenerator : MonoBehaviour
     public DuelistController GenerateDuelist()
     {
         GameObject randomFace = _duelistFacesPrefabs[Random.Range(0, _duelistFacesPrefabs.Length)];
-        Sprite randomEye = _eyes[Random.Range(0, _eyes.Length)];
+        DuelistEyes randomEyes = _duelistEyes[Random.Range(0, _duelistEyes.Length)];
+        DuelistMouth randomMouth = _duelistMouths[Random.Range(0, _duelistMouths.Length)];
         Sprite randomNose = _noses[Random.Range(0, _noses.Length)];
-        Sprite randomMouth = _mouths[Random.Range(0, _mouths.Length)];
         Sprite randomBody = _bodies[Random.Range(0, _bodies.Length)];
         float randomHue = Random.Range(0, 360);
         
@@ -26,7 +26,7 @@ public class DuelistGenerator : MonoBehaviour
         _duelistGenerated.SetDuelistName(DuelistNameGenerator.GenerateDuelistName());
         
         DuelistAnimation duelistAnimation = Instantiate(randomFace, _duelistGenerated.transform).GetComponent<DuelistAnimation>();
-        duelistAnimation.SetVisualFeatures(randomEye, randomNose, randomMouth, randomBody);
+        duelistAnimation.SetVisualFeatures(randomEyes, randomNose, randomMouth, randomBody);
         duelistAnimation.SetNewHue(randomHue);
 
         return _duelistGenerated;

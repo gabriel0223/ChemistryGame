@@ -23,23 +23,25 @@ public class BattleController : MonoBehaviour
     [SerializeField] private EndBattlePanel _endBattlePanel;
     [SerializeField] private TurnInformationPanel _playerTurnAnimation;
     [SerializeField] private TurnInformationPanel _enemyTurnAnimation;
+    [SerializeField] private DuelistController _playerDuelist;
 
     private const float EndTurnDelay = 1f;
     private const float EndBattleDelay = 2f;
     
-    private DuelistController _playerDuelist;
     private PlayerController _playerController;
     private DuelistController _enemyDuelist;
     private DuelistAI _enemyAI;
     private BattleState _battleState = BattleState.PlayerTurn;
 
-    void Start()
+    void Awake()
     {
-        _playerDuelist = FindObjectOfType<DuelistController>();
         _playerController = _playerDuelist.GetComponent<PlayerController>();
 
         _enemyDuelist = _duelistGenerator.GenerateDuelist();
         _enemyAI = _enemyDuelist.GetComponent<DuelistAI>();
+        
+        _playerDuelist.SetOpponent(_enemyDuelist);
+        _enemyDuelist.SetOpponent(_playerDuelist);
 
         OnStartPlayerTurn += _playerDuelist.StartTurn;
         OnStartPlayerTurn += _playerController.StartPlayerTurn;
