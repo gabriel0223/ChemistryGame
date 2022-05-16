@@ -11,7 +11,14 @@ public class Equipment : MonoBehaviour
     [SerializeField] protected int _power;
     [SerializeField] protected int _durability;
 
+    private int _basePower;
+
     public int Power => _power;
+
+    private void Start()
+    {
+        _basePower = _power;
+    }
 
     public int GetPower()
     {
@@ -38,7 +45,7 @@ public class Equipment : MonoBehaviour
     private void Break()
     {
         //reset
-        _power = 0;
+        _power = _basePower;
         _durability = 3;
         OnEquipmentBreak?.Invoke();
     }

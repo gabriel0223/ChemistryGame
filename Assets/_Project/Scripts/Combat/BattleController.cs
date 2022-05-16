@@ -12,6 +12,7 @@ public enum BattleState
 
 public class BattleController : MonoBehaviour
 {
+    public event Action OnStartBattle;
     public event Action OnStartPlayerTurn;
     public event Action OnEndPlayerTurn;
     public event Action OnStartEnemyTurn;
@@ -45,6 +46,10 @@ public class BattleController : MonoBehaviour
 
         OnStartPlayerTurn += _playerDuelist.StartTurn;
         OnStartPlayerTurn += _playerController.StartPlayerTurn;
+
+        OnStartBattle += _enemyAI.PlanMove;
+        OnStartPlayerTurn += _enemyAI.PlanMove;
+        
         OnStartEnemyTurn += _enemyDuelist.StartTurn;
         OnStartEnemyTurn += _enemyAI.MakeAMove;
 
@@ -57,10 +62,19 @@ public class BattleController : MonoBehaviour
         _playerDuelist.OnDie += PlayerLosesHandler;
     }
 
+    private void Start()
+    {
+        OnStartBattle?.Invoke();
+    }
+
     private void OnDisable()
     {
         OnStartPlayerTurn -= _playerDuelist.StartTurn;
         OnStartPlayerTurn -= _playerController.StartPlayerTurn;
+        
+        OnStartBattle -= _enemyAI.PlanMove;
+        OnStartPlayerTurn -= _enemyAI.PlanMove;
+        
         OnStartEnemyTurn -= _enemyDuelist.StartTurn;
         OnStartEnemyTurn -= _enemyAI.MakeAMove;
         

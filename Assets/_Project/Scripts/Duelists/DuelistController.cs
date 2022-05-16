@@ -16,18 +16,19 @@ public class DuelistController : MonoBehaviour
     [SerializeField] private TMP_Text _duelistName;
     [SerializeField] private int _health;
 
-    private WeaponController _weapon;
-    private ShieldController _shield;
     private int _initialHealth;
     private bool _isDefenseActive;
-
+    
     public DuelistController DuelistOpponent { get; private set; }
+    public WeaponController Weapon { get; private set; }
+    public ShieldController Shield { get; private set; }
+
     public float HealthPercentage => (float)_health / _initialHealth;
 
     private void Awake()
     {
-        _weapon = GetComponent<WeaponController>();
-        _shield = GetComponent<ShieldController>();
+        Weapon = GetComponent<WeaponController>();
+        Shield = GetComponent<ShieldController>();
     }
 
     private void OnEnable()
@@ -53,8 +54,8 @@ public class DuelistController : MonoBehaviour
 
     public void Attack(DuelistController targetDuelist)
     {
-        targetDuelist.TakeDamage(_weapon.GetPower());
-        _weapon.DecreaseDurability();
+        targetDuelist.TakeDamage(Weapon.GetPower());
+        Weapon.DecreaseDurability();
     }
 
     public void Defend()
@@ -73,8 +74,8 @@ public class DuelistController : MonoBehaviour
     {
         if (_isDefenseActive)
         {
-            damage -= _shield.GetPower();
-            _shield.DecreaseDurability();
+            damage -= Shield.GetPower();
+            Shield.DecreaseDurability();
         }
 
         if (damage <= 0)
