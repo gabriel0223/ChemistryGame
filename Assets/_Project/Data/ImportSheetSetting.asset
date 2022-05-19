@@ -34,15 +34,15 @@ MonoBehaviour:
     name: Electronegativity
     isEnable: 0
     isArray: 0
-  - type: 5
-    name: AtomicRadius
-    isEnable: 0
-    isArray: 0
   - type: 7
     name: Group
     isEnable: 0
     isArray: 0
-  excelFilePath: Assets/_Project/ElementsSheet.xlsx
+  - type: 8
+    name: Radioactive
+    isEnable: 0
+    isArray: 0
+  excelFilePath: Assets/_Project/Data/ElementsSheet.xlsx
   SheetNames:
   - ElementsSheet
   currentSelectedSheet: 0
