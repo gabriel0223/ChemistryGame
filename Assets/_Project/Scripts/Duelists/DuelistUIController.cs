@@ -52,7 +52,6 @@ public class DuelistUIController : MonoBehaviour
 
     private void EnableShield()
     {
-        AudioManager.instance.Play("ShieldEnable");
         _retractableShield.DOAnchorPosX(_shieldPosition.x, 0.5f).SetEase(Ease.OutBack);
         _shieldPowerText.SetText(_shieldController.GetPower().ToString());
         _shieldOnGroup.DOFade(1, 0.5f);
@@ -60,6 +59,7 @@ public class DuelistUIController : MonoBehaviour
 
     private void DisableShield()
     {
+        _retractableShield.DOAnchorPosX(0, 0.5f).SetEase(Ease.InBack);
         _shieldOnGroup.DOFade(0, 0.5f);
     }
 

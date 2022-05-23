@@ -15,6 +15,9 @@ public class CardManager : MonoBehaviour
     [SerializeField] private Transform _cardGenerationPosition;
     [SerializeField] private Transform _cardDiscardPosition;
 
+    [Space(10)] 
+    [SerializeField] private GameDifficulty _gameDifficulty;
+
     private Element[] _elementsInTheDeck;
     private List<Element> _cardsInTheDeck = new List<Element>();
 
@@ -68,10 +71,10 @@ public class CardManager : MonoBehaviour
             Element chosenElement = _cardsInTheDeck[Random.Range(0, _cardsInTheDeck.Count)];
             _cardsInTheDeck.Remove(chosenElement);
 
-            Sprite cardColor = _easyCardColors[(int)chosenElement.ElementData.GROUP];
+            Sprite cardColor = _hardCardColors[(int)chosenElement.ElementData.GROUP];
             CardController newCard = Instantiate(_cardPrefab, _cardGenerationPosition.position, Quaternion.identity, _cardSlots[i]).GetComponent<CardController>();
-            
-            newCard.Initialize(chosenElement);
+
+            newCard.Initialize(chosenElement, _gameDifficulty);
             newCard.gameObject.GetComponent<CardDataDisplayer>().SetCardColor(cardColor);
         }
     }

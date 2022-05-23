@@ -14,16 +14,27 @@ public class CardDataDisplayer : MonoBehaviour
     [SerializeField] private TMP_Text _elementName;
     [SerializeField] private TMP_Text _atomicNumber;
     [SerializeField] private TMP_Text _electronegativity;
+
     public void SetCardColor(Sprite color)
     {
         _cardBaseColor.sprite = color;
     }
-    
-    public void UpdateDataDisplay(Element element)
+
+    public void InitializeDataDisplay(Element element, GameDifficulty difficulty)
     {
-        _abbreviation.SetText(element.ElementData.Abbreviation);
-        _elementName.SetText(element.ElementData.Elementname);
-        _atomicNumber.SetText(element.ElementData.Atomicnumber.ToString());
-        _electronegativity.SetText(element.ElementData.Electronegativity.ToString(CultureInfo.InvariantCulture));
+        if (difficulty == GameDifficulty.Normal)
+        {
+            _abbreviation.SetText(element.ElementData.Abbreviation);
+            _elementName.SetText(element.ElementData.Elementname);
+            _atomicNumber.SetText(element.ElementData.Atomicnumber.ToString());
+            _electronegativity.SetText(element.ElementData.Electronegativity.ToString(CultureInfo.InvariantCulture));
+        }
+        else
+        {
+            _abbreviation.SetText(element.ElementData.Abbreviation);
+            _elementName.SetText(element.ElementData.Elementname);
+            _atomicNumber.SetText("");
+            _electronegativity.SetText("");
+        }
     }
 }

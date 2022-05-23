@@ -15,7 +15,8 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     [SerializeField] private DurabilityBar _durabilityBar;
     [SerializeField] private ElementSlotController[] _elementSlots;
     [SerializeField] private Equipment _equipment;
-    [SerializeField] private GameObject _powerPreview;
+    [SerializeField] private GameObject _normalPowerPreview;
+    [SerializeField] private GameObject _hardPowerPreview;
     [SerializeField] private TMP_Text _previewText;
 
     [Header("SETTINGS")] 
@@ -24,6 +25,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     private List<Element> _elementsFused = new List<Element>();
     private Element _elementBeingPreviewed;
     private bool _isSlotLocked;
+    private GameDifficulty _gameDifficulty = GameDifficulty.Hard;
 
     // Start is called before the first frame update
     void Start()
@@ -65,27 +67,44 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     private void EnablePreviewCardEffect()
     {
-        _previewText.SetText(_elementBeingPreviewed.ElementData.Atomicnumber.ToString());
-        _powerPreview.SetActive(true);
+        if (_gameDifficulty == GameDifficulty.Normal)
+        {
+            _normalPowerPreview.SetActive(true);
+            _previewText.SetText(_elementBeingPreviewed.ElementData.Atomicnumber.ToString());
+        }
+        else
+        {
+            _hardPowerPreview.SetActive(true);
+        }
     }
 
     private void DisablePreviewCardEffect()
     {
-        _powerPreview.SetActive(false);
+        if (_gameDifficulty == GameDifficulty.Normal)
+        {
+            _normalPowerPreview.SetActive(false);
+        }
+        else
+        {
+            _hardPowerPreview.SetActive(false);
+        }
     }
 
     private void FuseElement(Element element)
     {
         _elementsFused.Add(element);
 
-        if (_elementsFused.Count == _maxElementsFused)
-        {
-            _equipment.MultiplyPower(element.ElementData.Electronegativity);
-        }
-        else
-        {
-            _equipment.AddPower(element.ElementData.Atomicnumber);
-        }
+        _equipment.AddPower(element.ElementData.Atomicnumber);
+        
+        //ELECTRONEGATIVITY MULTIPLICATION
+        // if (_elementsFused.Count == _maxElementsFused)
+        // {
+        //     _equipment.MultiplyPower(element.ElementData.Electronegativity);
+        // }
+        // else
+        // {
+        //     _equipment.AddPower(element.ElementData.Atomicnumber);
+        // }
 
         UpdateEquipmentUI();
         DisablePreviewCardEffect();
@@ -127,6 +146,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         }
 
         _elementBeingPreviewed = card.Element;
+        
         EnablePreviewCardEffect();
     }
 

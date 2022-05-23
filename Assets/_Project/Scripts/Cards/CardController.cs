@@ -22,13 +22,13 @@ public class CardController : MonoBehaviour
     public CompoundSlot CompoundSlot => _compoundSlot;
     public Element Element => _element;
 
-    public void Initialize(Element element)
+    public void Initialize(Element element, GameDifficulty difficulty)
     {
         _cardDataDisplayer = GetComponent<CardDataDisplayer>();
         _currentDeck = GetComponentInParent<DeckController>();
         _compoundSlot = FindObjectOfType<CompoundSlot>();
         
+        _cardDataDisplayer.InitializeDataDisplay(element, difficulty);
         _element = element;
-        _cardDataDisplayer.UpdateDataDisplay(element);
     }
 }
