@@ -727,7 +727,7 @@ MonoBehaviour:
   m_text: Robson, o Cachaceiro
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1924b4c653067bb4f83e1b11985c92b7, type: 2}
-  m_sharedMaterial: {fileID: -8580145351535198389, guid: 1924b4c653067bb4f83e1b11985c92b7,
+  m_sharedMaterial: {fileID: -4477973474538362053, guid: 1924b4c653067bb4f83e1b11985c92b7,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

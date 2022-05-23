@@ -30,11 +30,11 @@ public class OpenAndClosePanels : MonoBehaviour
 
     private void EnableFocusBackground()
     {
-        focusBackground.LeanAlpha(1, 1);
+        focusBackground.LeanAlpha(1, 0.5f);
     }
     
     private void DisableFocusBackground()
     {
-        focusBackground.LeanAlpha(0, 1);
+        focusBackground.LeanAlpha(0, 0.5f);
     }
 }
