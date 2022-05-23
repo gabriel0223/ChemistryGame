@@ -42,7 +42,6 @@ public class CompoundBars : MonoBehaviour
         
         AnimateBar(_atomicNumberBar, element.AtomicNumber.PropertyQuantity, ref _atomicNumberLevel);
         AnimateBar(_electronegativityBar, element.Electronegativity.PropertyQuantity, ref _electronegativityLevel);
-        AnimateBar(_atomicRadiusBar, element.AtomicRadius.PropertyQuantity, ref _atomicRadiusLevel);
     }
 
     private void AnimateBar(Image bar, PropertyQuantity propertyQuantity, ref int barLevel)

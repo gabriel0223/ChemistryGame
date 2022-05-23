@@ -9,8 +9,8 @@ using UnityQuickSheet;
 ///
 public class ElementsSheetAssetPostprocessor : AssetPostprocessor 
 {
-    private static readonly string filePath = "Assets/_Project/ElementsSheet.xlsx";
-    private static readonly string assetFilePath = "Assets/_Project/ElementsSheet.asset";
+    private static readonly string filePath = "Assets/_Project/Data/ElementsSheet.xlsx";
+    private static readonly string assetFilePath = "Assets/_Project/Data/ElementsSheet.asset";
     private static readonly string sheetName = "ElementsSheet";
     
     static void OnPostprocessAllAssets (string[] importedAssets, string[] deletedAssets, string[] movedAssets, string[] movedFromAssetPaths)

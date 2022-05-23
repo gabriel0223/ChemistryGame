@@ -120,27 +120,62 @@ PrefabInstance:
     - target: {fileID: 717287226474506101, guid: 2f789c22533eea44787a70007f929e4c,
         type: 3}
       propertyPath: m_text
-      value: Enemy Turn
+      value: "VEZ DO \nINIMIGO!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 717287226474506101, guid: 2f789c22533eea44787a70007f929e4c,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 717287226474506101, guid: 2f789c22533eea44787a70007f929e4c,
         type: 3}
       propertyPath: m_fontColor.b
-      value: 0.10588234
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 717287226474506101, guid: 2f789c22533eea44787a70007f929e4c,
         type: 3}
       propertyPath: m_fontColor.g
-      value: 0.12189543
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 717287226474506101, guid: 2f789c22533eea44787a70007f929e4c,
         type: 3}
       propertyPath: m_fontColor.r
-      value: 0.77254903
+      value: 0.99215686
+      objectReference: {fileID: 0}
+    - target: {fileID: 717287226474506101, guid: 2f789c22533eea44787a70007f929e4c,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 717287226474506101, guid: 2f789c22533eea44787a70007f929e4c,
         type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4279967685
+      value: 4278190333
+      objectReference: {fileID: 0}
+    - target: {fileID: 717287226474506101, guid: 2f789c22533eea44787a70007f929e4c,
+        type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448233178585467857, guid: 2f789c22533eea44787a70007f929e4c,
+        type: 3}
+      propertyPath: m_text
+      value: "VEZ DO \nINIMIGO!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448233178585467857, guid: 2f789c22533eea44787a70007f929e4c,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448233178585467857, guid: 2f789c22533eea44787a70007f929e4c,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 7448233178585467857, guid: 2f789c22533eea44787a70007f929e4c,
+        type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f789c22533eea44787a70007f929e4c, type: 3}

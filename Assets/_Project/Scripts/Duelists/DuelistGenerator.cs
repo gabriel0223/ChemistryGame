@@ -4,6 +4,7 @@ using UnityEngine.UI;
 using Random = UnityEngine.Random;
 public class DuelistGenerator : MonoBehaviour
 {
+    [SerializeField] private RectTransform _duelistVisualContainer;
     [SerializeField] private GameObject _duelistPrefab;
     [SerializeField] private GameObject[] _duelistFacesPrefabs;
     [SerializeField] private DuelistEyes[] _duelistEyes;
@@ -12,6 +13,8 @@ public class DuelistGenerator : MonoBehaviour
     [SerializeField] private Sprite[] _bodies;
 
     private DuelistController _duelistGenerated;
+
+    public RectTransform DuelistVisualContainer => _duelistVisualContainer;
 
     public DuelistController GenerateDuelist()
     {
@@ -25,9 +28,10 @@ public class DuelistGenerator : MonoBehaviour
         _duelistGenerated = Instantiate(_duelistPrefab, transform).GetComponent<DuelistController>();
         _duelistGenerated.SetDuelistName(DuelistNameGenerator.GenerateDuelistName());
         
-        DuelistAnimation duelistAnimation = Instantiate(randomFace, _duelistGenerated.transform).GetComponent<DuelistAnimation>();
+        DuelistAnimation duelistAnimation = Instantiate(randomFace, _duelistVisualContainer).GetComponent<DuelistAnimation>();
         duelistAnimation.SetVisualFeatures(randomEyes, randomNose, randomMouth, randomBody);
         duelistAnimation.SetNewHue(randomHue);
+        duelistAnimation.SetDuelistController(_duelistGenerated);
 
         return _duelistGenerated;
     }

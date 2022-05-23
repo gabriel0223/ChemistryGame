@@ -27,36 +27,6 @@ public class GameManager : MonoBehaviour
 
             _elementsUsedInThisMatch.Add(newElement);   
         }
-
-        List<Element> elementsByAtomicNumber = _elementsUsedInThisMatch.OrderBy(e => e.ElementData.Atomicnumber).ToList();
-        List<Element> elementsByElectronegativity = _elementsUsedInThisMatch.OrderBy(e => e.ElementData.Electronegativity).ToList();
-        List<Element> elementsByAtomicRadius = _elementsUsedInThisMatch.OrderBy(e => e.ElementData.Atomicradius).ToList();
-        
-        foreach (var element in _elementsUsedInThisMatch)
-        {
-            CalculatePropertyQuantity(element, PropertyName.AtomicNumber, elementsByAtomicNumber);
-            CalculatePropertyQuantity(element, PropertyName.Electronegativity, elementsByElectronegativity);
-            CalculatePropertyQuantity(element, PropertyName.AtomicRadius, elementsByAtomicRadius);
-        }
-    }
-
-    private void CalculatePropertyQuantity(Element element, PropertyName property, List<Element> elementsOrderedByProperty)
-    {
-        int minimumThreshold = _elementsUsedInThisMatch.Count / 4;
-        int maximumThreshold = (int)(_elementsUsedInThisMatch.Count / 2 * 1.5f);
-        
-        int elementIndex = elementsOrderedByProperty.FindIndex(e => e == element);
-
-        if (elementIndex > _elementsUsedInThisMatch.Count / 2)
-        {
-            bool isQuantityMaximum = elementIndex > maximumThreshold;
-            element.SetPropertyQuantity(property, isQuantityMaximum ? PropertyQuantity.Maximum : PropertyQuantity.High);
-        }
-        else
-        {
-            bool isQuantityMinimum = elementIndex < minimumThreshold;
-            element.SetPropertyQuantity(property, isQuantityMinimum ? PropertyQuantity.Minimum : PropertyQuantity.Low);
-        }
     }
 
     public void RestartGame()

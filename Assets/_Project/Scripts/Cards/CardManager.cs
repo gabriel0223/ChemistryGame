@@ -10,7 +10,8 @@ public class CardManager : MonoBehaviour
     [SerializeField] private BattleController _battleController;
     [SerializeField] private GameObject _cardPrefab;
     [SerializeField] private Transform[] _cardSlots;
-    [SerializeField] private Sprite[] _cardColors;
+    [SerializeField] private Sprite[] _easyCardColors;
+    [SerializeField] private Sprite[] _hardCardColors;
     [SerializeField] private Transform _cardGenerationPosition;
     [SerializeField] private Transform _cardDiscardPosition;
 
@@ -67,11 +68,11 @@ public class CardManager : MonoBehaviour
             Element chosenElement = _cardsInTheDeck[Random.Range(0, _cardsInTheDeck.Count)];
             _cardsInTheDeck.Remove(chosenElement);
 
-            Sprite deckColor = _cardColors[Random.Range(1, _cardColors.Length)];
+            Sprite cardColor = _easyCardColors[(int)chosenElement.ElementData.GROUP];
             CardController newCard = Instantiate(_cardPrefab, _cardGenerationPosition.position, Quaternion.identity, _cardSlots[i]).GetComponent<CardController>();
             
             newCard.Initialize(chosenElement);
-            newCard.gameObject.GetComponent<CardDataDisplayer>().SetCardColor(deckColor);
+            newCard.gameObject.GetComponent<CardDataDisplayer>().SetCardColor(cardColor);
         }
     }
     

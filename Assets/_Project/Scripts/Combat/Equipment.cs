@@ -30,6 +30,12 @@ public class Equipment : MonoBehaviour
         _power += power;
     }
 
+    public void MultiplyPower(float multiplier)
+    {
+        int newPower = Mathf.RoundToInt(_power * multiplier);
+        _power = newPower;
+    }
+
     public void DecreaseDurability()
     {
         _durability--;

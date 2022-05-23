@@ -25,8 +25,8 @@ public class ElementsSheetData
   public float Electronegativity { get {return electronegativity; } set { electronegativity = value;} }
   
   [SerializeField]
-  float atomicradius;
-  public float Atomicradius { get {return atomicradius; } set { atomicradius = value;} }
+  bool radioactive;
+  public bool Radioactive { get {return radioactive; } set { radioactive = value;} }
   
   [SerializeField]
   Group group;
