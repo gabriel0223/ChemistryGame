@@ -48,7 +48,6 @@ public class DuelistAnimation : MonoBehaviour
 
     private void Initialize()
     {
-        _duelistController = GetComponentInParent<DuelistController>();
         _playerDuelistController = _duelistController.DuelistOpponent;
         
         GetComponent<RectTransform>().DOScaleY(1.025f, 1f).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo);
@@ -60,6 +59,11 @@ public class DuelistAnimation : MonoBehaviour
         
         _playerDuelistController.OnTakeDamage += ReactToDamageDone;
         _playerDuelistController.OnDie += ReactToWinning;
+    }
+
+    public void SetDuelistController(DuelistController duelistController)
+    {
+        _duelistController = duelistController;
     }
 
     public void SetVisualFeatures(DuelistEyes eyes, Sprite nose, DuelistMouth mouth, Sprite body)

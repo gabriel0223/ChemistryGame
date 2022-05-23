@@ -25,11 +25,11 @@ public class ElementsSheetData
   public float Electronegativity { get {return electronegativity; } set { electronegativity = value;} }
   
   [SerializeField]
-  Group group;
-  public Group GROUP { get {return group; } set { group = value;} }
-  
-  [SerializeField]
   bool radioactive;
   public bool Radioactive { get {return radioactive; } set { radioactive = value;} }
+  
+  [SerializeField]
+  Group group;
+  public Group GROUP { get {return group; } set { group = value;} }
   
 }

@@ -11,7 +11,8 @@ public static class DuelistNameGenerator
         "Sagaz",
         "Cruel",
         "Astuto",
-        "Impiedoso"
+        "Impiedoso",
+        "Ligeiro"
     };
 
     private static readonly string[] Names =
@@ -21,7 +22,8 @@ public static class DuelistNameGenerator
         "Zurg",
         "Vanderlei",
         "Zolmit",
-        "Cláudio"
+        "Cláudio",
+        "Sérgio",
     };
 
     public static string GenerateDuelistName()

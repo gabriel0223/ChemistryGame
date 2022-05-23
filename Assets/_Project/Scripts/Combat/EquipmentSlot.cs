@@ -13,7 +13,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     [SerializeField] private TMP_Text _powerText;
     [SerializeField] private Image _equipmentImage;
     [SerializeField] private DurabilityBar _durabilityBar;
-    [SerializeField] private TMP_Text[] _elementSlots;
+    [SerializeField] private ElementSlotController[] _elementSlots;
     [SerializeField] private Equipment _equipment;
     [SerializeField] private GameObject _powerPreview;
     [SerializeField] private TMP_Text _previewText;
@@ -49,23 +49,17 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     private void ResetEquipment()
     {
-        foreach (var elementText in _elementSlots)
+        foreach (var elementSlot in _elementSlots)
         {
-            elementText.SetText("");    
+            elementSlot.DeactivateSlot();  
         }
         
-        _equipmentImage.DOColor(Color.black, 0.5f);
         _elementsFused.Clear();
         UpdateEquipmentUI();
     }
 
     private void UpdateEquipmentUI()
     {
-        if (_elementsFused.Count == 1)
-        {
-            _equipmentImage.DOColor(Color.white, 0.5f);
-        }
-        
         _powerText.SetText(_equipment.Power.ToString());
     }
 
@@ -83,7 +77,16 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     private void FuseElement(Element element)
     {
         _elementsFused.Add(element);
-        _equipment.AddPower(element.ElementData.Atomicnumber);
+
+        if (_elementsFused.Count == _maxElementsFused)
+        {
+            _equipment.MultiplyPower(element.ElementData.Electronegativity);
+        }
+        else
+        {
+            _equipment.AddPower(element.ElementData.Atomicnumber);
+        }
+
         UpdateEquipmentUI();
         DisablePreviewCardEffect();
         AddElementInitialsToSlot(element.ElementData.Abbreviation);
@@ -102,19 +105,11 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     private void AddElementInitialsToSlot(string elementInitials)
     {
-        TMP_Text elementSlot = _elementSlots[_elementsFused.Count - 1];
-        elementSlot.SetText(elementInitials);
-        elementSlot.gameObject.SetActive(true);
+        _elementSlots[_elementsFused.Count - 1].ActivateSlot(elementInitials);
     }
 
     public void ActivateSlot()
     {
-        // Sequence activationTween = DOTween.Sequence();
-        //
-        // activationTween.Append(_equipmentImage.transform.DOScale(Vector3.one * , 1));
-        // activationTween.AppendInterval(1f);
-        // activationTween.Append(_equipmentImage.transform.DOScale(Vector3.one, 1));
-        
         _equipmentImage.transform.DOPunchScale(Vector3.one * 0.15f, 0.75f, 5, 0.5f);
         _equipmentImage.transform.DOShakeRotation(0.75f, 10f);
     }

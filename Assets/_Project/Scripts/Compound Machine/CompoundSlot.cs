@@ -41,7 +41,6 @@ public class CompoundSlot : MonoBehaviour
 
             sumProperties(ref compoundAtomicNumber.PropertyQuantity, element.AtomicNumber.PropertyQuantity);
             sumProperties(ref compoundElectronegativity.PropertyQuantity, element.Electronegativity.PropertyQuantity);
-            sumProperties(ref compoundAtomicRadius.PropertyQuantity, element.AtomicRadius.PropertyQuantity);
         }
 
         _generatedCompound = new Compound(compoundAtomicNumber, compoundElectronegativity, compoundAtomicRadius);
