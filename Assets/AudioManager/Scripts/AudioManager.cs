@@ -9,14 +9,9 @@ using Random = UnityEngine.Random;
 
 public class AudioManager : MonoBehaviour
 {
-
     public Sound[] sounds;
 
     public static AudioManager instance = null;
-    public AudioSource source;
-    public AudioMixerGroup masterMixer;
-    public AudioMixer musicMixer;
-    public AudioMixer sfxMixer;
     public Coroutine fadeCoroutine;
     [HideInInspector] public string musicPlaying; 
     
