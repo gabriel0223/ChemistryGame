@@ -337,6 +337,7 @@ namespace MoreMountains.Tools
                         }
                         else if (index >= PathElements.Count - 1)
                         {
+	                        transform.position = _originalTransformPosition + PathElements[0].PathElementPosition;
                             _direction = -1;
                         }
                         index = index + _direction;

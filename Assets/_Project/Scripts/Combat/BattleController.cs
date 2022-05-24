@@ -7,7 +7,8 @@ public enum BattleState
 {
     PlayerTurn,
     EnemyTurn,
-    End
+    PlayerWon,
+    PlayerLost
 }
 
 public class BattleController : MonoBehaviour
@@ -21,7 +22,8 @@ public class BattleController : MonoBehaviour
     
     [SerializeField] private Canvas _canvas;
     [SerializeField] private DuelistGenerator _duelistGenerator;
-    [SerializeField] private EndBattlePanel _endBattlePanel;
+    [SerializeField] private EndBattlePanel _winScreen;
+    [SerializeField] private EndBattlePanel _gameOverScreen;
     [SerializeField] private TurnInformationPanel _playerTurnAnimation;
     [SerializeField] private TurnInformationPanel _enemyTurnAnimation;
     [SerializeField] private DuelistController _playerDuelist;
@@ -117,21 +119,21 @@ public class BattleController : MonoBehaviour
 
     private void PlayerWinsHandler()
     {
-        _battleState = BattleState.End;
+        _battleState = BattleState.PlayerWon;
 
         StartCoroutine(EndBattle());
     }
     
     private void PlayerLosesHandler()
     {
-        _battleState = BattleState.End;
+        _battleState = BattleState.PlayerLost;
 
         StartCoroutine(EndBattle());
     }
 
     private IEnumerator EndTurn()
     {
-        if (_battleState == BattleState.End)
+        if (_battleState == BattleState.PlayerWon || _battleState == BattleState.PlayerLost)
         {
             yield break;
         }
@@ -175,7 +177,14 @@ public class BattleController : MonoBehaviour
     private IEnumerator EndBattle()
     {
         yield return new WaitForSeconds(EndBattleDelay);
-        
-        _endBattlePanel.Initialize();
+
+        if (_battleState == BattleState.PlayerLost)
+        {
+            _gameOverScreen.Initialize();
+        }
+        else if (_battleState == BattleState.PlayerWon)
+        {
+            _winScreen.Initialize();
+        }
     }
 }

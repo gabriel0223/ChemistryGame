@@ -7,9 +7,9 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 1_Duelist Head
+  m_Name: Moon
   m_Shader: {fileID: 4800000, guid: a36b7719ff0465b42ab1407d67672c5f, type: 3}
-  m_ShaderKeywords: HSV_ON
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -140,8 +140,8 @@ Material:
     - _HologramStripesSpeed: 4.5
     - _HologramUnmodAmount: 0
     - _HsvBright: 1
-    - _HsvSaturation: 1
-    - _HsvShift: 12
+    - _HsvSaturation: 0.26
+    - _HsvShift: 0
     - _InnerOutlineAlpha: 1
     - _InnerOutlineGlow: 4
     - _InnerOutlineThickness: 1

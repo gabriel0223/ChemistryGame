@@ -38,9 +38,11 @@ public class PlayerUIController : MonoBehaviour
 
     private void PlayTakeDamageAnimation()
     {
+        Handheld.Vibrate();
+        
         Sequence damageSequence = DOTween.Sequence();
         damageSequence.Append(_damagePanel.DOColor(new Color(_damagePanel.color.r, _damagePanel.color.g, _damagePanel.color.b, 0.5f), 0.25f));
-        damageSequence.AppendInterval(0.5f);
+        damageSequence.AppendInterval(0.25f);
         damageSequence.Append(_damagePanel.DOColor(new Color(_damagePanel.color.r, _damagePanel.color.g, _damagePanel.color.b, 0f), 0.25f));
     }
 }

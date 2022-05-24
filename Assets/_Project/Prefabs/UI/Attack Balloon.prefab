@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 4119965994301223381}
   - component: {fileID: 4119965994301223378}
   m_Layer: 5
-  m_Name: Sword Icon
+  m_Name: Weapon Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,17 +119,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4119965994301223376}
-  m_LocalRotation: {x: -0, y: -0, z: 0.07297864, w: 0.9973335}
+  m_LocalRotation: {x: 0, y: 0, z: 0.29720828, w: 0.9548127}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3340375792939983027}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 8.37}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 34.58}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -34.1, y: 2.4}
-  m_SizeDelta: {x: 31.8749, y: 31.8745}
+  m_SizeDelta: {x: 56.6167, y: 32.6849}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4119965994301223381
 CanvasRenderer:
@@ -152,14 +152,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 430e3b1a28a4b3d488af8c073824c94f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9570dff44d8a4c248a72d0f7cf5fefaf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -203,8 +203,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.6, y: -0.000099182}
-  m_SizeDelta: {x: 64.6841, y: 115.75}
+  m_AnchoredPosition: {x: 8.7835, y: -0.000099182}
+  m_SizeDelta: {x: 54.3172, y: 115.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4119965994564135680
 CanvasRenderer:
@@ -262,12 +262,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.1
+  m_fontSize: 38.63
   m_fontSizeBase: 38.1
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 38.63
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
