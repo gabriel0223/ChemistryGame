@@ -199,5 +199,7 @@ public class BattleController : MonoBehaviour
         {
             _winScreen.Initialize();
         }
+        
+        AudioManager.instance.Stop("battle");
     }
 }

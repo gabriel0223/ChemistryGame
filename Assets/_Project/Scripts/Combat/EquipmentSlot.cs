@@ -140,6 +140,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             slot.ChangeSlotColor(synergy.Color);
         }
 
+        _durabilityBar.ChangeColor(synergy.Color);
         _equipmentImage.DOColor(synergy.Color, 0.5f);
         _powerLevelBox.DOColor(synergy.Color, 0.5f);
         _synergyStar.DOFade(1, 0.5f);
@@ -159,6 +160,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             slot.ChangeSlotColor(_initialColor);
         }
 
+        _durabilityBar.ChangeColor(_initialColor);
         _equipmentImage.DOColor(_initialColor, 0.5f);
         _powerLevelBox.DOColor(_initialColor, 0.5f);
         _synergyStar.DOFade(0, 0.5f);

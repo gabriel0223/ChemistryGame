@@ -18,8 +18,10 @@ public class DuelistAnimation : MonoBehaviour
     [SerializeField] private Image _nose;
     [SerializeField] private Image _mouth;
     [SerializeField] private Image _body;
+    [SerializeField] private Image _accessory;
     [SerializeField] private float _shakeDuration;
     [SerializeField] private float _shakeStrength;
+    [SerializeField] private Image _holographicShield;
 
     private DuelistController _duelistController;
     private DuelistController _playerDuelistController;
@@ -41,6 +43,8 @@ public class DuelistAnimation : MonoBehaviour
     {
         _duelistController.OnTakeDamage -= ReactToDamageTaken;
         _duelistController.OnDie -= ReactToLosing;
+        _duelistController.OnEnableDefense -= EnableShield;
+        _duelistController.OnDisableDefense -= DisableShield;
         
         _playerDuelistController.OnTakeDamage -= ReactToDamageDone;
         _playerDuelistController.OnDie -= ReactToWinning;
@@ -56,6 +60,8 @@ public class DuelistAnimation : MonoBehaviour
         
         _duelistController.OnTakeDamage += ReactToDamageTaken;
         _duelistController.OnDie += ReactToLosing;
+        _duelistController.OnEnableDefense += EnableShield;
+        _duelistController.OnDisableDefense += DisableShield;
         
         _playerDuelistController.OnTakeDamage += ReactToDamageDone;
         _playerDuelistController.OnDie += ReactToWinning;
@@ -65,8 +71,18 @@ public class DuelistAnimation : MonoBehaviour
     {
         _duelistController = duelistController;
     }
+    
+    private void EnableShield()
+    {
+        _holographicShield.DOFillAmount(1, 1f);
+    }
 
-    public void SetVisualFeatures(DuelistEyes eyes, Sprite nose, DuelistMouth mouth, Sprite body)
+    private void DisableShield()
+    {
+        _holographicShield.DOFillAmount(0, 1f);
+    }
+
+    public void SetVisualFeatures(DuelistEyes eyes, Sprite nose, DuelistMouth mouth, Sprite body, Sprite accessory)
     {
         _duelistEyes = eyes;
         _duelistMouth = mouth;
@@ -75,6 +91,15 @@ public class DuelistAnimation : MonoBehaviour
         
         _nose.sprite = nose;
         _body.sprite = body;
+
+        if (Random.Range(0f, 1f) <= 0.7f)
+        {
+            _accessory.sprite = accessory;
+        }
+        else
+        {
+            _accessory.enabled = false;
+        }
     }
 
     private void SetMood(DuelistMood newMood)

@@ -18,7 +18,7 @@ public class OpenAndClosePanels : MonoBehaviour
 
     public void OpenPanel()
     {
-        transform.LeanMoveLocal(new Vector2(0, 148), timeToClose).setEaseInOutBack();
+        transform.LeanMoveLocal(new Vector2(0, 146), timeToClose).setEaseInOutBack();
         EnableFocusBackground();
     }
     
