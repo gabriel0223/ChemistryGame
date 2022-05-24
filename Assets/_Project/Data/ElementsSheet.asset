@@ -1,0 +1,725 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17ffbab3efcdce54289a5106c79a8f2d, type: 3}
+  m_Name: ElementsSheet
+  m_EditorClassIdentifier: 
+  SheetName: Assets/_Project/Data/ElementsSheet.xlsx
+  WorksheetName: ElementsSheet
+  dataArray:
+  - abbreviation: H
+    elementname: "Hidrog\xEAnio"
+    atomicnumber: 1
+    electronegativity: 2.1
+    radioactive: 0
+    group: 0
+  - abbreviation: He
+    elementname: "H\xE9lio"
+    atomicnumber: 2
+    electronegativity: 0
+    radioactive: 0
+    group: 9
+  - abbreviation: Li
+    elementname: "L\xEDtio"
+    atomicnumber: 3
+    electronegativity: 1
+    radioactive: 0
+    group: 1
+  - abbreviation: Be
+    elementname: "Ber\xEDlio"
+    atomicnumber: 4
+    electronegativity: 1.6
+    radioactive: 0
+    group: 2
+  - abbreviation: B
+    elementname: Boro
+    atomicnumber: 5
+    electronegativity: 1.6
+    radioactive: 0
+    group: 6
+  - abbreviation: C
+    elementname: Carbono
+    atomicnumber: 6
+    electronegativity: 2.5
+    radioactive: 0
+    group: 0
+  - abbreviation: N
+    elementname: "Nitrog\xEAnio"
+    atomicnumber: 7
+    electronegativity: 3
+    radioactive: 0
+    group: 0
+  - abbreviation: O
+    elementname: "Oxig\xE9nio"
+    atomicnumber: 8
+    electronegativity: 3.5
+    radioactive: 0
+    group: 0
+  - abbreviation: F
+    elementname: "Fl\xFAor"
+    atomicnumber: 9
+    electronegativity: 4
+    radioactive: 0
+    group: 8
+  - abbreviation: Ne
+    elementname: "N\xE9onio"
+    atomicnumber: 10
+    electronegativity: 0
+    radioactive: 0
+    group: 9
+  - abbreviation: Na
+    elementname: "S\xF3dio"
+    atomicnumber: 11
+    electronegativity: 0.9
+    radioactive: 0
+    group: 1
+  - abbreviation: Mg
+    elementname: "Magn\xE9sio"
+    atomicnumber: 12
+    electronegativity: 1.2
+    radioactive: 0
+    group: 2
+  - abbreviation: Al
+    elementname: "Alum\xEDnio"
+    atomicnumber: 13
+    electronegativity: 1.5
+    radioactive: 0
+    group: 7
+  - abbreviation: Si
+    elementname: "Sil\xEDcio"
+    atomicnumber: 14
+    electronegativity: 1.8
+    radioactive: 0
+    group: 6
+  - abbreviation: P
+    elementname: "F\xF3sforo"
+    atomicnumber: 15
+    electronegativity: 2.1
+    radioactive: 0
+    group: 0
+  - abbreviation: S
+    elementname: Enxofre
+    atomicnumber: 16
+    electronegativity: 2.5
+    radioactive: 0
+    group: 0
+  - abbreviation: Cl
+    elementname: Cloro
+    atomicnumber: 17
+    electronegativity: 3
+    radioactive: 0
+    group: 8
+  - abbreviation: Ar
+    elementname: "\xC1rgonio"
+    atomicnumber: 18
+    electronegativity: 0
+    radioactive: 0
+    group: 9
+  - abbreviation: K
+    elementname: "Pot\xE1ssio"
+    atomicnumber: 19
+    electronegativity: 0.8
+    radioactive: 0
+    group: 1
+  - abbreviation: Ca
+    elementname: "C\xE1lcio"
+    atomicnumber: 20
+    electronegativity: 1
+    radioactive: 0
+    group: 2
+  - abbreviation: Sc
+    elementname: "Esc\xE2ndio"
+    atomicnumber: 21
+    electronegativity: 1.3
+    radioactive: 0
+    group: 3
+  - abbreviation: Ti
+    elementname: "Tit\xE2nio"
+    atomicnumber: 22
+    electronegativity: 1.5
+    radioactive: 0
+    group: 3
+  - abbreviation: V
+    elementname: "Van\xE1dio"
+    atomicnumber: 23
+    electronegativity: 1.6
+    radioactive: 0
+    group: 3
+  - abbreviation: Cr
+    elementname: Cromo
+    atomicnumber: 24
+    electronegativity: 1.6
+    radioactive: 0
+    group: 3
+  - abbreviation: Mn
+    elementname: "Mangan\xEAs"
+    atomicnumber: 25
+    electronegativity: 1.5
+    radioactive: 0
+    group: 3
+  - abbreviation: Fe
+    elementname: Ferro
+    atomicnumber: 26
+    electronegativity: 1.8
+    radioactive: 0
+    group: 3
+  - abbreviation: Co
+    elementname: Cobalto
+    atomicnumber: 27
+    electronegativity: 1.9
+    radioactive: 0
+    group: 3
+  - abbreviation: Ni
+    elementname: "N\xEDquel"
+    atomicnumber: 28
+    electronegativity: 1.9
+    radioactive: 0
+    group: 3
+  - abbreviation: Cu
+    elementname: Cobre
+    atomicnumber: 29
+    electronegativity: 1.9
+    radioactive: 0
+    group: 3
+  - abbreviation: Zn
+    elementname: Zinco
+    atomicnumber: 30
+    electronegativity: 1.6
+    radioactive: 0
+    group: 3
+  - abbreviation: Ga
+    elementname: "G\xE1lio"
+    atomicnumber: 31
+    electronegativity: 1.6
+    radioactive: 0
+    group: 7
+  - abbreviation: Ge
+    elementname: "Germ\xE2nio"
+    atomicnumber: 32
+    electronegativity: 1.8
+    radioactive: 0
+    group: 6
+  - abbreviation: As
+    elementname: "Ars\xEAnio"
+    atomicnumber: 33
+    electronegativity: 2
+    radioactive: 0
+    group: 6
+  - abbreviation: Se
+    elementname: "Sel\xEAnio"
+    atomicnumber: 34
+    electronegativity: 2.4
+    radioactive: 0
+    group: 0
+  - abbreviation: Br
+    elementname: Bromo
+    atomicnumber: 35
+    electronegativity: 2.8
+    radioactive: 0
+    group: 8
+  - abbreviation: Kr
+    elementname: "Cript\xF4nio"
+    atomicnumber: 36
+    electronegativity: 0
+    radioactive: 0
+    group: 9
+  - abbreviation: Rb
+    elementname: "Rub\xEDdio"
+    atomicnumber: 37
+    electronegativity: 0.8
+    radioactive: 0
+    group: 1
+  - abbreviation: Sr
+    elementname: "Estr\xF4ncio"
+    atomicnumber: 38
+    electronegativity: 1
+    radioactive: 0
+    group: 2
+  - abbreviation: Y
+    elementname: "\xCDtrio"
+    atomicnumber: 39
+    electronegativity: 1.2
+    radioactive: 0
+    group: 3
+  - abbreviation: Zr
+    elementname: "Zirc\xF4nio"
+    atomicnumber: 40
+    electronegativity: 1.4
+    radioactive: 0
+    group: 3
+  - abbreviation: Nb
+    elementname: "Ni\xF3bio"
+    atomicnumber: 41
+    electronegativity: 1.6
+    radioactive: 0
+    group: 3
+  - abbreviation: Mo
+    elementname: "Molibd\xEAnio"
+    atomicnumber: 42
+    electronegativity: 1.8
+    radioactive: 0
+    group: 3
+  - abbreviation: Tc
+    elementname: "Tecn\xE9rcio"
+    atomicnumber: 43
+    electronegativity: 1.9
+    radioactive: 0
+    group: 3
+  - abbreviation: Ru
+    elementname: "Rut\xEAnio"
+    atomicnumber: 44
+    electronegativity: 2.2
+    radioactive: 0
+    group: 3
+  - abbreviation: Rh
+    elementname: "R\xF3dio"
+    atomicnumber: 45
+    electronegativity: 2.3
+    radioactive: 0
+    group: 3
+  - abbreviation: Pd
+    elementname: "Pal\xE1dio"
+    atomicnumber: 46
+    electronegativity: 2.2
+    radioactive: 0
+    group: 3
+  - abbreviation: Ag
+    elementname: Prata
+    atomicnumber: 47
+    electronegativity: 2
+    radioactive: 0
+    group: 3
+  - abbreviation: Cd
+    elementname: "C\xE1dmio"
+    atomicnumber: 48
+    electronegativity: 1.7
+    radioactive: 0
+    group: 3
+  - abbreviation: In
+    elementname: "\xCDndio"
+    atomicnumber: 49
+    electronegativity: 1.8
+    radioactive: 0
+    group: 7
+  - abbreviation: Sn
+    elementname: Estanho
+    atomicnumber: 50
+    electronegativity: 2
+    radioactive: 0
+    group: 7
+  - abbreviation: Sb
+    elementname: "Antim\xF4nio"
+    atomicnumber: 51
+    electronegativity: 2
+    radioactive: 0
+    group: 6
+  - abbreviation: Te
+    elementname: "Tel\xFArio"
+    atomicnumber: 52
+    electronegativity: 2.1
+    radioactive: 0
+    group: 6
+  - abbreviation: I
+    elementname: Iodo
+    atomicnumber: 53
+    electronegativity: 2.6
+    radioactive: 0
+    group: 8
+  - abbreviation: Xe
+    elementname: "Xen\xF4nio"
+    atomicnumber: 54
+    electronegativity: 0
+    radioactive: 0
+    group: 9
+  - abbreviation: Cs
+    elementname: "C\xE9sio"
+    atomicnumber: 55
+    electronegativity: 0.8
+    radioactive: 0
+    group: 1
+  - abbreviation: Ba
+    elementname: "B\xE1rio"
+    atomicnumber: 56
+    electronegativity: 0.9
+    radioactive: 0
+    group: 2
+  - abbreviation: La
+    elementname: "Lant\xE2nio"
+    atomicnumber: 57
+    electronegativity: 1.1
+    radioactive: 0
+    group: 4
+  - abbreviation: Ce
+    elementname: "C\xE9rio"
+    atomicnumber: 58
+    electronegativity: 1.1
+    radioactive: 0
+    group: 4
+  - abbreviation: Pr
+    elementname: "Praseod\xEDmio"
+    atomicnumber: 59
+    electronegativity: 1.1
+    radioactive: 0
+    group: 4
+  - abbreviation: Nd
+    elementname: "Neod\xEDmio"
+    atomicnumber: 60
+    electronegativity: 1.1
+    radioactive: 0
+    group: 4
+  - abbreviation: Pm
+    elementname: "Prom\xE9cio"
+    atomicnumber: 61
+    electronegativity: 1.1
+    radioactive: 0
+    group: 4
+  - abbreviation: Sm
+    elementname: "Sam\xE1rio"
+    atomicnumber: 62
+    electronegativity: 1.2
+    radioactive: 0
+    group: 4
+  - abbreviation: Eu
+    elementname: "Eur\xF3pio"
+    atomicnumber: 63
+    electronegativity: 1.2
+    radioactive: 0
+    group: 4
+  - abbreviation: Gd
+    elementname: "Gadol\xEDneo"
+    atomicnumber: 64
+    electronegativity: 1.2
+    radioactive: 0
+    group: 4
+  - abbreviation: Tb
+    elementname: "T\xE9rbio"
+    atomicnumber: 65
+    electronegativity: 1.1
+    radioactive: 0
+    group: 4
+  - abbreviation: Dy
+    elementname: "Dispr\xF3sio"
+    atomicnumber: 66
+    electronegativity: 1.2
+    radioactive: 0
+    group: 4
+  - abbreviation: Ho
+    elementname: "H\xF3lmio"
+    atomicnumber: 67
+    electronegativity: 1.2
+    radioactive: 0
+    group: 4
+  - abbreviation: Er
+    elementname: "\xC9rbio"
+    atomicnumber: 68
+    electronegativity: 1.2
+    radioactive: 0
+    group: 4
+  - abbreviation: Tm
+    elementname: "T\xFAlio"
+    atomicnumber: 69
+    electronegativity: 1.2
+    radioactive: 0
+    group: 4
+  - abbreviation: Yb
+    elementname: "It\xE9rbio"
+    atomicnumber: 70
+    electronegativity: 1.1
+    radioactive: 0
+    group: 4
+  - abbreviation: Lu
+    elementname: "Lut\xE9cio"
+    atomicnumber: 71
+    electronegativity: 1.3
+    radioactive: 0
+    group: 4
+  - abbreviation: Hf
+    elementname: "H\xE1fnio"
+    atomicnumber: 72
+    electronegativity: 1.3
+    radioactive: 0
+    group: 3
+  - abbreviation: Ta
+    elementname: "T\xE2ntalo"
+    atomicnumber: 73
+    electronegativity: 1.5
+    radioactive: 0
+    group: 3
+  - abbreviation: W
+    elementname: "Tungst\xEAnio"
+    atomicnumber: 74
+    electronegativity: 2.4
+    radioactive: 0
+    group: 3
+  - abbreviation: Re
+    elementname: "R\xEAnio"
+    atomicnumber: 75
+    electronegativity: 1.9
+    radioactive: 0
+    group: 3
+  - abbreviation: Os
+    elementname: "\xD3smio"
+    atomicnumber: 76
+    electronegativity: 2.2
+    radioactive: 0
+    group: 3
+  - abbreviation: Ir
+    elementname: "Ir\xEDdio"
+    atomicnumber: 77
+    electronegativity: 2.2
+    radioactive: 0
+    group: 3
+  - abbreviation: Pt
+    elementname: Platina
+    atomicnumber: 78
+    electronegativity: 2.3
+    radioactive: 0
+    group: 3
+  - abbreviation: Au
+    elementname: Ouro
+    atomicnumber: 79
+    electronegativity: 2.5
+    radioactive: 0
+    group: 3
+  - abbreviation: Hg
+    elementname: "Merc\xFArio"
+    atomicnumber: 80
+    electronegativity: 2
+    radioactive: 0
+    group: 3
+  - abbreviation: TI
+    elementname: "T\xE1lio"
+    atomicnumber: 81
+    electronegativity: 1.62
+    radioactive: 0
+    group: 7
+  - abbreviation: Pb
+    elementname: Chumbo
+    atomicnumber: 82
+    electronegativity: 2.3
+    radioactive: 0
+    group: 7
+  - abbreviation: Bi
+    elementname: Bismuto
+    atomicnumber: 83
+    electronegativity: 2
+    radioactive: 0
+    group: 7
+  - abbreviation: Po
+    elementname: "Pol\xF4nio"
+    atomicnumber: 84
+    electronegativity: 2
+    radioactive: 1
+    group: 6
+  - abbreviation: At
+    elementname: "\xC1stato"
+    atomicnumber: 85
+    electronegativity: 2.2
+    radioactive: 1
+    group: 8
+  - abbreviation: Rn
+    elementname: "Rad\xF4nio"
+    atomicnumber: 86
+    electronegativity: 0
+    radioactive: 1
+    group: 9
+  - abbreviation: Fr
+    elementname: "Fr\xE2ncio"
+    atomicnumber: 87
+    electronegativity: 0.8
+    radioactive: 1
+    group: 1
+  - abbreviation: Ra
+    elementname: "R\xE1dio"
+    atomicnumber: 88
+    electronegativity: 0.9
+    radioactive: 1
+    group: 2
+  - abbreviation: Ac
+    elementname: "Act\xEDnio"
+    atomicnumber: 89
+    electronegativity: 1.1
+    radioactive: 1
+    group: 5
+  - abbreviation: Th
+    elementname: "T\xF3rio"
+    atomicnumber: 90
+    electronegativity: 1.3
+    radioactive: 1
+    group: 5
+  - abbreviation: Pa
+    elementname: "Protact\xEDnio"
+    atomicnumber: 91
+    electronegativity: 1.5
+    radioactive: 1
+    group: 5
+  - abbreviation: U
+    elementname: "Ur\xE2nio"
+    atomicnumber: 92
+    electronegativity: 1.4
+    radioactive: 1
+    group: 5
+  - abbreviation: Np
+    elementname: "Net\xFAnio"
+    atomicnumber: 93
+    electronegativity: 1.4
+    radioactive: 1
+    group: 5
+  - abbreviation: Pu
+    elementname: "Plut\xF4nico"
+    atomicnumber: 94
+    electronegativity: 1.3
+    radioactive: 1
+    group: 5
+  - abbreviation: Am
+    elementname: "Am\xE9ricio"
+    atomicnumber: 95
+    electronegativity: 1.1
+    radioactive: 1
+    group: 5
+  - abbreviation: Cm
+    elementname: "C\xFArio"
+    atomicnumber: 96
+    electronegativity: 1.3
+    radioactive: 1
+    group: 5
+  - abbreviation: Bk
+    elementname: "Berqu\xE9lio"
+    atomicnumber: 97
+    electronegativity: 1.3
+    radioactive: 1
+    group: 5
+  - abbreviation: Cf
+    elementname: "Calif\xF3rnio"
+    atomicnumber: 98
+    electronegativity: 1.3
+    radioactive: 1
+    group: 5
+  - abbreviation: Es
+    elementname: "Einst\xE9nio"
+    atomicnumber: 99
+    electronegativity: 1.3
+    radioactive: 1
+    group: 5
+  - abbreviation: Fm
+    elementname: "F\xE9rmio"
+    atomicnumber: 100
+    electronegativity: 1.3
+    radioactive: 1
+    group: 5
+  - abbreviation: Md
+    elementname: "Mendel\xE9vio"
+    atomicnumber: 101
+    electronegativity: 1.3
+    radioactive: 1
+    group: 5
+  - abbreviation: No
+    elementname: "Nob\xE9lio"
+    atomicnumber: 102
+    electronegativity: 1.3
+    radioactive: 1
+    group: 5
+  - abbreviation: Lr
+    elementname: "Laur\xEAncio"
+    atomicnumber: 103
+    electronegativity: 1.3
+    radioactive: 1
+    group: 5
+  - abbreviation: Rf
+    elementname: "Rutherf\xF3rdio"
+    atomicnumber: 104
+    electronegativity: 0.01
+    radioactive: 1
+    group: 3
+  - abbreviation: Db
+    elementname: "D\xFAbnio"
+    atomicnumber: 105
+    electronegativity: 0.01
+    radioactive: 1
+    group: 3
+  - abbreviation: Sg
+    elementname: "Seab\xF3rgio"
+    atomicnumber: 106
+    electronegativity: 0.01
+    radioactive: 1
+    group: 3
+  - abbreviation: Bh
+    elementname: "B\xF3hrio"
+    atomicnumber: 107
+    electronegativity: 0.01
+    radioactive: 1
+    group: 3
+  - abbreviation: Hs
+    elementname: "H\xE1ssio"
+    atomicnumber: 108
+    electronegativity: 0.01
+    radioactive: 1
+    group: 3
+  - abbreviation: Mt
+    elementname: "Meitn\xE9rio"
+    atomicnumber: 109
+    electronegativity: 0.01
+    radioactive: 1
+    group: 3
+  - abbreviation: Ds
+    elementname: "Darmst\xE1dio"
+    atomicnumber: 110
+    electronegativity: 0.01
+    radioactive: 1
+    group: 3
+  - abbreviation: Rg
+    elementname: "Roentg\xEAnio"
+    atomicnumber: 111
+    electronegativity: 0.01
+    radioactive: 1
+    group: 3
+  - abbreviation: Cn
+    elementname: "Copern\xEDcio"
+    atomicnumber: 112
+    electronegativity: 0.01
+    radioactive: 1
+    group: 3
+  - abbreviation: Nh
+    elementname: "Nih\xF4nio"
+    atomicnumber: 113
+    electronegativity: 0.01
+    radioactive: 1
+    group: 7
+  - abbreviation: Fl
+    elementname: "Fler\xF3vio"
+    atomicnumber: 114
+    electronegativity: 0.01
+    radioactive: 1
+    group: 7
+  - abbreviation: Mc
+    elementname: "Mosc\xF3vio"
+    atomicnumber: 115
+    electronegativity: 0.01
+    radioactive: 1
+    group: 7
+  - abbreviation: Lv
+    elementname: "Liverm\xF3dio"
+    atomicnumber: 116
+    electronegativity: 0.01
+    radioactive: 1
+    group: 7
+  - abbreviation: Ts
+    elementname: Tenssino
+    atomicnumber: 117
+    electronegativity: 0.01
+    radioactive: 1
+    group: 8
+  - abbreviation: Og
+    elementname: "Oganess\xF4nio"
+    atomicnumber: 118
+    electronegativity: 0.01
+    radioactive: 1
+    group: 9

@@ -44,8 +44,116 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: 
-    clip: {fileID: 0}
+  - name: battle
+    clip: {fileID: 8300000, guid: 82c13502e05aef44fbe24161ae90ba78, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    mixerGroup: {fileID: 5761305569374750478, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 1
+    source: {fileID: 0}
+  - name: shot01
+    clip: {fileID: 8300000, guid: 2ccbaf25bacd5f04fa9da8018db58366, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: shot02
+    clip: {fileID: 8300000, guid: 356ccb2b770f6c84ba10003aa3260d5e, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: shot03
+    clip: {fileID: 8300000, guid: 7183fdb0f12ced6408a87739d8184a5e, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: shield01
+    clip: {fileID: 8300000, guid: 7289ec4c196d0af4e97650c9f55c46a8, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: powerUp01
+    clip: {fileID: 8300000, guid: 8ae499edcf8c8b44ea1bc51355c2ec46, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: powerUp02
+    clip: {fileID: 8300000, guid: 3ca9387f330412140bb61674e9f75e3e, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: critShot01
+    clip: {fileID: 8300000, guid: 786885ca3aa3cf14facbe86d186aa93e, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: critShot02
+    clip: {fileID: 8300000, guid: 4badcf484c907054c889516aa4976526, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: card01
+    clip: {fileID: 8300000, guid: 4db90120822e74f4985e76cac49de381, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: card02
+    clip: {fileID: 8300000, guid: 171a4c0d041bc7348956050f79fc91b1, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: card03
+    clip: {fileID: 8300000, guid: ec9ecc5fab0d37241b735d674520b4c2, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: accept01
+    clip: {fileID: 8300000, guid: 6073fdcf8cd59044195fe608a0296223, type: 3}
     volume: 0.5
     pitch: 1
     loop: 0
