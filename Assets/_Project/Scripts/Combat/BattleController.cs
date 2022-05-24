@@ -67,6 +67,7 @@ public class BattleController : MonoBehaviour
     private void Start()
     {
         OnStartBattle?.Invoke();
+        AudioManager.instance.Play("battle");
     }
 
     private void OnDisable()
@@ -93,6 +94,8 @@ public class BattleController : MonoBehaviour
     {
         _playerDuelist.Attack(_enemyDuelist);
 
+        AudioManager.instance.PlayRandomBetweenSounds(new[] { "shot01", "shot03" });
+
         StartCoroutine(EndTurn());
     }
     
@@ -100,20 +103,26 @@ public class BattleController : MonoBehaviour
     {
         _playerDuelist.Defend();
 
+        AudioManager.instance.Play("shield01");
+
         StartCoroutine(EndTurn());
     }
 
     private void EnemyAttack()
     {
         _enemyDuelist.Attack(_playerDuelist);
-        
+
+        AudioManager.instance.PlayRandomBetweenSounds(new[] { "shot01", "shot03" });
+
         StartCoroutine(EndTurn());
     }
     
     private void EnemyDefend()
     {
         _enemyDuelist.Defend();
-        
+
+        AudioManager.instance.Play("shield01");
+
         StartCoroutine(EndTurn());
     }
 
@@ -171,6 +180,10 @@ public class BattleController : MonoBehaviour
         else
         {
             OnStartPlayerTurn?.Invoke();
+        }
+
+        if (!AudioManager.instance.IfSoundIsPlaying("battle")) {
+            AudioManager.instance.Play("battle");
         }
     }
 
