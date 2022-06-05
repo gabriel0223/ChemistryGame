@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sounds:
   - name: battle
-    clip: {fileID: 8300000, guid: 82c13502e05aef44fbe24161ae90ba78, type: 3}
+    clip: {fileID: 8300000, guid: 9fc8931642f834547933c657c95376f8, type: 3}
     volume: 0.5
     pitch: 1
     loop: 1
@@ -158,6 +158,42 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     mixerGroup: {fileID: -8899816711095108932, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: briefing
+    clip: {fileID: 8300000, guid: 74600da658d5eee46bdcf5ddfabf9d0d, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    mixerGroup: {fileID: 5761305569374750478, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 1
+    source: {fileID: 0}
+  - name: title
+    clip: {fileID: 8300000, guid: 30fd39d412ecad94caff7077ff0f3c2f, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    mixerGroup: {fileID: 5761305569374750478, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 1
+    source: {fileID: 0}
+  - name: victory
+    clip: {fileID: 8300000, guid: d632383dcdc7ee942aed36f1debbabe5, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 5761305569374750478, guid: 069b200953ef446418b0239061af1ebb,
+      type: 2}
+    ignoreListenerPause: 0
+    source: {fileID: 0}
+  - name: lose
+    clip: {fileID: 8300000, guid: 940866a666a35bf4cac216bd4b1877c4, type: 3}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    mixerGroup: {fileID: 5761305569374750478, guid: 069b200953ef446418b0239061af1ebb,
       type: 2}
     ignoreListenerPause: 0
     source: {fileID: 0}

@@ -130,6 +130,8 @@ public class BattleController : MonoBehaviour
     {
         _battleState = BattleState.PlayerWon;
 
+
+
         StartCoroutine(EndBattle());
     }
     
@@ -194,10 +196,12 @@ public class BattleController : MonoBehaviour
         if (_battleState == BattleState.PlayerLost)
         {
             _gameOverScreen.Initialize();
+            AudioManager.instance.Play("lose");
         }
         else if (_battleState == BattleState.PlayerWon)
         {
             _winScreen.Initialize();
+            AudioManager.instance.Play("victory");
         }
         
         AudioManager.instance.Stop("battle");

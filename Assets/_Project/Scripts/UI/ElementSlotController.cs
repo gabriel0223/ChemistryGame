@@ -24,6 +24,7 @@ public class ElementSlotController : MonoBehaviour
     {
         _elementText.SetText(elementInitials);
         _canvasGroup.DOFade(1f, 0.5f);
+        AudioManager.instance.PlayRandomBetweenSounds(new[] { "powerUp01", "powerUp02" });
     }
 
     public void DeactivateSlot()
