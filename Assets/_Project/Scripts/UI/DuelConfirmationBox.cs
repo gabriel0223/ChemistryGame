@@ -1,0 +1,55 @@
+using System.Collections;
+using System.Collections.Generic;
+using DG.Tweening;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class DuelConfirmationBox : MonoBehaviour
+{
+    [SerializeField] private Image _darkPanel;
+    [SerializeField] private Transform _confirmationBox;
+    [SerializeField] private TMP_Text _duelistName;
+    [SerializeField] private Button _playButton;
+
+    private bool _isConfirmationBoxOpen;
+    private float _panelOriginalAlpha;
+    private PlanetData _selectedPlanetData;
+
+    public void OpenBox(PlanetData planetData)
+    {
+        _selectedPlanetData = planetData;
+        _panelOriginalAlpha = _darkPanel.color.a;
+
+        _darkPanel.DOFade(0, 0);
+        _darkPanel.DOFade(_panelOriginalAlpha, 0.5f);
+        
+        _duelistName.SetText(planetData.DuelistData.Name);
+        _confirmationBox.localScale = Vector3.zero;
+        _confirmationBox.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
+        gameObject.SetActive(true);
+        
+        _playButton.onClick.AddListener(StartDuel);
+        
+        _isConfirmationBoxOpen = true;
+    }
+
+    private void StartDuel()
+    {
+        GamePersistentData.Instance.CurrentLevelData = _selectedPlanetData;
+        
+        LevelManager.Instance.GoToGameScene();
+    }
+
+    public void CloseBox()
+    {
+        if (!_isConfirmationBoxOpen)
+        {
+            return;
+        }
+
+        _confirmationBox.DOScale(Vector3.zero, 0.5f).SetEase(Ease.InBack).OnComplete(() => gameObject.SetActive(false));
+        _playButton.onClick.RemoveAllListeners();
+        _isConfirmationBoxOpen = false;
+    }
+}

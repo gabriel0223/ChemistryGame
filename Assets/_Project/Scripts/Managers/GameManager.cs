@@ -34,8 +34,8 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void GoBackToMenu()
+    public void GoBackToMap()
     {
-        SceneManager.LoadScene((int)SceneIndexes.MAIN_MENU);
+        SceneManager.LoadScene((int)SceneIndexes.MAP);
     }
 }

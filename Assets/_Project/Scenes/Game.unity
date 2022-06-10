@@ -1468,7 +1468,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1264386084}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: GoBackToMenu
+        m_MethodName: GoBackToMap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1546,7 +1546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _canvas: {fileID: 1996205358}
-  _duelistGenerator: {fileID: 9064603696677548113}
+  duelistSpawner: {fileID: 9064603696677548113}
   _winScreen: {fileID: 2129038863}
   _gameOverScreen: {fileID: 1858296364}
   _playerTurnAnimation: {fileID: 717287226162350523, guid: 2f789c22533eea44787a70007f929e4c,
@@ -7167,7 +7167,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1264386084}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: GoBackToMenu
+        m_MethodName: GoBackToMap
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9036,6 +9036,7 @@ GameObject:
   - component: {fileID: 1864832017}
   - component: {fileID: 1864832016}
   - component: {fileID: 1864832018}
+  - component: {fileID: 1864832015}
   m_Layer: 5
   m_Name: Planet
   m_TagString: Untagged
@@ -9062,6 +9063,18 @@ RectTransform:
   m_AnchoredPosition: {x: 244, y: 435}
   m_SizeDelta: {x: 349, y: 350}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1864832015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864832013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c2cdb18a3fa2944e9c955ddc0d7b43d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1864832016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9074,7 +9087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 9dfc825aed78fcd4ba02077103263b40, type: 2}
+  m_Material: {fileID: 2100000, guid: 3d5aafce23799d949b551c013579fdaf, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -11031,7 +11044,7 @@ GameObject:
   - component: {fileID: 1897968029020674132}
   - component: {fileID: 9064603696677548113}
   m_Layer: 5
-  m_Name: Duelist Generator
+  m_Name: Duelist Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

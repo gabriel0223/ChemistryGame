@@ -21,7 +21,7 @@ public class BattleController : MonoBehaviour
     public event Action OnEndTurn;
     
     [SerializeField] private Canvas _canvas;
-    [SerializeField] private DuelistGenerator _duelistGenerator;
+    [SerializeField] private DuelistSpawner duelistSpawner;
     [SerializeField] private EndBattlePanel _winScreen;
     [SerializeField] private EndBattlePanel _gameOverScreen;
     [SerializeField] private TurnInformationPanel _playerTurnAnimation;
@@ -35,12 +35,14 @@ public class BattleController : MonoBehaviour
     private DuelistController _enemyDuelist;
     private DuelistAI _enemyAI;
     private BattleState _battleState = BattleState.PlayerTurn;
+    private GamePersistentData _gamePersistentData;
 
     void Awake()
     {
+        _gamePersistentData = GamePersistentData.Instance;
         _playerController = _playerDuelist.GetComponent<PlayerController>();
 
-        _enemyDuelist = _duelistGenerator.GenerateDuelist();
+        _enemyDuelist = duelistSpawner.SpawnDuelist(_gamePersistentData.CurrentLevelData.DuelistData);
         _enemyAI = _enemyDuelist.GetComponent<DuelistAI>();
         
         _playerDuelist.SetOpponent(_enemyDuelist);

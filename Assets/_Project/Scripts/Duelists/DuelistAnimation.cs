@@ -92,13 +92,13 @@ public class DuelistAnimation : MonoBehaviour
         _nose.sprite = nose;
         _body.sprite = body;
 
-        if (Random.Range(0f, 1f) <= 0.7f)
+        if (accessory == null)
         {
-            _accessory.sprite = accessory;
+            _accessory.enabled = false;
         }
         else
         {
-            _accessory.enabled = false;
+            _accessory.sprite = accessory;
         }
     }
 

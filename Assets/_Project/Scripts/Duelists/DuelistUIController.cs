@@ -29,7 +29,7 @@ public class DuelistUIController : MonoBehaviour
 
         _shieldPosition = _retractableShield.anchoredPosition;
         _retractableShield.anchoredPosition = new Vector2(0, _shieldPosition.y);
-        _duelistVisualContainer = GetComponentInParent<DuelistGenerator>().DuelistVisualContainer;
+        _duelistVisualContainer = GetComponentInParent<DuelistSpawner>().DuelistVisualContainer;
     }
 
     private void OnEnable()

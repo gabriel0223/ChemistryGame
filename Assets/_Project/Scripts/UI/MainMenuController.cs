@@ -16,7 +16,7 @@ public class MainMenuController : MonoBehaviour
     {
         AudioManager.instance.Stop("title");
         AudioManager.instance.Play("accept01");
-        SceneManager.LoadScene((int)SceneIndexes.GAME);
+        SceneManager.LoadScene((int)SceneIndexes.MAP);
     }
 
     public void OpenCredits()
