@@ -125,6 +125,7 @@ namespace Triplano.SaveSystem
 			public int Level = 1;
 			public int ExperiencePoints = 0;
 			public int Money = 0;
+			public int Health = 0;
 			public int DuelsWon = 0;
 			public List<PlanetData> CurrentPlanets = new List<PlanetData>();
 

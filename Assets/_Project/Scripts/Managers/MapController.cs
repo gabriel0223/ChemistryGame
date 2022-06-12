@@ -82,6 +82,12 @@ public class MapController : MonoBehaviour
             .GetComponent<PlanetLevelController>();
         
         planet.SetPlanetData(planetData);
+        
+        if (planetData.LevelState == LevelState.Available)
+        {
+            planet.PlanetButton.onClick.AddListener(() => _duelConfirmationBox.OpenBox(planetData));
+        }
+        
         SaveSystem.Data.CurrentPlanets.Add(planetData);
         SaveSystem.SaveGame();
     }
@@ -92,6 +98,7 @@ public class MapController : MonoBehaviour
         SaveSystem.SaveData playerData = SaveSystem.Data;
 
         duelistData.Level = playerData.Level;
+        duelistData.Health = DuelistGeneratorSettings.GenerateDuelistHealth(duelistData.Level);
         duelistData.Name = DuelistNameGenerator.GenerateDuelistName();
 
         duelistData.FaceIndex = Random.Range(0, _duelistVisualData.DuelistFacesPrefabs.Length);

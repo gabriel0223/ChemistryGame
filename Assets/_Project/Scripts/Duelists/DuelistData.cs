@@ -8,6 +8,7 @@ public struct DuelistData
 {
     public string Name;
     public int Level;
+    public int Health;
     
     public int FaceIndex;
     public int EyesIndex;

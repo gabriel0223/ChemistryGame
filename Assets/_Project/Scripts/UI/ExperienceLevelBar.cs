@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using DG.Tweening;
 using TMPro;
 using Triplano.SaveSystem;
 using UnityEngine;
@@ -14,6 +15,7 @@ public class ExperienceLevelBar : MonoBehaviour
     
     private int _level;
     private int _experiencePoints;
+    private const float BarAnimationDuration = 3f;
 
     private void Start()
     {
@@ -34,5 +36,12 @@ public class ExperienceLevelBar : MonoBehaviour
     {
         _levelNumberText.SetText(_level.ToString());
         _bar.fillAmount = _experiencePoints / ExperienceLevelData.GetMaxXpInLevel(_level);
+    }
+
+    public void AnimateBar(float newExperiencePoints)
+    {
+        float newFillAmount = (_experiencePoints + newExperiencePoints) / ExperienceLevelData.GetMaxXpInLevel(_level);
+        
+        _bar.DOFillAmount(newFillAmount, BarAnimationDuration);
     }
 }

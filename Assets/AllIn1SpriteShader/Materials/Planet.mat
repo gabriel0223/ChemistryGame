@@ -44,7 +44,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GlowTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 7eef1b66a64daee46b87f6f979353425, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -80,7 +80,7 @@ Material:
     - _BlurIntensity: 10
     - _Brightness: 0
     - _ChromAberrAlpha: 0.4
-    - _ChromAberrAmount: 1
+    - _ChromAberrAmount: 0.348
     - _ClipUvDown: 0
     - _ClipUvLeft: 0
     - _ClipUvRight: 0
@@ -109,13 +109,13 @@ Material:
     - _FishEyeUvAmount: 0.35
     - _FlickerAlpha: 0
     - _FlickerFreq: 0.2
-    - _FlickerPercent: 0.05
+    - _FlickerPercent: 0.012
     - _GhostBlend: 1
     - _GhostColorBoost: 1
     - _GhostTransparency: 0
-    - _GlitchAmount: 3
+    - _GlitchAmount: 4
     - _GlitchSize: 1
-    - _Glow: 10
+    - _Glow: 2.5
     - _GlowGlobal: 1
     - _GradBlend: 1
     - _GradBoostX: 1.2

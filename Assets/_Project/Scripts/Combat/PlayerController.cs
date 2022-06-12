@@ -23,6 +23,16 @@ public class PlayerController : MonoBehaviour
         _shield = GetComponent<ShieldController>();
     }
 
+    private void Start()
+    {
+        Initialize();
+    }
+
+    private void Initialize()
+    {
+        _duelistController.Initialize("Player", GamePersistentData.Instance.PlayerHealth);
+    }
+
     public void Attack()
     {
         if (!_isPlayerTurn || _weapon.Power == 0)

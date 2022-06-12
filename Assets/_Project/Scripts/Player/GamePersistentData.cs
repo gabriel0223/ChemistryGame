@@ -9,10 +9,11 @@ public class GamePersistentData : MonoBehaviour
 {
     public static GamePersistentData Instance;
     
-    [SerializeField] private int _level;
-    [SerializeField] private int _experiencePoints;
-    [SerializeField] private int _money;
-
+    public int PlayerLevel;
+    public int PlayerExperiencePoints;
+    public int PlayerMoney;
+    public int PlayerHealth;
+    
     public PlanetData CurrentLevelData;
 
     private void Awake()
@@ -35,17 +36,42 @@ public class GamePersistentData : MonoBehaviour
         LoadPlayerData();
     }
 
-    private void SavePlayerData()
+    public void SavePlayerData()
     {
-        SaveSystem.Data.Level = _level;
-        SaveSystem.Data.ExperiencePoints = _experiencePoints;
-        SaveSystem.Data.Money = _money;
+        SaveSystem.Data.Level = PlayerLevel;
+        SaveSystem.Data.ExperiencePoints = PlayerExperiencePoints;
+        SaveSystem.Data.Health = PlayerHealth;
+        SaveSystem.Data.Money = PlayerMoney;
+        
         SaveSystem.SaveGame();
         SaveSystem.LoadGame();
+    }
+
+    public void AddExperiencePoints(int xp)
+    {
+        PlayerExperiencePoints += xp;
+    }
+
+    public void AddMoney(int money)
+    {
+        PlayerMoney += money;
     }
 
     private void LoadPlayerData()
     {
         SaveSystem.LoadGame();
+
+        SaveSystem.SaveData playerData = SaveSystem.Data;
+
+        PlayerLevel = playerData.Level;
+        PlayerExperiencePoints = playerData.ExperiencePoints;
+        PlayerMoney = playerData.Money;
+        PlayerHealth = PlayerProgressionSettings.GeneratePlayerHealthByLevel(PlayerLevel);
+    }
+
+    [ContextMenu("Delete Save Files")]
+    public void DeleteSaveFiles()
+    {
+        SaveSystem.ClearSavedData();
     }
 }

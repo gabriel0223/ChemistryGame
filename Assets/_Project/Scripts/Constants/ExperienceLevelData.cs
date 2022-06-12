@@ -29,10 +29,4 @@ public static class ExperienceLevelData
 
         return LevelData[level];
     }
-    
-    // public static Dictionary<int, int> LevelData = new Dictionary<int, int>()
-    // {
-    //     { 1, 100 },
-    //     { 2, 200 }
-    // };
 }

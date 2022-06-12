@@ -22,7 +22,7 @@ public class EndBattlePanel : MonoBehaviour
         _endBattleWindow.DOAnchorPosY(230, 1f);
     }
 
-    public void Initialize()
+    public virtual void Initialize()
     {
         gameObject.SetActive(true);
     }
