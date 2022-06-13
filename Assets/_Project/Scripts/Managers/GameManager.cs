@@ -9,19 +9,21 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private ElementsSheet _elementsSheet;
     [SerializeField] private CardManager _cardManager;
-    [SerializeField] private int[] _atomicNumbersUsedInThisMatch;
 
+    private GamePersistentData _gamePersistentData;
     private List<Element> _elementsUsedInThisMatch = new List<Element>();
 
     private void Start()
     {
+        _gamePersistentData = GamePersistentData.Instance;
+
         GenerateMatchElements();
         _cardManager.GenerateHand(_elementsUsedInThisMatch.ToArray());
     }
 
     private void GenerateMatchElements()
     {
-        foreach (var atomicNumber in _atomicNumbersUsedInThisMatch)
+        foreach (var atomicNumber in _gamePersistentData.CardsInPossession)
         {
             Element newElement = new Element(_elementsSheet.dataArray[atomicNumber - 1]);
 

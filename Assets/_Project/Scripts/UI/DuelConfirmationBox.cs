@@ -9,6 +9,7 @@ public class DuelConfirmationBox : MonoBehaviour
 {
     [SerializeField] private Image _darkPanel;
     [SerializeField] private Transform _confirmationBox;
+    [SerializeField] private TMP_Text _duelTitleText;
     [SerializeField] private TMP_Text _duelistName;
     [SerializeField] private Button _playButton;
 
@@ -24,6 +25,7 @@ public class DuelConfirmationBox : MonoBehaviour
         _darkPanel.DOFade(OpenPanelAlpha, 0.5f);
         
         _duelistName.SetText(planetData.DuelistData.Name);
+        _duelTitleText.SetText($"Duelo {planetData.PlanetNumber}");
         _confirmationBox.localScale = Vector3.zero;
         _confirmationBox.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
         gameObject.SetActive(true);

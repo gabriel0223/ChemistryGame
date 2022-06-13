@@ -7,7 +7,7 @@ public static class ExperienceLevelData
     //FORMULA: baseXP * (level ^ exponent)
     
     private const float BaseXp = 100f;
-    private const float Exponent = 1.5f;
+    private const float Exponent = 1.25f;
     private const int NumberOfLevels = 50;
 
     public static readonly Dictionary<int, int> LevelData = new Dictionary<int, int>();
@@ -22,6 +22,11 @@ public static class ExperienceLevelData
 
     public static float GetMaxXpInLevel(int level)
     {
+        if (level == 0)
+        {
+            return 0;
+        }
+        
         if (LevelData.Count == 0)
         {
             InitializeDictionary();

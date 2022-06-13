@@ -31,6 +31,7 @@ public class PlanetLevelController : MonoBehaviour
 
         _planetImage.material = planetMaterial;
         planetMaterial.SetFloat("_HsvShift", _planetData.PlanetColor);
+        planetMaterial.SetFloat("_HsvSaturation", _planetData.PlanetSaturation);
         _planetNumberText.SetText("Duelo " + _planetData.PlanetNumber);
 
         switch (_planetData.LevelState)
@@ -41,6 +42,7 @@ public class PlanetLevelController : MonoBehaviour
             
             case LevelState.Available:
                 SetIconActive(_shipOrbit);
+                _planetNumberText.transform.localPosition = Vector3.zero;
                 break;
             
             case LevelState.Done:

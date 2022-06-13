@@ -8,6 +8,7 @@ public struct PlanetData
 {
     public int PlanetNumber;
     public int PlanetColor;
+    public float PlanetSaturation;
     public LevelState LevelState;
     public DuelistData DuelistData;
 }

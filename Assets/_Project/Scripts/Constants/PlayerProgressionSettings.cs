@@ -4,6 +4,8 @@ using UnityEngine;
 
 public static class PlayerProgressionSettings
 {
+    public const int CardsWonEachLevelUp = 3;
+    
     private const float InitialHealth = 90f;
     private const float BaseHealth = 10f;
     private const float HealthExponent = 1.5f;

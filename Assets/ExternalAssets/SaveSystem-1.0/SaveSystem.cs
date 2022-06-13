@@ -129,6 +129,11 @@ namespace Triplano.SaveSystem
 			public int DuelsWon = 0;
 			public List<PlanetData> CurrentPlanets = new List<PlanetData>();
 
+			public List<int> CardsInPossession = new List<int>
+			{
+				1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
+			};
+
 			[Header("Volume Settings")]
 			public float masterVolume;
 			public float soundtrackVolume;

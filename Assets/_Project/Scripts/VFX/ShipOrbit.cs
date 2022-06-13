@@ -7,12 +7,13 @@ using UnityEngine;
 public class ShipOrbit : MonoBehaviour
 {
     [SerializeField] private float _rotationSpeed;
-    
-    private void Start()
+
+    private float _currentRotation;
+
+    private void Update()
     {
-        RectTransform rectTransform = GetComponent<RectTransform>();
-        rectTransform.DORotate(new Vector3(rectTransform.rotation.eulerAngles.x,
-            rectTransform.rotation.eulerAngles.y, 180), 1 / _rotationSpeed)
-            .SetLoops(-1, LoopType.Incremental).SetEase(Ease.Linear);
+        _currentRotation += _rotationSpeed * Time.deltaTime;
+        
+        transform.localRotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y, _currentRotation);
     }
 }

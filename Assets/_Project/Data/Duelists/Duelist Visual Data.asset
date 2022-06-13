@@ -114,7 +114,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 41e446b3d0b147e42b819e3a7e547412, type: 3}
   - {fileID: 21300000, guid: b89fc22e0d0bacb4ebae198add99a4c6, type: 3}
   Accessories:
-  - {fileID: 21300000, guid: 5fbf7661c40d79a44b00bdb760d8dfd4, type: 3}
   - {fileID: 21300000, guid: abf59ba8307c8b2459e4a6737f308224, type: 3}
   - {fileID: 21300000, guid: df1526483ec767e4bb6299a08da8510b, type: 3}
   - {fileID: 21300000, guid: 8f067fe0544a7454886e9e67b77474d0, type: 3}

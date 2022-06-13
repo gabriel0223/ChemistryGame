@@ -105,4 +105,10 @@ public class DuelistController : MonoBehaviour
     {
         DuelistOpponent = opponent;
     }
+
+    [ContextMenu("Debug_SetNewHealthToOne")]
+    public void SetHealthToOne()
+    {
+        _health = 1;
+    }
 }

@@ -19,11 +19,16 @@ public class EndBattlePanel : MonoBehaviour
         _panel.color = new Color(Color.black.r, Color.black.g, Color.black.b, 0);
         
         _panel.DOFade(_targetAlpha, 1f);
-        _endBattleWindow.DOAnchorPosY(230, 1f);
+        _endBattleWindow.DOAnchorPosY(230, 1f).OnComplete(HandlePosYTweenEnd);
     }
 
     public virtual void Initialize()
     {
         gameObject.SetActive(true);
+    }
+
+    public virtual void HandlePosYTweenEnd()
+    {
+        
     }
 }

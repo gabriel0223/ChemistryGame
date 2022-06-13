@@ -12,12 +12,24 @@ public class Equipment : MonoBehaviour
     [SerializeField] protected int _durability;
 
     private int _basePower;
+    private bool _hasInitialized;
 
     public int Power => _power;
 
     private void Start()
     {
+        if (_hasInitialized)
+        {
+            return;
+        }
+        
         _basePower = _power;
+    }
+
+    public void Initialize(int power)
+    {
+        _power = power;
+        _hasInitialized = true;
     }
 
     public int GetPower()
