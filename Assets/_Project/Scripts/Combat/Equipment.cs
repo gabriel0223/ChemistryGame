@@ -29,6 +29,7 @@ public class Equipment : MonoBehaviour
     public void Initialize(int power)
     {
         _power = power;
+        _basePower = power;
         _hasInitialized = true;
     }
 

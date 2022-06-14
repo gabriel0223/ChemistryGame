@@ -15,6 +15,8 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     [SerializeField] private TMP_Text _powerText;
     [SerializeField] private Image _powerLevelBox;
     [SerializeField] private CanvasGroup _synergyStar;
+    [SerializeField] private float _imageYPosOnSynergy;
+    [SerializeField] private TMP_Text _synergyText;
     [SerializeField] private Image _equipmentImage;
     [SerializeField] private DurabilityBar _durabilityBar;
     [SerializeField] private ElementSlotController[] _elementSlots;
@@ -31,6 +33,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     private bool _isSlotLocked;
     private bool _isSynergyActive;
     private Color _initialColor;
+    private float _initialYPos;
     private GameDifficulty _gameDifficulty = GameDifficulty.Hard;
 
     // Start is called before the first frame update
@@ -39,6 +42,7 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         UpdateEquipmentUI();
         
         _initialColor = _equipmentImage.color;
+        _initialYPos = _equipmentImage.GetComponent<RectTransform>().anchoredPosition.y;
     }
 
     private void OnEnable()
@@ -142,7 +146,11 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
         _durabilityBar.ChangeColor(synergy.Color);
         _equipmentImage.DOColor(synergy.Color, 0.5f);
+        _equipmentImage.GetComponent<RectTransform>().DOAnchorPosY(_imageYPosOnSynergy, 0.5f);
         _powerLevelBox.DOColor(synergy.Color, 0.5f);
+        _synergyText.SetText(synergy.Name);
+        _synergyText.color = synergy.Color;
+        _synergyText.DOFade(1, 0.5f);
         _synergyStar.DOFade(1, 0.5f);
 
         _isSynergyActive = true;
@@ -162,7 +170,9 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
         _durabilityBar.ChangeColor(_initialColor);
         _equipmentImage.DOColor(_initialColor, 0.5f);
+        _equipmentImage.GetComponent<RectTransform>().DOAnchorPosY(_initialYPos, 0.5f);
         _powerLevelBox.DOColor(_initialColor, 0.5f);
+        _synergyText.DOFade(0, 0.5f);
         _synergyStar.DOFade(0, 0.5f);
     }
 

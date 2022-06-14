@@ -11,9 +11,6 @@ public class DuelistAI : MonoBehaviour
     public event Action OnEnemyDefend;
     public event Action<KeyValuePair<ActionType, int>> OnMovePlanned;
 
-    [SerializeField] private float _maxPowerToAdd;
-    [SerializeField] private float _minPowerToAdd;
-
     private DuelistData _duelistData;
     private DuelistController _duelistController;
     private WeaponController _weapon;
@@ -26,13 +23,11 @@ public class DuelistAI : MonoBehaviour
     private void Awake()
     {
         _duelistData = GamePersistentData.Instance.CurrentLevelData.DuelistData;
+        
         _duelistController = GetComponent<DuelistController>();
         _weapon = GetComponent<WeaponController>();
         _shield = GetComponent<ShieldController>();
-    }
-
-    private void Start()
-    {
+        
         _weapon.Initialize(_duelistData.Power);
         _shield.Initialize(_duelistData.Power);
     }
@@ -46,7 +41,7 @@ public class DuelistAI : MonoBehaviour
 
         ActionType move = odds <= 0.8f ? ActionType.Attack : ActionType.Defend;
         int movePower = move == ActionType.Attack ? _duelistController.Weapon.Power : _duelistController.Shield.Power;
-        
+
         _nextUpgrade = new KeyValuePair<ActionType, int>(upgradeType, powerToBeAdded);
 
         if (_nextUpgrade.Key == move)

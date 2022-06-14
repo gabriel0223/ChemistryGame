@@ -9,6 +9,8 @@ public class PlayerUIController : MonoBehaviour
     [SerializeField] private DuelistController _duelistController;
     [SerializeField] private Image _playerMachine;
     [SerializeField] private Image _shieldHologram;
+    [SerializeField] private float _shakeDuration;
+    [SerializeField] private float _shakeStrength;
     [SerializeField] private Image _damagePanel;
     
     private void OnEnable()
@@ -16,6 +18,7 @@ public class PlayerUIController : MonoBehaviour
         _duelistController.OnEnableDefense += EnableShield;
         _duelistController.OnDisableDefense += DisableShield;
 
+        _duelistController.OnShieldTakeDamage += HandleShieldTakeDamage;
         _duelistController.OnTakeDamage += PlayTakeDamageAnimation;
     }
 
@@ -23,7 +26,8 @@ public class PlayerUIController : MonoBehaviour
     {
         _duelistController.OnEnableDefense -= EnableShield;
         _duelistController.OnDisableDefense -= DisableShield;
-        
+
+        _duelistController.OnShieldTakeDamage -= HandleShieldTakeDamage;
         _duelistController.OnTakeDamage -= PlayTakeDamageAnimation;
     }
 
@@ -51,5 +55,17 @@ public class PlayerUIController : MonoBehaviour
         damageSequence.AppendInterval(0.2f);
         damageSequence.Append(_damagePanel.DOColor(new Color(_damagePanel.color.r, _damagePanel.color.g, _damagePanel.color.b, 0f), 0.25f));
         damageSequence.Join(DOVirtual.Float(0.2f, 0, 0.5f, value => mat.SetFloat("_ChromAberrAmount", value)));
+    }
+    
+    private void HandleShieldTakeDamage(bool shieldAbsorbedAllDamage)
+    {
+        if (shieldAbsorbedAllDamage)
+        {
+            _shieldHologram.transform.DOShakePosition(_shakeDuration, _shakeStrength);
+        }
+        else
+        {
+            DisableShield();   
+        }
     }
 }

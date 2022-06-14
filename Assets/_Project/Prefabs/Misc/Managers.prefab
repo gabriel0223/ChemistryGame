@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8277548054856913169}
   - component: {fileID: 1264386084}
   - component: {fileID: 353917584}
+  - component: {fileID: 595751579}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -46,7 +47,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _elementsSheet: {fileID: 11400000, guid: abb57ee260f6cda41821be7b00948b1f, type: 2}
   _cardManager: {fileID: 353917584}
-  _atomicNumbersUsedInThisMatch: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c000000
 --- !u!114 &353917584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,7 +67,49 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   _easyCardColors:
+  - {fileID: 21300000, guid: 6531c4e3943c93e438f676dc77c31cea, type: 3}
+  - {fileID: 21300000, guid: 88910963ca5152a4c814e389e838bb1c, type: 3}
+  - {fileID: 21300000, guid: 78e949f2ccfe60f438a95f22e339b2fb, type: 3}
+  - {fileID: 21300000, guid: c1948b9817466034db8ed309b75b64a4, type: 3}
+  - {fileID: 21300000, guid: 1ee5422a65522fe41a4bca220eff5e03, type: 3}
   - {fileID: 21300000, guid: c0d7edea224144a4cb6833d6dcce5776, type: 3}
-  _hardCardColors: []
+  - {fileID: 21300000, guid: 6255ecd9fb595d84188f059a95840b8d, type: 3}
+  - {fileID: 21300000, guid: a860640dc0be6ce4b976397790d85cf8, type: 3}
+  - {fileID: 21300000, guid: d7a050c04d88e3848a5868ad3ac6b0a0, type: 3}
+  - {fileID: 21300000, guid: 3ca1b28188090ba4cb8a3c89ba273c68, type: 3}
+  _hardCardColors:
+  - {fileID: 21300000, guid: b8aac560421bfe7449240cb46031489d, type: 3}
+  - {fileID: 21300000, guid: bb5404141e95aca4ea79177c41c23b65, type: 3}
+  - {fileID: 21300000, guid: 5d92045c05f6ed746836b0f13af4a976, type: 3}
+  - {fileID: 21300000, guid: b3073e82716701640b9a889ad12fe393, type: 3}
+  - {fileID: 21300000, guid: a85d134a7300b9a43a0b6e6453ef77e3, type: 3}
+  - {fileID: 21300000, guid: 2f97113568a462345a5433ad376e5f7e, type: 3}
+  - {fileID: 21300000, guid: 52e81f40673621743bf8f5ced390ece2, type: 3}
+  - {fileID: 21300000, guid: 7e6dc2bea4a142742bb6ad09caafe2c3, type: 3}
+  - {fileID: 21300000, guid: 3041198e7e30c9944af3ce355a1de93b, type: 3}
+  - {fileID: 21300000, guid: 7d66f2ac67987924e8a634090753646a, type: 3}
   _cardGenerationPosition: {fileID: 0}
   _cardDiscardPosition: {fileID: 0}
+  _gameDifficulty: 1
+--- !u!114 &595751579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8277548054856913171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04850c2e78a855b4cbde6419a30e3de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ametalColor: {r: 0.43151137, g: 0.6226415, b: 0.20852618, a: 1}
+  _gasesNobresColor: {r: 0.7264151, g: 0.09251513, b: 0.19061893, a: 1}
+  _metaisAlcalinosColor: {r: 0.14159843, g: 0.6981132, b: 0.56274474, a: 1}
+  _metaisAlcalinosTerrososColor: {r: 0.21115166, g: 0.48262268, b: 0.6886792, a: 1}
+  _semimetaisColor: {r: 0.22659309, g: 0.67325234, b: 0.7169812, a: 1}
+  _halogeniosColor: {r: 0.6981132, g: 0.45213106, b: 0.18770024, a: 1}
+  _metaisDeTransicaoColor: {r: 0.42040193, g: 0.26593092, b: 0.6792453, a: 0}
+  _lantanideosColor: {r: 0.7075472, g: 0.13683695, b: 0.4259467, a: 0}
+  _actinideosColor: {r: 0.6698113, g: 0.3443841, b: 0.3443841, a: 0}
+  _outrosMetaisColor: {r: 0.7735849, g: 0.6422816, b: 0.12771447, a: 0}

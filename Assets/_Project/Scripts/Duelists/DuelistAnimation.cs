@@ -41,6 +41,7 @@ public class DuelistAnimation : MonoBehaviour
 
     private void OnDisable()
     {
+        _duelistController.OnShieldTakeDamage -= HandleShieldTakeDamage;
         _duelistController.OnTakeDamage -= ReactToDamageTaken;
         _duelistController.OnDie -= ReactToLosing;
         _duelistController.OnEnableDefense -= EnableShield;
@@ -58,6 +59,7 @@ public class DuelistAnimation : MonoBehaviour
         
         StartCoroutine(BlinkingCoroutine());
         
+        _duelistController.OnShieldTakeDamage += HandleShieldTakeDamage;
         _duelistController.OnTakeDamage += ReactToDamageTaken;
         _duelistController.OnDie += ReactToLosing;
         _duelistController.OnEnableDefense += EnableShield;
@@ -133,6 +135,18 @@ public class DuelistAnimation : MonoBehaviour
             DuelistMood.Angry => _duelistMouth.AngryMouth,
             _ => throw new ArgumentOutOfRangeException(nameof(_duelistMouth), _duelistMouth, null)
         };
+    }
+    
+    private void HandleShieldTakeDamage(bool shieldAbsorbedAllDamage)
+    {
+        if (shieldAbsorbedAllDamage)
+        {
+            _holographicShield.transform.DOShakePosition(_shakeDuration, _shakeStrength);
+        }
+        else
+        {
+            DisableShield();   
+        }
     }
 
     private void ReactToDamageTaken()

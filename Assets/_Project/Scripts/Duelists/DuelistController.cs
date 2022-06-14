@@ -8,6 +8,7 @@ public class DuelistController : MonoBehaviour
 {
     public event Action<int> OnHealthChange;
     public event Action OnTakeDamage;
+    public event Action<bool> OnShieldTakeDamage;
     public event Action OnEnableDefense;
     public event Action OnDisableDefense;
     public event Action OnDie;
@@ -82,6 +83,8 @@ public class DuelistController : MonoBehaviour
         {
             damage -= Shield.GetPower();
             Shield.DecreaseDurability();
+
+            OnShieldTakeDamage?.Invoke(damage <= 0);
         }
 
         if (damage <= 0)
