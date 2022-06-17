@@ -30,8 +30,8 @@ public class DuelistSpawner : MonoBehaviour
         float hue = duelistData.HueColor;
 
         _duelistGenerated = Instantiate(_duelistPrefab, transform).GetComponent<DuelistController>();
-        _duelistGenerated.SetDuelistName(duelistData.Name);
-        
+        _duelistGenerated.Initialize(duelistData.Name, duelistData.Health);
+
         DuelistAnimation duelistAnimation = Instantiate(face, _duelistVisualContainer).GetComponent<DuelistAnimation>();
         duelistAnimation.SetVisualFeatures(eyes, nose, mouth, body, accessory);
         duelistAnimation.SetNewHue(hue);

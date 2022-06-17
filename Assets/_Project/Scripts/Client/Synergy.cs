@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Synergy
 {
+    public string Name;
     public Color Color;
     public float Multiplier;
 
-    public Synergy(Color color, float multiplier)
+    public Synergy(string name, Color color, float multiplier)
     {
+        Name = name;
         Color = color;
         Multiplier = multiplier;
     }

@@ -4,14 +4,18 @@ using TMPro;
 using Triplano.SaveSystem;
 using UnityEngine;
 
-public class MapMenuController : MonoBehaviour
+public class MapUIController : MonoBehaviour
 {
     [SerializeField] private TMP_Text _moneyText;
+
+    private GamePersistentData _gamePersistentData;
     
     // Start is called before the first frame update
     void Start()
     {
-        _moneyText.SetText(SaveSystem.Data.Money.ToString());
+        _gamePersistentData = GamePersistentData.Instance;
+        
+        _moneyText.SetText(_gamePersistentData.PlayerMoney.ToString());
     }
 
     // Update is called once per frame

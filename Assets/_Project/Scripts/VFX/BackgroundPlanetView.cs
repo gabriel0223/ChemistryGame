@@ -17,5 +17,6 @@ public class BackgroundPlanetView : MonoBehaviour
         Material planetMaterial = Instantiate(_image.material);
         _image.material = planetMaterial;
         planetMaterial.SetFloat("_HsvShift", _gamePersistentData.CurrentLevelData.PlanetColor);
+        planetMaterial.SetFloat("_HsvSaturation", _gamePersistentData.CurrentLevelData.PlanetSaturation);
     }
 }
