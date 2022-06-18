@@ -76,6 +76,7 @@ public static class DuelistNameGenerator
         "Marombeiro",
         "Galã",
         "Cheiroso",
+        "Irresistível",
     };
 
     private static readonly string[] Names =
@@ -135,6 +136,8 @@ public static class DuelistNameGenerator
         "Douglas",
         "Alex",
         "Wellinton",
+        "Reginaldo",
+        "Arnaldo",
     };
 
     public static string GenerateDuelistName()
