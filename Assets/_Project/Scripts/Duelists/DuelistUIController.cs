@@ -19,6 +19,7 @@ public class DuelistUIController : MonoBehaviour
     private DuelistAI _duelistAI;
     private ShieldController _shieldController;
     private RectTransform _duelistVisualContainer;
+    private RectTransform _actionBalloonsContainer;
     private Vector2 _shieldPosition;
 
     private void Awake()
@@ -30,6 +31,7 @@ public class DuelistUIController : MonoBehaviour
         _shieldPosition = _retractableShield.anchoredPosition;
         _retractableShield.anchoredPosition = new Vector2(0, _shieldPosition.y);
         _duelistVisualContainer = GetComponentInParent<DuelistSpawner>().DuelistVisualContainer;
+        _actionBalloonsContainer = GetComponentInParent<DuelistSpawner>().ActionBalloonsContainer;
     }
 
     private void OnEnable()
@@ -67,14 +69,14 @@ public class DuelistUIController : MonoBehaviour
     {
         if (plannedMovement.Key == ActionType.Attack)
         {
-            DuelistBalloon balloon = Instantiate(_attackBalloon, _duelistVisualContainer).GetComponent<DuelistBalloon>();
+            DuelistBalloon balloon = Instantiate(_attackBalloon, _actionBalloonsContainer).GetComponent<DuelistBalloon>();
             balloon.DisplayMovementInfo(plannedMovement.Value);
             _duelistAI.OnEnemyAttack += balloon.HideMovementInfo;
             _duelistAI.OnEnemyDefend += balloon.HideMovementInfo;
         }
         else
         {
-            DuelistBalloon balloon = Instantiate(_defenseBalloon, _duelistVisualContainer).GetComponent<DuelistBalloon>();
+            DuelistBalloon balloon = Instantiate(_defenseBalloon, _actionBalloonsContainer).GetComponent<DuelistBalloon>();
             balloon.DisplayMovementInfo(plannedMovement.Value);
             _duelistAI.OnEnemyAttack += balloon.HideMovementInfo;
             _duelistAI.OnEnemyDefend += balloon.HideMovementInfo;
@@ -84,7 +86,7 @@ public class DuelistUIController : MonoBehaviour
     private void SpawnImpactSpeechBubble()
     {
         Vector2 randomPosition = new Vector2(Random.Range(-150, 150), Random.Range(-100, 100));
-        RectTransform speechBubble = Instantiate(_impactSpeechBubbles[Random.Range(0, _impactSpeechBubbles.Length)], _duelistVisualContainer).GetComponent<RectTransform>();
+        RectTransform speechBubble = Instantiate(_impactSpeechBubbles[Random.Range(0, _impactSpeechBubbles.Length)], _actionBalloonsContainer).GetComponent<RectTransform>();
         speechBubble.anchoredPosition = randomPosition;
     }
 }

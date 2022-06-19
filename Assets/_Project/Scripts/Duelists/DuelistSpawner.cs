@@ -5,6 +5,7 @@ using Random = UnityEngine.Random;
 public class DuelistSpawner : MonoBehaviour
 {
     [SerializeField] private RectTransform _duelistVisualContainer;
+    [SerializeField] private RectTransform _actionBalloonsContainer;
     [SerializeField] private GameObject _duelistPrefab;
     [SerializeField] private GameObject[] _duelistFacesPrefabs;
     [SerializeField] private DuelistEyes[] _duelistEyes;
@@ -16,6 +17,7 @@ public class DuelistSpawner : MonoBehaviour
     private DuelistController _duelistGenerated;
 
     public RectTransform DuelistVisualContainer => _duelistVisualContainer;
+    public RectTransform ActionBalloonsContainer => _actionBalloonsContainer;
 
     public DuelistController SpawnDuelist(DuelistData duelistData)
     {

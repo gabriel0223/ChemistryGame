@@ -17,10 +17,11 @@ public class DuelistAI : MonoBehaviour
     private ShieldController _shield;
     private KeyValuePair<ActionType, int> _nextMove;
     private KeyValuePair<ActionType, int> _nextUpgrade;
+    private bool _hasInitialized;
     
     private const float MakeMoveDelay = 1f;
 
-    private void Awake()
+    private void Initialize()
     {
         _duelistData = GamePersistentData.Instance.CurrentLevelData.DuelistData;
         
@@ -30,10 +31,17 @@ public class DuelistAI : MonoBehaviour
         
         _weapon.Initialize(_duelistData.Power);
         _shield.Initialize(_duelistData.Power);
+        
+        _hasInitialized = true;
     }
 
     public void PlanMove()
     {
+        if (!_hasInitialized)
+        {
+            Initialize();
+        }
+        
         float odds = Random.Range(0f, 1f);
 
         ActionType upgradeType = odds <= 0.75f ? ActionType.Attack : ActionType.Defend;

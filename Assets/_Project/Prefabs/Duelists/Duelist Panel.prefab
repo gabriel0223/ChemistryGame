@@ -85,7 +85,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158713253}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 0.03
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -236,8 +236,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.094, y: 0}
-  m_SizeDelta: {x: -2.188, y: 0}
+  m_AnchoredPosition: {x: -1.3702, y: 0}
+  m_SizeDelta: {x: -6.0551, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1764691917
 CanvasRenderer:
@@ -295,10 +295,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
+  m_fontSize: 27.7
   m_fontSizeBase: 25
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -402,7 +402,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _lifeBar: {fileID: 4925642545187343534}
   _duelistName: {fileID: 4438159023995760457}
-  _health: 50
 --- !u!114 &7919382331913430089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,8 +442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0094b6c6b10edb046855cf64e8434827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxPowerToAdd: 1
-  _minPowerToAdd: 5
 --- !u!114 &443205442
 MonoBehaviour:
   m_ObjectHideFlags: 0

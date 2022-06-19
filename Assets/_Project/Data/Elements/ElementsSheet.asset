@@ -118,7 +118,7 @@ MonoBehaviour:
     radioactive: 0
     group: 8
   - abbreviation: Ar
-    elementname: "\xC1rgonio"
+    elementname: "Arg\xF4nio"
     atomicnumber: 18
     electronegativity: 0
     radioactive: 0

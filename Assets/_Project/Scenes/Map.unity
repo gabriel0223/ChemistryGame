@@ -2359,6 +2359,7 @@ MonoBehaviour:
   PlayerMoney: 0
   PlayerHealth: 0
   CardsInPossession: 
+  IsPlayingFirstTime: 0
   CurrentLevelData:
     PlanetNumber: 0
     PlanetColor: 0
@@ -3201,6 +3202,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moneyText: {fileID: 1939313652}
+--- !u!1 &926223769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 926223771}
+  - component: {fileID: 926223770}
+  m_Layer: 0
+  m_Name: Tutorial Initializer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &926223770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926223769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01cc259ee0381394393c35f6a760b887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _customDuelist: {fileID: 11400000, guid: ea6d7cd77e82008489bcd0928d73338f, type: 2}
+--- !u!4 &926223771
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926223769}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 165.11353, y: 237.17412, z: -805.5061}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &938296939
 GameObject:
   m_ObjectHideFlags: 0

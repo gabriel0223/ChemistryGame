@@ -16,6 +16,7 @@ public class GamePersistentData : MonoBehaviour
     public int PlayerMoney;
     public int PlayerHealth;
     public List<int> CardsInPossession;
+    public bool IsPlayingFirstTime = false;
 
     public PlanetData CurrentLevelData;
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
@@ -16,6 +17,12 @@ public class DuelConfirmationBox : MonoBehaviour
     private bool _isConfirmationBoxOpen;
     private const float OpenPanelAlpha = 0.4f;
     private PlanetData _selectedPlanetData;
+    private GamePersistentData _gamePersistentData;
+
+    private void Start()
+    {
+        _gamePersistentData = GamePersistentData.Instance;
+    }
 
     public void OpenBox(PlanetData planetData)
     {
@@ -37,8 +44,11 @@ public class DuelConfirmationBox : MonoBehaviour
 
     private void StartDuel()
     {
-        GamePersistentData.Instance.CurrentLevelData = _selectedPlanetData;
-        
+        if (!_gamePersistentData.IsPlayingFirstTime)
+        {
+            _gamePersistentData.CurrentLevelData = _selectedPlanetData;
+        }
+
         LevelManager.Instance.GoToGameScene();
     }
 
