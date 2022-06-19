@@ -24,6 +24,7 @@ public class MapController : MonoBehaviour
     private void Start()
     {
        InitializeMap();
+       AudioManager.instance.Play("briefing");
     }
 
     private void InitializeMap()
