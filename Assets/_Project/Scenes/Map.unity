@@ -2359,7 +2359,7 @@ MonoBehaviour:
   PlayerMoney: 0
   PlayerHealth: 0
   CardsInPossession: 
-  IsPlayingFirstTime: 0
+  IsPlayingFirstTime: 1
   CurrentLevelData:
     PlanetNumber: 0
     PlanetColor: 0

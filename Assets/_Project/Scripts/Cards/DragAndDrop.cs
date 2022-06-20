@@ -21,6 +21,7 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     private bool _isActive = true;
     private Vector3 _targetPosition;
 
+    public bool IsActive => _isActive;
     public bool IsDragging => _isDragging;
 
     // Start is called before the first frame update
@@ -58,7 +59,7 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
     public void OnDrag(PointerEventData eventData)
     {
         Transform deck = transform.parent;
-        if (transform != deck.GetChild(deck.childCount - 1))
+        if (transform != deck.GetChild(deck.childCount - 1) || !_isActive)
         {
             return;
         }
@@ -111,5 +112,10 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndD
         
         transform.DOScale(Vector3.zero, 0.5f)
             .OnComplete(() => Destroy(gameObject));
+    }
+
+    public void SetActive(bool value)
+    {
+        _isActive = value;
     }
 }

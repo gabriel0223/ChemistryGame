@@ -10,11 +10,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8e78f87207ea6a4a9cd1e2d547ef15d, type: 3}
-  m_Name: Tutorial 01
+  m_Name: Tutorial 03
   m_EditorClassIdentifier: 
-  Sentence: "Seja bem vindo ao <wave><crawler>Chemistry Crawler!</crawler></wave>
-    Eu serei seu guia at\xE9 voc\xEA se habituar com todo o processo dos duelos."
-  HasSpeakerPointer: 1
-  Skippable: 1
-  RequiresRespawn: 0
-  CustomPosition: {x: 0, y: 0}
+  Sentence: "Aqui \xE9 onde o beb\xEA chora e a m\xE3e n\xE3o v\xEA, <shake>O DUELO!</shake>"

@@ -9,11 +9,12 @@ using UnityEngine;
 public class TextboxView : MonoBehaviour
 {
     [SerializeField] private TextAnimatorPlayer _dialogueText;
+    [SerializeField] private GameObject _speakerPointer;
 
     private RectTransform _rectTransform;
     private bool _hasInitialized;
-    private Sequence textboxAnimSequence;
-    private const float InitializationTime = 0.5f;
+    private Sequence _textboxAnimSequence;
+    private const float InitializationTime = 1f;
 
     public TextAnimatorPlayer DialogueText => _dialogueText;
     public bool HasInitialized => _hasInitialized;
@@ -25,20 +26,29 @@ public class TextboxView : MonoBehaviour
         DOVirtual.DelayedCall( InitializationTime,() => _hasInitialized = true);
     }
 
-    public void Initialize(string sentence)
+    public void Initialize(string sentence, bool hasSpeakerPointer)
     {
         _rectTransform = GetComponent<RectTransform>();
+        _speakerPointer.SetActive(hasSpeakerPointer);
 
-        textboxAnimSequence?.Kill();
-        textboxAnimSequence = DOTween.Sequence();
+        _textboxAnimSequence?.Kill();
+        _textboxAnimSequence = DOTween.Sequence();
 
         if (!_hasInitialized)
         {
-            textboxAnimSequence.AppendInterval(0.5f);
-            textboxAnimSequence.Append(_rectTransform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack));
+            _textboxAnimSequence.AppendInterval(0.5f);
+            _textboxAnimSequence.Append(_rectTransform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack));
         }
 
-        textboxAnimSequence.AppendCallback(() => _dialogueText.ShowText(sentence));
+        _textboxAnimSequence.AppendCallback(() => _dialogueText.ShowText(sentence));
+    }
+
+    public void Close()
+    {
+        _textboxAnimSequence?.Kill();
+
+        _rectTransform.DOScale(Vector3.zero, 0.5f).SetEase(Ease.InBack)
+            .OnComplete(() => Destroy(gameObject));
     }
 }
     

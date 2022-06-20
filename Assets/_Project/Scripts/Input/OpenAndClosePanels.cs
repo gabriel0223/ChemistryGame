@@ -7,6 +7,9 @@ using Vector2 = UnityEngine.Vector2;
 
 public class OpenAndClosePanels : MonoBehaviour
 {
+    public event Action OnOpenPanel;
+    public event Action OnClosePanel;
+    
     [SerializeField] private float timeToOpen;
     [SerializeField] private float timeToClose;
     [SerializeField] private CanvasGroup focusBackground;
@@ -20,12 +23,16 @@ public class OpenAndClosePanels : MonoBehaviour
     {
         transform.LeanMoveLocal(new Vector2(0, 146), timeToClose).setEaseInOutBack();
         EnableFocusBackground();
+        
+        OnOpenPanel?.Invoke();
     }
     
     public void ClosePanel()
     {
         transform.LeanMoveLocal(new Vector2(0, 2390), timeToOpen).setEaseInOutBack();
         DisableFocusBackground();
+        
+        OnClosePanel?.Invoke();
     }
 
     private void EnableFocusBackground()

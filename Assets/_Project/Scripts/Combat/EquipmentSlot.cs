@@ -203,6 +203,14 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         {
             return;
         }
+        
+        if (eventData.pointerDrag.TryGetComponent(out DragAndDrop dragAndDrop))
+        {
+            if (!dragAndDrop.IsActive)
+            {
+                return;
+            }
+        }
 
         if (_isSlotLocked || _elementsFused.Count == _maxElementsFused)
         {
@@ -221,6 +229,14 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
             return;
         }
         
+        if (eventData.pointerDrag.TryGetComponent(out DragAndDrop dragAndDrop))
+        {
+            if (!dragAndDrop.IsActive)
+            {
+                return;
+            }
+        }
+        
         DisablePreviewCardEffect();
     }
 
@@ -229,6 +245,14 @@ public class EquipmentSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (eventData.pointerDrag == null || !eventData.pointerDrag.TryGetComponent(out CardController card))
         {
             return;
+        }
+        
+        if (eventData.pointerDrag.TryGetComponent(out DragAndDrop dragAndDrop))
+        {
+            if (!dragAndDrop.IsActive)
+            {
+                return;
+            }
         }
 
         if (_isSlotLocked || _elementsFused.Count == _maxElementsFused)

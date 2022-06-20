@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private WeaponController _weapon;
     private ShieldController _shield;
     private bool _isPlayerTurn = true;
+    private bool _inputLocked;
 
     private void Awake()
     {
@@ -35,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
     public void Attack()
     {
-        if (!_isPlayerTurn || _weapon.Power == 0)
+        if (!_isPlayerTurn || _weapon.Power == 0 || _inputLocked)
         {
             return;
         }
@@ -48,7 +49,7 @@ public class PlayerController : MonoBehaviour
     
     public void Defend()
     {
-        if (!_isPlayerTurn || _shield.Power == 0)
+        if (!_isPlayerTurn || _shield.Power == 0 || _inputLocked)
         {
             return;
         }
@@ -67,5 +68,10 @@ public class PlayerController : MonoBehaviour
     private void EndPlayerTurn()
     {
         _isPlayerTurn = false;
+    }
+
+    public void SetInputLocked(bool value)
+    {
+        _inputLocked = value;
     }
 }

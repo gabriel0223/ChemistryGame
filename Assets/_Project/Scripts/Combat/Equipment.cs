@@ -7,6 +7,7 @@ public class Equipment : MonoBehaviour
 {
     public event Action<int> OnChangeDurability;
     public event Action OnEquipmentBreak;
+    public event Action OnEquipmentEnergized;
     
     [SerializeField] protected int _power;
     [SerializeField] protected int _durability;
@@ -41,6 +42,8 @@ public class Equipment : MonoBehaviour
     public void AddPower(int power)
     {
         _power += power;
+        
+        OnEquipmentEnergized?.Invoke();
     }
 
     public void MultiplyPower(float multiplier)
