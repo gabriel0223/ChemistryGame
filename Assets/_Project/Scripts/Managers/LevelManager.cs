@@ -24,6 +24,7 @@ public class LevelManager : MonoBehaviour
 
     public void GoToGameScene()
     {
+        AudioManager.instance.Stop("briefing");
         SceneManager.LoadScene((int)SceneIndexes.GAME);
     }
 }
