@@ -157,6 +157,12 @@ PrefabInstance:
       propertyPath: m_enableWordWrapping
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5502736915230520337, guid: 2f789c22533eea44787a70007f929e4c,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 68e5e2444892c874fa03646e58753a72,
+        type: 3}
     - target: {fileID: 7448233178585467857, guid: 2f789c22533eea44787a70007f929e4c,
         type: 3}
       propertyPath: m_text

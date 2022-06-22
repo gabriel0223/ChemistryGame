@@ -9614,11 +9614,14 @@ MonoBehaviour:
   _textboxPrefab: {fileID: 6551161749159256514, guid: 98f4aabfdee7b1e47a96f30d803c24fd,
     type: 3}
   _cardArea: {fileID: 512512228}
+  _battleController: {fileID: 256522936}
+  _playerController: {fileID: 488660881}
   _weaponEquipment: {fileID: 488660877}
   _shieldEquipment: {fileID: 488660880}
   _periodicTablePanel: {fileID: 190418807}
   _periodicTableZoom: {fileID: 1083935804}
   _periodicTableImage: {fileID: 1083935803}
+  _gameOverScreen: {fileID: 1858296362}
   _tutorialPages:
   - TutorialBalloon: {fileID: 11400000, guid: 6a1a31c27fcbf5a49ad45b55b52bfe02, type: 2}
     TutorialEvent:
@@ -9660,12 +9663,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: f71dcb99d1864664dbf40c66e478ca62, type: 2}
     TutorialEvent:
       m_PersistentCalls:
         m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: e233415d0daaece4f98624fc794ff877, type: 2}
     TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
       m_PersistentCalls:
         m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: 179f70bb47670434eb91e35967779da8, type: 2}
@@ -9684,12 +9696,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: fcc2c91771ffb7b4684cd14aa8d90b53, type: 2}
     TutorialEvent:
       m_PersistentCalls:
         m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: 15089e63db042244eb0f1ef87e74665c, type: 2}
     TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
       m_PersistentCalls:
         m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: 4b8c586e3c8700e49872f116347da765, type: 2}
@@ -9756,8 +9777,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: 45367fa5751c7be4d8ea78a7ddc778f9, type: 2}
     TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
       m_PersistentCalls:
         m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: ff366588949a83340bc2949b8be077ad, type: 2}
@@ -9776,8 +9803,14 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: 565e860e138b48345b917ae19cb70b6e, type: 2}
     TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
       m_PersistentCalls:
         m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: 479a5257ad71d2c49a8bedfec4767bfc, type: 2}
@@ -9808,6 +9841,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: fa5c09d1c68b1614da6db2ae8096458b, type: 2}
     TutorialEvent:
       m_PersistentCalls:
@@ -9824,6 +9860,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: 5574ac28e2747cf4ab7584a4dbc0323e, type: 2}
     TutorialEvent:
       m_PersistentCalls:
@@ -9840,16 +9879,28 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: 3b0aeff034d5fde4d9f2c9efd9cbda8b, type: 2}
     TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
       m_PersistentCalls:
         m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: c2b3493b8b6225a4fa3e68c57fc06f61, type: 2}
     TutorialEvent:
       m_PersistentCalls:
         m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: 058ce18bc1d5fcc419d727a703a8e105, type: 2}
     TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
       m_PersistentCalls:
         m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: 49742edd38d1d90459518a8d681c8322, type: 2}
@@ -9916,10 +9967,510 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
   - TutorialBalloon: {fileID: 11400000, guid: be91c3d5fc5852749aacc951326f660a, type: 2}
     TutorialEvent:
       m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: StartActionTutorial
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
         m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 09d66969b41a1764fb3f339db78afd6d, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: FocusOnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 454537098}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: FocusOnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1929021115}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 2d896310bb907704695c0772296ca59c, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 2c47d4d1195098643a6a19cee43f3df7, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: EndBalloonTutorial
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - TutorialBalloon: {fileID: 11400000, guid: f4f990d12635bf545952bdbe05ed2ecf, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: FocusOnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2020499274}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 35cfb5810523c7a49868c131ba851af5, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: FocusOnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 910171834}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: UnfocusObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2020499274}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: FocusOnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 9064603696677548112}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: IncreaseObjectSortingOrder
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 9064603696677548112}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 0873394023334cd478fb4542efca3b1f, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: UnfocusAllObjects
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: DisableFocusPanel
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 82114c06b68c9af4cb3c85b7fa20ed59, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: a7d7049d9c6ed564b8f040eb73820b4f, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 2be4a446563787f4ea846d288e6fba0d, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: cef7766fabd217c40a9144641710e984, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 61d74b89029f46f4fa42bf3eaac78409, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: FocusOnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1571113644}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: FocusOnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 163236259}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: ba7b9363553d5e34d8a34f818a17aa25, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: UnfocusObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1571113644}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: UnfocusObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 163236259}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: FocusOnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1488267813}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: FocusOnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 964437602}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: IncreaseObjectSortingOrder
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 964437602}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: FocusOnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 950740826}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: FocusOnObject
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1048528880}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: IncreaseObjectSortingOrder
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1048528880}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 9eeeb2987f12e2b4684c451594a39aad, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: f2dd0c9fa561fa34eb9dea96448c9e3f, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 84466da4c062a9647946eb09920a15c3, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: UnfocusAllObjects
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: DisableFocusPanel
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: EndDurabilityTutorial
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - TutorialBalloon: {fileID: 11400000, guid: b487540aefc25c043af64fc4a68bdf3a, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 9d6e1592ada330f4c9def531fa1a55c8, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 7b6182a66ea914b4e93457d1c15a729e, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: d4b72771698b2f6428565e9f488372f9, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 7fb6a4f1bd6bd294f9c91b82231f6d48, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 74179a9ca04e0b04884210057e584d3f, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 080b6b07c384ac64c97eda6a88834fbd, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: 746231f6d0de4b1428378df46a675086, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: EndSynergyTutorial
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - TutorialBalloon: {fileID: 11400000, guid: e3c42d1ed9981a54eb9ac2ca39345c3e, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: d93bf254fbf2ca147b7e424cc495c89f, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls: []
+  - TutorialBalloon: {fileID: 11400000, guid: e2a171bd8d3c8d144826467e6e34fdad, type: 2}
+    TutorialEvent:
+      m_PersistentCalls:
+        m_Calls: []
+    OnAllTextShowedEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1715063873}
+          m_TargetAssemblyTypeName: TutorialController, Assembly-CSharp
+          m_MethodName: EndTutorial
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!4 &1715063874
 Transform:
   m_ObjectHideFlags: 0

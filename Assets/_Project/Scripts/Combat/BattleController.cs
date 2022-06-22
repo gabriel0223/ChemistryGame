@@ -37,6 +37,8 @@ public class BattleController : MonoBehaviour
     private BattleState _battleState = BattleState.PlayerTurn;
     private GamePersistentData _gamePersistentData;
 
+    public DuelistAI Enemy => _enemyAI;
+
     void Awake()
     {
         _gamePersistentData = GamePersistentData.Instance;
@@ -131,9 +133,7 @@ public class BattleController : MonoBehaviour
     private void PlayerWinsHandler()
     {
         _battleState = BattleState.PlayerWon;
-
-
-
+        
         StartCoroutine(EndBattle());
     }
     
@@ -197,7 +197,11 @@ public class BattleController : MonoBehaviour
 
         if (_battleState == BattleState.PlayerLost)
         {
-            _gameOverScreen.Initialize();
+            if (_gameOverScreen != null)
+            {
+                _gameOverScreen.Initialize();
+            }
+            
             AudioManager.instance.Play("lose");
         }
         else if (_battleState == BattleState.PlayerWon)

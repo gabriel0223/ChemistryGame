@@ -44,10 +44,7 @@ public class DuelConfirmationBox : MonoBehaviour
 
     private void StartDuel()
     {
-        if (!_gamePersistentData.IsPlayingFirstTime)
-        {
-            _gamePersistentData.CurrentLevelData = _selectedPlanetData;
-        }
+        _gamePersistentData.CurrentLevelData = _selectedPlanetData;
 
         LevelManager.Instance.GoToGameScene();
     }

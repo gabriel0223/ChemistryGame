@@ -2,10 +2,14 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class TutorialInitializer : MonoBehaviour
 {
-    [SerializeField] private CustomDuelistDataSO _customDuelist;
+    [FormerlySerializedAs("_customDuelist")] [SerializeField] private CustomPlanetDataSO customPlanet;
+    [SerializeField] private Button _playButton;
 
     private GamePersistentData _gamePersistentData;
 
@@ -18,6 +22,13 @@ public class TutorialInitializer : MonoBehaviour
             return;
         }
         
-        _gamePersistentData.CurrentLevelData.DuelistData = _customDuelist.DuelistData;
+        _gamePersistentData.CurrentLevelData = customPlanet.PlanetData;
+        _playButton.onClick.RemoveAllListeners();
+        _playButton.onClick.AddListener(() => SceneManager.LoadScene((int)SceneIndexes.GAME));
+    }
+
+    private void OnDestroy()
+    {
+        _playButton.onClick.RemoveAllListeners();
     }
 }

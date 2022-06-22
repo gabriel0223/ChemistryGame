@@ -52,8 +52,14 @@ public class GamePersistentData : MonoBehaviour
         SaveSystem.Data.ExperiencePoints = PlayerExperiencePoints;
         SaveSystem.Data.Health = PlayerHealth;
         SaveSystem.Data.Money = PlayerMoney;
-        SaveSystem.Data.CurrentPlanets[0] = CurrentLevelData;
+
+        if (SaveSystem.Data.CurrentPlanets.Count > 0)
+        {
+            SaveSystem.Data.CurrentPlanets[0] = CurrentLevelData;
+        }
+
         SaveSystem.Data.CardsInPossession = CardsInPossession;
+        SaveSystem.Data.IsPlayingFirstTime = IsPlayingFirstTime;
         
         SaveSystem.SaveGame();
         SaveSystem.LoadGame();
@@ -95,6 +101,7 @@ public class GamePersistentData : MonoBehaviour
         PlayerMoney = playerData.Money;
         PlayerHealth = PlayerProgressionSettings.GeneratePlayerHealthByLevel(PlayerLevel);
         CardsInPossession = playerData.CardsInPossession;
+        IsPlayingFirstTime = playerData.IsPlayingFirstTime;
     }
 
     [ContextMenu("Delete Save Files")]

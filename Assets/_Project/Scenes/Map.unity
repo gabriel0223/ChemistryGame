@@ -2325,73 +2325,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714869566}
   m_CullTransparentMesh: 1
---- !u!1 &732921192
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 732921194}
-  - component: {fileID: 732921193}
-  m_Layer: 0
-  m_Name: Player Persistent Data
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &732921193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732921192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cd10c0a31876414bb9c090e84433126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerLevel: 0
-  PlayerExperiencePoints: 0
-  PlayerMoney: 0
-  PlayerHealth: 0
-  CardsInPossession: 
-  IsPlayingFirstTime: 1
-  CurrentLevelData:
-    PlanetNumber: 0
-    PlanetColor: 0
-    PlanetSaturation: 0
-    LevelState: 0
-    DuelistData:
-      Name: 
-      Level: 0
-      Health: 0
-      Power: 0
-      UpgradePowerRate: 0
-      FaceIndex: 0
-      EyesIndex: 0
-      MouthIndex: 0
-      NoseIndex: 0
-      BodyIndex: 0
-      AccessoryIndex: 0
-      HueColor: 0
---- !u!4 &732921194
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732921192}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 157.91785, y: 453.92456, z: -127.46303}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &764203666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3202,50 +3135,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moneyText: {fileID: 1939313652}
---- !u!1 &926223769
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 926223771}
-  - component: {fileID: 926223770}
-  m_Layer: 0
-  m_Name: Tutorial Initializer
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &926223770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926223769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01cc259ee0381394393c35f6a760b887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _customDuelist: {fileID: 11400000, guid: ea6d7cd77e82008489bcd0928d73338f, type: 2}
---- !u!4 &926223771
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926223769}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 165.11353, y: 237.17412, z: -805.5061}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &938296939
 GameObject:
   m_ObjectHideFlags: 0
@@ -4547,7 +4436,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1344843404
 GameObject:

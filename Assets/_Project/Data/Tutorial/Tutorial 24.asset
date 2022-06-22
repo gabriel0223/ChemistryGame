@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8e78f87207ea6a4a9cd1e2d547ef15d, type: 3}
+  m_Name: Tutorial 24
+  m_EditorClassIdentifier: 
+  Sentence: "Se voc\xEA ou o inimigo utilizar o escudo, ele servir\xE1 para <blue><slide>absorver</blue></slide>
+    o dano recebido."
+  HasSpeakerPointer: 1
+  Skippable: 1
+  RequiresRespawn: 1
+  CustomPosition: {x: 0, y: 0}

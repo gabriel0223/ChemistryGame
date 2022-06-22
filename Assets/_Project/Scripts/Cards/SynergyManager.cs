@@ -20,34 +20,34 @@ public class SynergyManager : MonoBehaviour
         switch (group)
         {
             case Group.Ametais:
-                return new Synergy("Ametais", _ametalColor, 2);
+                return new Synergy("Ametais", _ametalColor, 3f);
                 break;
             case Group.Metais_Alcalinos:
-                return new Synergy("Metais Alcalinos", _metaisAlcalinosColor, 2);
+                return new Synergy("Metais Alcalinos", _metaisAlcalinosColor, 2f);
                 break;
             case Group.Metais_Alcalinos_Terrosos:
-                return new Synergy("Metais Alcalinos Terrosos", _metaisAlcalinosTerrososColor, 2);
+                return new Synergy("Metais Alcalinos Terrosos", _metaisAlcalinosTerrososColor, 2f);
                 break;
             case Group.Metais_de_Transicao:
-                return new Synergy("Metais de Transição", _metaisDeTransicaoColor, 2);
+                return new Synergy("Metais de Transição", _metaisDeTransicaoColor, 1.25f);
                 break;
             case Group.Lantanideos:
-                return new Synergy("Metais Alcalinos", _lantanideosColor, 2);
+                return new Synergy("Metais Alcalinos", _lantanideosColor, 1.25f);
                 break;
             case Group.Actinideos:
-                return new Synergy("Actinídeos", _actinideosColor, 2);
+                return new Synergy("Actinídeos", _actinideosColor, 1.25f);
                 break;
             case Group.Semimetais:
-                return new Synergy("Semimetais", _semimetaisColor, 2);
+                return new Synergy("Semimetais", _semimetaisColor, 1.5f);
                 break;
             case Group.Outros_Metais:
-                return new Synergy("Outros Metais", _outrosMetaisColor, 2);
+                return new Synergy("Outros Metais", _outrosMetaisColor, 1.5f);
                 break;
             case Group.Halogenios:
-                return new Synergy("Halogênios", _halogeniosColor, 2);
+                return new Synergy("Halogênios", _halogeniosColor, 2f);
                 break;
             case Group.Gases_Nobres:
-                return new Synergy("Gases Nobres", _gasesNobresColor, 2);
+                return new Synergy("Gases Nobres", _gasesNobresColor, 2f);
                 break;
             default:
                 throw new ArgumentOutOfRangeException(nameof(@group), @group, null);
