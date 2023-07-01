@@ -58,7 +58,7 @@ MonoBehaviour:
     radioactive: 0
     group: 0
   - abbreviation: O
-    elementname: "Oxig\xE9nio"
+    elementname: "Oxig\xEAnio"
     atomicnumber: 8
     electronegativity: 3.5
     radioactive: 0

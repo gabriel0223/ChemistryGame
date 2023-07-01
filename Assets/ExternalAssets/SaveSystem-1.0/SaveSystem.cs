@@ -99,9 +99,6 @@ namespace Triplano.SaveSystem
 		private static SaveData SetupNewSaveFile()
 		{
 			SaveData newSaveFile = new SaveData();
-			newSaveFile.masterVolume = 1;
-			newSaveFile.soundEffectVolume = 0.8f;
-			newSaveFile.soundtrackVolume = 0.8f;
 
 			return newSaveFile;
 		}
@@ -137,9 +134,9 @@ namespace Triplano.SaveSystem
 			public bool IsPlayingFirstTime = true;
 
 			[Header("Volume Settings")]
-			public float masterVolume;
-			public float soundtrackVolume;
-			public float soundEffectVolume;
+			public bool MuteSfx;
+			public bool MuteMusic;
+			public bool VibrationDisabled;
 		}
 	}
 }

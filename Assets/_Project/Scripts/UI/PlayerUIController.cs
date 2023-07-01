@@ -44,7 +44,10 @@ public class PlayerUIController : MonoBehaviour
     private void PlayTakeDamageAnimation()
     {
         #if !UNITY_WEBGL
-        Handheld.Vibrate();
+        if (!GamePersistentData.Instance.VibrationDisabled)
+        {
+            Handheld.Vibrate();  
+        }
         #endif
 
         Material mat = _playerMachine.GetComponent<Image>().material;

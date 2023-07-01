@@ -19,6 +19,10 @@ public class GamePersistentData : MonoBehaviour
     public bool IsPlayingFirstTime = false;
 
     public PlanetData CurrentLevelData;
+    
+    public bool MuteSfx;
+    public bool MuteMusic;
+    public bool VibrationDisabled;
 
     private void Awake()
     {
@@ -60,6 +64,16 @@ public class GamePersistentData : MonoBehaviour
 
         SaveSystem.Data.CardsInPossession = CardsInPossession;
         SaveSystem.Data.IsPlayingFirstTime = IsPlayingFirstTime;
+
+        SaveSystem.SaveGame();
+        SaveSystem.LoadGame();
+    }
+
+    public void SavePlayerSettings()
+    {
+        SaveSystem.Data.MuteSfx = MuteSfx;
+        SaveSystem.Data.MuteMusic = MuteMusic;
+        SaveSystem.Data.VibrationDisabled = VibrationDisabled;
         
         SaveSystem.SaveGame();
         SaveSystem.LoadGame();
@@ -102,6 +116,10 @@ public class GamePersistentData : MonoBehaviour
         PlayerHealth = PlayerProgressionSettings.GeneratePlayerHealthByLevel(PlayerLevel);
         CardsInPossession = playerData.CardsInPossession;
         IsPlayingFirstTime = playerData.IsPlayingFirstTime;
+
+        MuteSfx = playerData.MuteSfx;
+        MuteMusic = playerData.MuteMusic;
+        VibrationDisabled = playerData.VibrationDisabled;
     }
 
     [ContextMenu("Delete Save Files")]

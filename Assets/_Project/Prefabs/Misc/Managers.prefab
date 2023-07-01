@@ -78,16 +78,16 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d7a050c04d88e3848a5868ad3ac6b0a0, type: 3}
   - {fileID: 21300000, guid: 3ca1b28188090ba4cb8a3c89ba273c68, type: 3}
   _hardCardColors:
-  - {fileID: 21300000, guid: b8aac560421bfe7449240cb46031489d, type: 3}
-  - {fileID: 21300000, guid: bb5404141e95aca4ea79177c41c23b65, type: 3}
-  - {fileID: 21300000, guid: 5d92045c05f6ed746836b0f13af4a976, type: 3}
-  - {fileID: 21300000, guid: b3073e82716701640b9a889ad12fe393, type: 3}
-  - {fileID: 21300000, guid: a85d134a7300b9a43a0b6e6453ef77e3, type: 3}
-  - {fileID: 21300000, guid: 2f97113568a462345a5433ad376e5f7e, type: 3}
-  - {fileID: 21300000, guid: 52e81f40673621743bf8f5ced390ece2, type: 3}
-  - {fileID: 21300000, guid: 7e6dc2bea4a142742bb6ad09caafe2c3, type: 3}
-  - {fileID: 21300000, guid: 3041198e7e30c9944af3ce355a1de93b, type: 3}
-  - {fileID: 21300000, guid: 7d66f2ac67987924e8a634090753646a, type: 3}
+  - {fileID: 21300000, guid: 23aee7ae096450e4db18e6c8267c3072, type: 3}
+  - {fileID: 21300000, guid: 0272e351117502f4aa3657b750f2fece, type: 3}
+  - {fileID: 21300000, guid: 0f9ad3b6d9a6dac4ea62b0101c6bf2e5, type: 3}
+  - {fileID: 21300000, guid: 993344b1d7c3e9249a052e90fad91a37, type: 3}
+  - {fileID: 21300000, guid: 3456366aef30b38459e6a095960b75e9, type: 3}
+  - {fileID: 21300000, guid: 6c444837815087640a671056e939db2d, type: 3}
+  - {fileID: 21300000, guid: 6e40a5a383fb93940ad3f878a841f480, type: 3}
+  - {fileID: 21300000, guid: 723942324bfd38b4ab99c780b14b2bfe, type: 3}
+  - {fileID: 21300000, guid: c95ba8728d1ed3d4aa91fea51288bee7, type: 3}
+  - {fileID: 21300000, guid: d0cad8bad8297a348b41c33bc703c157, type: 3}
   _cardGenerationPosition: {fileID: 0}
   _cardDiscardPosition: {fileID: 0}
   _gameDifficulty: 1

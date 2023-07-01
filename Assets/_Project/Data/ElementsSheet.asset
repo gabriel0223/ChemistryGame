@@ -70,7 +70,7 @@ MonoBehaviour:
     radioactive: 0
     group: 8
   - abbreviation: Ne
-    elementname: "Ne\xF4nio"
+    elementname: "N\xE9onio"
     atomicnumber: 10
     electronegativity: 0
     radioactive: 0
